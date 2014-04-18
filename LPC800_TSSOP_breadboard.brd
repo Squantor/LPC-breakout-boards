@@ -117,9 +117,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="30.48" y1="0" x2="30.48" y2="17.78" width="0" layer="20"/>
-<wire x1="30.48" y1="17.78" x2="0" y2="17.78" width="0" layer="20"/>
-<wire x1="0" y1="17.78" x2="0.01" y2="0" width="0" layer="20"/>
+<wire x1="30.48" y1="0" x2="30.48" y2="17.6784" width="0" layer="20"/>
+<wire x1="30.48" y1="17.6784" x2="0" y2="17.6784" width="0" layer="20"/>
+<wire x1="0" y1="17.6784" x2="0.01" y2="0" width="0" layer="20"/>
 <wire x1="0.01" y1="0" x2="30.48" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="17.6784" width="0.254" layer="102"/>
 <wire x1="0" y1="17.6784" x2="30.48" y2="17.6784" width="0.254" layer="102"/>
@@ -1913,14 +1913,14 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.91" y1="13.97" x2="15.86" y2="14.62" width="0.3048" layer="1"/>
 <wire x1="15.86" y1="14.62" x2="15.24" y2="15.24" width="0.3048" layer="1"/>
 <polygon width="0.254" layer="1">
-<vertex x="0" y="17.78"/>
-<vertex x="30.48" y="17.78"/>
+<vertex x="0" y="17.6784"/>
+<vertex x="30.48" y="17.6784"/>
 <vertex x="30.48" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
 <polygon width="0.254" layer="16">
-<vertex x="0" y="17.78"/>
-<vertex x="30.48" y="17.78"/>
+<vertex x="0" y="17.6784"/>
+<vertex x="30.48" y="17.6784"/>
 <vertex x="30.48" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
