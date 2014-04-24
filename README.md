@@ -9,9 +9,12 @@ It has a footprint for TS9011SCXRF regulator and a 12MHz crystal. The TS9011SCXR
 
 TODO's:
 * Fix silk issues with regulator
-* Place the decoupling cap at a more friendly location and use a 0603
 * Enlarge footprint to 24 pins to allow top pins to access the regulator
-* Shrink edges of the board (evaluate after deliver)
+* Shrink edges of the board (evaluate after delivery and assembly)
+* Fix Via's
+* Fix silkscreen positioning
+* cut away ground around crystal oscillator to reduce stray capacitance
+* change footprints to KEMET style reflow footprints (easier to solder)
 
 You can order PCB's [here at OSH Park](https://oshpark.com/shared_projects/cvMYU9qG) per three for $4.20 including shipping.
 
