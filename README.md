@@ -10,8 +10,6 @@ It has a footprint for TS9011SCXRF regulator and a 12MHz crystal. The TS9011SCXR
 TODO's:
 * Fix silk issues with regulator
 * Enlarge footprint to 24 pins to allow top pins to access the regulator
-* Shrink edges of the board (evaluate after delivery and assembly)
-* Fix Via's
 * Fix silkscreen positioning
 * cut away ground around crystal oscillator to reduce stray capacitance
 * change footprints to KEMET style reflow footprints (easier to solder)

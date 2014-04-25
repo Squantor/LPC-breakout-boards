@@ -125,6 +125,7 @@
 <wire x1="0" y1="17.6784" x2="30.48" y2="17.6784" width="0.254" layer="102"/>
 <wire x1="30.48" y1="17.6784" x2="30.48" y2="0" width="0.254" layer="102"/>
 <wire x1="30.48" y1="0" x2="0" y2="0" width="0.254" layer="102"/>
+<text x="29.8704" y="12.192" size="1.016" layer="22" rot="MR270">V 2014.04.15</text>
 </plain>
 <libraries>
 <library name="ohw-logo">
@@ -2941,7 +2942,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="3.4163" y1="7.3406" x2="3.4163" y2="7.9756" width="0.6096" layer="16"/>
 <via x="27.5844" y="6.7056" extent="1-16" drill="0.4" shape="octagon"/>
 <wire x1="27.5844" y1="6.7056" x2="27.7368" y2="7.9248" width="0.6096" layer="1"/>
-<wire x1="27.7368" y1="7.9248" x2="27.7368" y2="10.0584" width="0.6096" layer="1"/>
+<wire x1="27.7368" y1="7.9248" x2="27.7368" y2="10.3632" width="0.6096" layer="1"/>
 <wire x1="27.5844" y1="6.7056" x2="29.4513" y2="6.7056" width="0.6096" layer="1"/>
 <wire x1="29.4513" y1="7.9756" x2="27.7368" y2="7.9248" width="0.6096" layer="1"/>
 <wire x1="21.1963" y1="7.3927" x2="21.1963" y2="6.7056" width="0.6096" layer="16"/>
@@ -2971,6 +2972,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="0" y="0"/>
 </polygon>
 <contactref element="C6" pad="2"/>
+<via x="15.3924" y="9.4488" extent="1-16" drill="0.4" shape="octagon"/>
 </signal>
 <signal name="VDD">
 <contactref element="C1" pad="1"/>
@@ -2995,9 +2997,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="18.9888" y1="13.7056" x2="19.6088" y2="14.3256" width="0.3048" layer="1"/>
 <wire x1="18.6563" y1="10.8859" x2="18.6638" y2="10.8934" width="0.3048" layer="1"/>
 <wire x1="29.4513" y1="5.4356" x2="29.4513" y2="4.4831" width="0.6096" layer="1"/>
-<wire x1="29.4513" y1="4.4831" x2="29.1338" y2="4.1656" width="0.6096" layer="1"/>
-<via x="29.1338" y="4.1656" extent="1-16" drill="0.4" shape="octagon"/>
-<wire x1="29.1338" y1="4.1656" x2="16.256" y2="4.1656" width="0.6096" layer="16"/>
+<via x="27.0002" y="4.1656" extent="1-16" drill="0.4" shape="octagon"/>
+<wire x1="27.0002" y1="4.1656" x2="16.256" y2="4.1656" width="0.6096" layer="16"/>
 <wire x1="12.192" y1="8.2296" x2="16.256" y2="4.1656" width="0.6096" layer="16"/>
 <contactref element="C6" pad="1"/>
 <wire x1="14.0208" y1="8.269" x2="17.7178" y2="8.269" width="0.6096" layer="1"/>
@@ -3008,6 +3009,8 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="12.2314" y1="8.269" x2="14.0208" y2="8.269" width="0.6096" layer="1"/>
 <wire x1="6.3373" y1="8.2296" x2="7.8613" y2="8.2296" width="0.6096" layer="16"/>
 <wire x1="7.8613" y1="8.2296" x2="12.192" y2="8.2296" width="0.6096" layer="16"/>
+<wire x1="29.4513" y1="4.4831" x2="29.1338" y2="4.1656" width="0.6096" layer="1"/>
+<wire x1="29.1338" y1="4.1656" x2="27.0002" y2="4.1656" width="0.6096" layer="1"/>
 </signal>
 <signal name="PIO0_0">
 <contactref element="JP1" pad="9"/>
