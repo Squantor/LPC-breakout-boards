@@ -8,11 +8,7 @@ There are plenty of LPC812 breakout boards, why another one? Well this one has a
 It has a footprint for TS9011SCXRF regulator and a 12MHz crystal. The TS9011SCXRF is pin compatible with the MCP1703 regulator. The crystal can be useful if you need a higher accuracy clock.
 
 TODO's:
-* Fix silk issues with regulator
-* Enlarge footprint to 24 pins to allow top pins to access the regulator
-* Fix silkscreen positioning
-* cut away ground around crystal oscillator to reduce stray capacitance
-* change footprints to KEMET style reflow footprints (easier to solder)
+* none as of yet
 
 You can order PCB's [here at OSH Park](https://oshpark.com/shared_projects/cvMYU9qG) per three for $4.20 including shipping.
 
