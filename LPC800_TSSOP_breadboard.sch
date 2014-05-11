@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,16 +39,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -11880,6 +11880,119 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <rectangle x1="-14.224" y1="-0.254" x2="-13.716" y2="0.254" layer="51"/>
 <rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
 </package>
+<package name="1X12_NORMAL_OCT">
+<wire x1="8.255" y1="1.27" x2="9.525" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="9.525" y1="1.27" x2="10.16" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="0.635" x2="10.16" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="-0.635" x2="9.525" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="10.16" y1="0.635" x2="10.795" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="10.795" y1="1.27" x2="12.065" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="12.065" y1="1.27" x2="12.7" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="0.635" x2="12.7" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="-0.635" x2="12.065" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="12.065" y1="-1.27" x2="10.795" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="10.795" y1="-1.27" x2="10.16" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.985" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="0.635" x2="7.62" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="6.985" y1="-1.27" x2="5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="-0.635" x2="8.255" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="9.525" y1="-1.27" x2="8.255" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="0.635" x2="5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="5.08" y1="-0.635" x2="4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="-1.27" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-5.715" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="1.27" x2="-5.08" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-5.715" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.08" y1="0.635" x2="-4.445" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="1.27" x2="-3.175" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-3.175" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-4.445" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="0.635" x2="-9.525" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-9.525" y1="1.27" x2="-8.255" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-8.255" y1="1.27" x2="-7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="0.635" x2="-7.62" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-8.255" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-8.255" y1="-1.27" x2="-9.525" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-9.525" y1="-1.27" x2="-10.16" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-6.985" y1="1.27" x2="-7.62" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-7.62" y1="-0.635" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-5.715" y1="-1.27" x2="-6.985" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-14.605" y1="1.27" x2="-13.335" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-13.335" y1="1.27" x2="-12.7" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="0.635" x2="-12.7" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="-0.635" x2="-13.335" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-12.7" y1="0.635" x2="-12.065" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-12.065" y1="1.27" x2="-10.795" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-10.795" y1="1.27" x2="-10.16" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="0.635" x2="-10.16" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-10.16" y1="-0.635" x2="-10.795" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-10.795" y1="-1.27" x2="-12.065" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-12.065" y1="-1.27" x2="-12.7" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-15.24" y1="0.635" x2="-15.24" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-14.605" y1="1.27" x2="-15.24" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-15.24" y1="-0.635" x2="-14.605" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-13.335" y1="-1.27" x2="-14.605" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="12.7" y1="0.635" x2="13.335" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="13.335" y1="1.27" x2="14.605" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="14.605" y1="1.27" x2="15.24" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="15.24" y1="0.635" x2="15.24" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="15.24" y1="-0.635" x2="14.605" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="14.605" y1="-1.27" x2="13.335" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="13.335" y1="-1.27" x2="12.7" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-13.97" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="2" x="-11.43" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="3" x="-8.89" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="4" x="-6.35" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="5" x="-3.81" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="6" x="-1.27" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="7" x="1.27" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="8" x="3.81" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="9" x="6.35" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="10" x="8.89" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="11" x="11.43" y="0" drill="1" shape="octagon" rot="R90"/>
+<pad name="12" x="13.97" y="0" drill="1" shape="octagon" rot="R90"/>
+<text x="-15.3162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-15.24" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
+<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
+<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
+<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
+<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
+<rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
+<rectangle x1="-11.684" y1="-0.254" x2="-11.176" y2="0.254" layer="51"/>
+<rectangle x1="-14.224" y1="-0.254" x2="-13.716" y2="0.254" layer="51"/>
+<rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="PINHD12">
@@ -11948,6 +12061,25 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="NORM_OCT" package="1X12_NORMAL_OCT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 </devicesets>
@@ -11963,13 +12095,10 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </classes>
 <parts>
 <part name="LOGO2" library="ohw-logo" deviceset="OSHW_LOGO_FILL" device="X0150-NT"/>
-<part name="C1" library="bart_rcl" deviceset="C-EU" device="C0402K" value="100n"/>
 <part name="Q1" library="bart_crystals" deviceset="CRYSTAL" device="SMD_5.0X3.2" value="12MHz"/>
 <part name="C2" library="SquantorRCL" deviceset="C-EU" device="C0603K" value="22p"/>
 <part name="C3" library="SquantorRCL" deviceset="C-EU" device="C0603K" value="22p"/>
-<part name="VSS1" library="supply1" deviceset="VSS" device=""/>
-<part name="VDD1" library="supply1" deviceset="VDD" device=""/>
-<part name="U$1" library="LPC800" deviceset="LPC812M101JDH20" device=""/>
+<part name="LPC812" library="LPC800" deviceset="LPC812M101JDH20" device=""/>
 <part name="VSS5" library="supply1" deviceset="VSS" device=""/>
 <part name="VDD3" library="supply1" deviceset="VDD" device=""/>
 <part name="JP3" library="bart_connectors" deviceset="PINHD-2X5" device="SMD_1.27_SMD" value="JTAG"/>
@@ -11998,8 +12127,8 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <part name="C6" library="SquantorRCL" deviceset="C-EU" device="C0603K"/>
 <part name="VDD8" library="supply1" deviceset="VDD" device=""/>
 <part name="VSS11" library="supply1" deviceset="VSS" device=""/>
-<part name="JP4" library="SquantorConnectors" deviceset="PINHD-1X12" device="SMALL"/>
-<part name="JP5" library="SquantorConnectors" deviceset="PINHD-1X12" device="SMALL"/>
+<part name="JP4" library="SquantorConnectors" deviceset="PINHD-1X12" device="NORM_OCT"/>
+<part name="JP5" library="SquantorConnectors" deviceset="PINHD-1X12" device="NORM_OCT"/>
 <part name="VDD9" library="supply1" deviceset="VDD" device=""/>
 <part name="VSS12" library="supply1" deviceset="VSS" device=""/>
 </parts>
@@ -12009,13 +12138,10 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </plain>
 <instances>
 <instance part="LOGO2" gate="G$1" x="5.08" y="2.54"/>
-<instance part="C1" gate="G$1" x="20.32" y="10.16"/>
 <instance part="Q1" gate="G$1" x="55.88" y="15.24"/>
 <instance part="C2" gate="G$1" x="48.26" y="10.16"/>
 <instance part="C3" gate="G$1" x="63.5" y="10.16"/>
-<instance part="VSS1" gate="G$1" x="20.32" y="0"/>
-<instance part="VDD1" gate="G$1" x="20.32" y="17.78"/>
-<instance part="U$1" gate="G$1" x="81.28" y="99.06"/>
+<instance part="LPC812" gate="G$1" x="81.28" y="99.06"/>
 <instance part="VSS5" gate="G$1" x="48.26" y="109.22" rot="R270"/>
 <instance part="VDD3" gate="G$1" x="48.26" y="111.76" rot="R90"/>
 <instance part="JP3" gate="A" x="116.84" y="55.88"/>
@@ -12069,7 +12195,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_9/XTALOUT"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_9/XTALOUT"/>
 <wire x1="109.22" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
 <label x="111.76" y="109.22" size="1.778" layer="95"/>
 </segment>
@@ -12091,19 +12217,14 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_8/XTALIN"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_8/XTALIN"/>
 <wire x1="109.22" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
 <label x="111.76" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="VSS" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="5.08" x2="20.32" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="VSS1" gate="G$1" pin="VSS"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VSS"/>
+<pinref part="LPC812" gate="G$1" pin="VSS"/>
 <wire x1="53.34" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="VSS5" gate="G$1" pin="VSS"/>
 </segment>
@@ -12186,12 +12307,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="VDD" class="0">
 <segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="15.24" x2="20.32" y2="12.7" width="0.1524" layer="91"/>
-<pinref part="VDD1" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="LPC812" gate="G$1" pin="VDD"/>
 <wire x1="53.34" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="VDD3" gate="G$1" pin="VDD"/>
 </segment>
@@ -12240,14 +12356,14 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <pinref part="JP4" gate="G$1" pin="9"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
 <wire x1="53.34" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
 <label x="50.8" y="106.68" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PIO0_1" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI"/>
 <wire x1="53.34" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
 <label x="50.8" y="104.14" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -12259,7 +12375,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_2" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_2/SWDIO/TMS"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_2/SWDIO/TMS"/>
 <wire x1="53.34" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
 <label x="50.8" y="101.6" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -12276,7 +12392,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_3" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_3/SWCLK/TCK"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_3/SWCLK/TCK"/>
 <wire x1="53.34" y1="99.06" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
 <label x="50.8" y="99.06" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -12293,7 +12409,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_4" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_4/WAKEUP/TRST"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_4/WAKEUP/TRST"/>
 <wire x1="53.34" y1="96.52" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
 <label x="50.8" y="96.52" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -12305,7 +12421,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_5" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_5/RESET"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_5/RESET"/>
 <wire x1="53.34" y1="93.98" x2="50.8" y2="93.98" width="0.1524" layer="91"/>
 <label x="50.8" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -12332,7 +12448,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_6" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_6/VDDCMP"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_6/VDDCMP"/>
 <wire x1="53.34" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
 <label x="50.8" y="91.44" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -12344,7 +12460,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_7"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_7"/>
 <wire x1="53.34" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 <label x="50.8" y="88.9" size="1.778" layer="95" rot="R180"/>
 </segment>
@@ -12356,7 +12472,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_17" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_17"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_17"/>
 <wire x1="109.22" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
 <label x="111.76" y="88.9" size="1.778" layer="95"/>
 </segment>
@@ -12368,7 +12484,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_16" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_16"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_16"/>
 <wire x1="109.22" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
 <label x="111.76" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -12380,7 +12496,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_15"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_15"/>
 <wire x1="109.22" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
 <label x="111.76" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -12392,7 +12508,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_14" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_14"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_14"/>
 <wire x1="109.22" y1="96.52" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
 <label x="111.76" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -12404,7 +12520,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_13"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_13"/>
 <wire x1="109.22" y1="99.06" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
 <label x="111.76" y="99.06" size="1.778" layer="95"/>
 </segment>
@@ -12416,7 +12532,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_12" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_12"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_12"/>
 <wire x1="109.22" y1="101.6" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
 <label x="111.76" y="101.6" size="1.778" layer="95"/>
 </segment>
@@ -12438,7 +12554,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_11" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_11"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_11"/>
 <wire x1="109.22" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
 <label x="111.76" y="104.14" size="1.778" layer="95"/>
 </segment>
@@ -12450,7 +12566,7 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 </net>
 <net name="PIO0_10" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_10"/>
+<pinref part="LPC812" gate="G$1" pin="PIO0_10"/>
 <wire x1="109.22" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
 <label x="111.76" y="106.68" size="1.778" layer="95"/>
 </segment>
