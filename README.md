@@ -8,18 +8,21 @@ There are plenty of LPC812 breakout boards, why another one? Well this one has a
 It has a footprint for TS9011SCXRF regulator and a 12MHz crystal. The TS9011SCXRF is pin compatible with the MCP1703 regulator. The crystal can be useful if you need a higher accuracy clock.
 
 TODO's:
-* none as of yet
+* board bringup
+* Pictures
 
-You can order PCB's [here at OSH Park](https://oshpark.com/shared_projects/cvMYU9qG) per three for $4.20 including shipping.
+You can order PCB's [here at OSH Park](http://oshpark.com/shared_projects/feusf0aw) per three for $4.20 including shipping.
 
 This project has been inspired by [another LPC812 breakout](https://github.com/cpldcpu/LPC812breakout) but did not have the features I wanted.
 
 Status
 ======
 
- - 2014/04/18 V1.0 boards Ordered at OSHpark
+ - 2014/04/18 V1.0 boards ordered at OSHpark
+ - 2014/05/10 V1.0 boards received and assembly
+ - 2014/05/11 V2014.05.11 boards ordered at OSHpark
 
 Pictures
 ========
 
-Coming soon.
+Assembly done, coming soon.
