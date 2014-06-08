@@ -11,7 +11,7 @@ TODO's:
 * Pictures
 * Add SOT-89 footprint combined with the SOT-23
 
-You can order PCB's [here at OSH Park](http://oshpark.com/shared_projects/feusf0aw) per three for $3.80 including shipping.
+You can order PCB's [here at OSH Park](https://oshpark.com/shared_projects/b25GTusd) per three for $3.80 including shipping.
 
 This project has been inspired by [another LPC812 breakout](https://github.com/cpldcpu/LPC812breakout) but did not have the features I wanted.
 
@@ -19,10 +19,18 @@ Status
 ======
 
  - 2014/04/18 V1.0 boards ordered at OSHpark
- - 2014/05/10 V1.0 boards received and assembly
+ - 2014/05/10 V1.0 boards received and assembled
  - 2014/05/11 V2014.05.11 boards ordered at OSHpark
+ - 2014/06/01 V2014.05.11 boards received and assembled
 
 Pictures
 ========
 
-Assembly done, coming soon.
+## Top ##
+![Front](images/lpc812_breakout_top.jpg)
+
+## Bottom ##
+![Front](images/lpc812_breakout_bot.jpg)
+
+## In action on breadboard ##
+![Front](images/lpc812_breakout_bboard.jpg)
