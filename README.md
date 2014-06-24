@@ -9,10 +9,19 @@ It has a footprint for TS9011SCXRF regulator and a 12MHz crystal. The TS9011SCXR
 
 TODO's:
 * Add pin 1 indicator to solder mask of JTAG header
+* Add cheaper button to button footprint
+* Add nice build environment in separate repository
 
 You can order PCB's [here at OSH Park](https://oshpark.com/shared_projects/b25GTusd) per three for $3.80 including shipping.
 
 This project has been inspired by [another LPC812 breakout](https://github.com/cpldcpu/LPC812breakout) but did not have the features I wanted.
+
+Useful information
+==================
+
+For nice Linux based build environments look at the [lpc8xx](https://github.com/sebseb7/lpc8xx) project by sebseb7.
+I am working on combining the lpc8xx project makefile together with this [pretty comprehensive multi build target Makefile](https://gist.github.com/je-so/5614757) to create a build environment with debugging with code::blocks.
+
 
 Status
 ======
@@ -33,3 +42,6 @@ Pictures
 
 ## In action on breadboard ##
 ![Front](images/lpc812_breakout_bboard.jpg)
+
+## Schematic ##
+![Front](LPC812-breakout-JTAG-schematic.png)
