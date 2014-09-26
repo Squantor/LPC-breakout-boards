@@ -10,6 +10,7 @@ It has a footprint for TS9011SCXRF regulator and a 12MHz crystal. The TS9011SCXR
 TODO's:
 * Add pin 1 indicator to solder mask of JTAG header
 * Add cheaper button to button footprint (DX.com : [295339](http://dx.com/p/295339) [122514](http://dx.com/p/122514))
+* Add lower cost version without regulator footprint
 
 You can order PCB's [here at OSH Park](https://oshpark.com/shared_projects/b25GTusd) per three for $3.80 including shipping.
 

@@ -1,5 +1,5 @@
 [Eagle]
-Version="06 05 00"
+Version="07 01 00"
 Platform="Linux"
 Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
@@ -7,18 +7,6 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/amd.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/ase.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/axis.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/con-phoenix-me_max.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/dimensions.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/logo.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/marks.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/nec-lqfp100-pack.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/plcc-socket.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/ref-packages-longpad.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/ref-packages.lbr"
-UsedLibrary="/home/abilos/programs/eagle-6.5.0/lbr/smd-ipc.lbr"
 UsedLibrary="/home/abilos/projects/private/PCB/lbr/microchip_linear.lbr"
 UsedLibrary="/home/abilos/projects/private/PCB/lbr/ohw-logo.lbr"
 UsedLibrary="/home/abilos/projects/private/PCB/lbr/supply1.lbr"
@@ -35,7 +23,7 @@ Loc="0 25 1155 766"
 State=2
 Number=2
 File="LPC800_TSSOP_breadboard.sch"
-View="110.482 28.0492 230.153 100.331"
+View="8.5281 -8.47254 215.32 116.43"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -74,16 +62,16 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: 110.482 28.0492 230.153 100.331"
-Sheet=1
+Views=" 1: 8.5281 -8.47254 215.32 116.43"
+Sheet="1"
 
 [Win_2]
 Type="Board Editor"
-Loc="0 25 1664 1080"
-State=2
+Loc="0 25 1365 767"
+State=1
 Number=1
 File="LPC800_TSSOP_breadboard.brd"
-View="-2.69533 -3.03277 36.8021 19.3469"
+View="-2.75869 -1.52665 30.1558 17.1231"
 WireWidths=" 0 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.3048 0.254 1.27 1.016 0.8128 0.6096"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -125,12 +113,12 @@ Layer=16
 
 [Win_3]
 Type="Control Panel"
-Loc="0 25 912 896"
+Loc="151 69 1144 714"
 State=2
 Number=0
 
 [Desktop]
-Screen="1920 1200"
+Screen="1366 768"
 Window="Win_1"
 Window="Win_2"
 Window="Win_3"
