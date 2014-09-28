@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -144,6 +144,7 @@
 <text x="6.35" y="12.7" size="0.6096" layer="25" rot="R270">15</text>
 <text x="3.81" y="12.7" size="0.6096" layer="25" rot="R270">GND</text>
 <text x="1.27" y="12.7" size="0.6096" layer="25" rot="R270">(max 12V) VIN</text>
+<text x="30.48" y="3.81" size="1.778" layer="25" rot="R90">1</text>
 </plain>
 <libraries>
 <library name="ohw-logo">
@@ -2749,6 +2750,9 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>

@@ -7,23 +7,29 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
-UsedLibrary="/home/abilos/projects/private/PCB/lbr/microchip_linear.lbr"
-UsedLibrary="/home/abilos/projects/private/PCB/lbr/ohw-logo.lbr"
-UsedLibrary="/home/abilos/projects/private/PCB/lbr/supply1.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/LPC800.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorButtons.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorConnectors.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorCrystal.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorIC.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorRCL.lbr"
+UsedLibrary="/home/abilos/projects/private/PCB/lbr/microchip_linear.lbr"
+UsedLibrary="/home/abilos/projects/private/PCB/lbr/ohw-logo.lbr"
+UsedLibrary="/home/abilos/projects/private/PCB/lbr/supply1.lbr"
 
 [Win_1]
-Type="Schematic Editor"
-Loc="0 25 1155 766"
+Type="Control Panel"
+Loc="-1 25 1364 743"
 State=2
-Number=2
-File="LPC800_TSSOP_breadboard.sch"
-View="8.5281 -8.47254 215.32 116.43"
+Number=0
+
+[Win_2]
+Type="Schematic Editor"
+Loc="0 25 1365 743"
+State=1
+Number=1
+File="LPC800_TSSOP_breadboard_mini.sch"
+View="146.074 45.5638 203.786 80.4221"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -62,23 +68,23 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: 8.5281 -8.47254 215.32 116.43"
+Views=" 1: 146.074 45.5638 203.786 80.4221"
 Sheet="1"
 
-[Win_2]
+[Win_3]
 Type="Board Editor"
-Loc="0 25 1365 767"
+Loc="-1 25 1364 743"
 State=1
-Number=1
-File="LPC800_TSSOP_breadboard.brd"
-View="-2.75869 -1.52665 30.1558 17.1231"
-WireWidths=" 0 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.3048 0.254 1.27 1.016 0.8128 0.6096"
+Number=2
+File="LPC800_TSSOP_breadboard_mini.brd"
+View="0.0626375 0.88565 27.2492 14.8642"
+WireWidths=" 0 0.254 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.8128 0.6096 0.3048"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
 ViaDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 ViaDrills=" 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.6 0.4"
 HoleDrills=" 0.5 0.7 0.8 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.6"
-TextSizes=" 0.254 0.3048 0.4064 0.8128 1.27 1.4224 1.6764 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.778 1.016 0.6096"
+TextSizes=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.778"
 PolygonSpacings=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 5.08 6.4516 1.27"
 PolygonIsolates=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 MiterRadiuss=" 0.254 0.3175 0.635 1.27 2.54 1 2 2.5 5 7.5 10 0"
@@ -87,7 +93,7 @@ DimensionExtWidths=" 0.127 0.254 0.1 0.13 0.26 0"
 DimensionExtLengths=" 1.27 2.54 1 2 3 0"
 DimensionExtOffsets=" 1.27 2.54 1 2 3 0"
 SmdSizes=" 0.3048 0.1524 0.4064 0.2032 0.6096 0.3048 0.8128 0.4064 1.016 0.508 1.27 0.6604 1.4224 0.7112 1.6764 0.8128 1.778 0.9144 1.9304 0.9652 2.1844 1.0668 2.54 1.27 3.81 1.9304 5.08 2.54 6.4516 3.2512 1.27 0.635"
-WireBend=4
+WireBend=0
 WireBendSet=0
 WireCap=1
 MiterStyle=0
@@ -109,13 +115,7 @@ SwapLevel=0
 ArcDirection=0
 AddLevel=2
 PadsSameType=0
-Layer=16
-
-[Win_3]
-Type="Control Panel"
-Loc="151 69 1144 714"
-State=2
-Number=0
+Layer=1
 
 [Desktop]
 Screen="1366 768"
