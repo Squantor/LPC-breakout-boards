@@ -1,5 +1,5 @@
 [Eagle]
-Version="07 01 00"
+Version="06 05 00"
 Platform="Linux"
 Serial="62191E841E-LSR-WLM-1EL"
 Globals="Globals"
@@ -7,22 +7,23 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="/home/abilos/projects/private/PCB/lbr/microchip_linear.lbr"
+UsedLibrary="/home/abilos/projects/private/PCB/lbr/ohw-logo.lbr"
+UsedLibrary="/home/abilos/projects/private/PCB/lbr/supply1.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/LPC800.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorButtons.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorConnectors.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorCrystal.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorIC.lbr"
 UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/SquantorRCL.lbr"
-UsedLibrary="/home/abilos/projects/private/PCB/lbr/microchip_linear.lbr"
-UsedLibrary="/home/abilos/projects/private/PCB/lbr/ohw-logo.lbr"
-UsedLibrary="/home/abilos/projects/private/PCB/lbr/supply1.lbr"
+UsedLibrary="/home/abilos/projects/public/SquantorEagleLib/ohw-logo.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="-1 25 1364 743"
+Loc="0 25 1365 743"
 State=2
 Number=0
 
 [Desktop]
-Screen="1366 768"
+Screen="1600 1200"
 Window="Win_1"
