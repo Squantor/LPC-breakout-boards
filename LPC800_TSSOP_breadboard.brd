@@ -9,19 +9,19 @@
 <grid distance="0.3175" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.635" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -121,7 +121,7 @@
 <wire x1="31.115" y1="15.875" x2="0" y2="15.875" width="0" layer="20"/>
 <wire x1="0" y1="15.875" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="31.115" y2="0" width="0" layer="20"/>
-<text x="27.305" y="3.81" size="1.016" layer="22" rot="MR0">V2014.10.08</text>
+<text x="27.305" y="3.81" size="1.016" layer="22" rot="MR0">V2014.10.09</text>
 <text x="1.905" y="3.175" size="0.6096" layer="25" rot="R90">3.3V</text>
 <text x="3.175" y="2.8575" size="0.6096" layer="25" rot="R90">GND</text>
 <text x="6.985" y="3.175" size="0.6096" layer="25" rot="R90">17</text>
@@ -2893,13 +2893,9 @@ Please make sure your boards conform to these design rules.</description>
 </element>
 <element name="LOGO2" library="ohw-logo" package="OSHW_FILLX150_NOTEXT" value="OSHW_LOGO_FILLX0150-NT" x="18.6055" y="3.9116" rot="MR0"/>
 <element name="U$1" library="SquantorButtons" package="DTSM3" value="TACT_2PINDTSM3" x="6.35" y="9.8425" smashed="yes" rot="R180"/>
-<element name="U$3" library="SquantorButtons" package="DTSM3" value="TACT_2PINDTSM3" x="6.35" y="6.0325" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.16" y="3.4925" size="1.27" layer="21" rot="R180"/>
-</element>
+<element name="U$3" library="SquantorButtons" package="DTSM3" value="TACT_2PINDTSM3" x="6.35" y="6.0325" smashed="yes" rot="R180"/>
 <element name="U$4" library="SquantorButtons" package="TD-85XU" value="TACT_2PIN" x="6.35" y="9.8425" smashed="yes" rot="R180"/>
-<element name="U$5" library="SquantorButtons" package="TD-85XU" value="TACT_2PIN" x="6.35" y="6.0325" smashed="yes" rot="R180">
-<attribute name="NAME" x="10.16" y="3.4925" size="1.27" layer="21" rot="R180"/>
-</element>
+<element name="U$5" library="SquantorButtons" package="TD-85XU" value="TACT_2PIN" x="6.35" y="6.0325" smashed="yes" rot="R180"/>
 </elements>
 <signals>
 <signal name="PIO0_9">
@@ -3229,6 +3225,19 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="2.3806" y1="9.3669" x2="2.54" y2="9.405" width="0.6096" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="19,1,9562a129c737d2e2"/>
+<approved hash="19,1,b26593d452d275e5"/>
+<approved hash="19,1,47eacd9fff725499"/>
+<approved hash="19,1,3da120bd21323c2e"/>
+<approved hash="19,1,60e5ff756a9ff389"/>
+<approved hash="19,1,3aa127bd273a3a26"/>
+<approved hash="19,1,64d45b04e813cfd5"/>
+<approved hash="19,1,7d1f6eaa40b5511e"/>
+<approved hash="19,1,f89efa1a9a818827"/>
+<approved hash="19,16,3da120bd21323c2e"/>
+<approved hash="19,16,3aa127bd273a3a26"/>
+</errors>
 </board>
 </drawing>
 </eagle>
