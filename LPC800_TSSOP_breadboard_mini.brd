@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15,13 +15,13 @@
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -121,7 +121,7 @@
 <wire x1="26.035" y1="15.875" x2="0" y2="15.875" width="0" layer="20"/>
 <wire x1="0" y1="15.875" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="26.035" y2="0" width="0" layer="20"/>
-<text x="24.13" y="3.4925" size="1.016" layer="22" rot="MR90">V2014.10.08</text>
+<text x="23.1775" y="3.4925" size="1.016" layer="22" rot="MR0">V2014.10.08</text>
 <text x="1.905" y="3.175" size="0.6096" layer="25" rot="R90">17</text>
 <text x="4.445" y="3.175" size="0.6096" layer="25" rot="R90">13</text>
 <text x="6.985" y="3.175" size="0.6096" layer="25" rot="R90">12</text>
@@ -2719,6 +2719,9 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2811,27 +2814,27 @@ Please make sure your boards conform to these design rules.</description>
 </autorouter>
 <elements>
 <element name="Q1" library="bart_crystals" package="CRYSTAL_5.0X3.2" value="12MHz" x="18.0213" y="10.5156" smashed="yes" rot="MR180">
-<attribute name="NAME" x="13.6525" y="9.8425" size="1.016" layer="26" rot="MR90"/>
-<attribute name="VALUE" x="22.5425" y="8.255" size="1.016" layer="28" rot="MR90"/>
+<attribute name="NAME" x="21.59" y="9.8425" size="1.016" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="22.86" y="8.255" size="1.016" layer="28" rot="MR90"/>
 </element>
-<element name="C2" library="SquantorRCL" package="C0603K" value="22p" x="15.7988" y="7.3152" smashed="yes" rot="MR270">
-<attribute name="NAME" x="13.7414" y="6.5405" size="1.016" layer="26" rot="MR90"/>
+<element name="C2" library="SquantorRCL" package="C0603K" value="22p" x="15.7988" y="6.9977" smashed="yes" rot="MR270">
+<attribute name="NAME" x="16.9164" y="6.223" size="1.016" layer="26" rot="MR90"/>
 </element>
-<element name="C3" library="SquantorRCL" package="C0603K" value="22p" x="20.2438" y="7.3152" smashed="yes" rot="MR270">
-<attribute name="NAME" x="18.1864" y="6.5405" size="1.016" layer="26" rot="MR90"/>
+<element name="C3" library="SquantorRCL" package="C0603K" value="22p" x="20.2438" y="6.9977" smashed="yes" rot="MR270">
+<attribute name="NAME" x="18.1864" y="6.223" size="1.016" layer="26" rot="MR90"/>
 </element>
 <element name="LPC812" library="LPC800" package="TSSOP20" value="LPC812M101JDH20" x="13.8938" y="7.9756" smashed="yes"/>
 <element name="JP3" library="SquantorConnectors" package="2X05_1.27_SMD" value="JTAG" x="22.1488" y="7.9756" smashed="yes" rot="R90">
 <attribute name="VALUE" x="18.6182" y="6.7437" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="C4" library="bart_rcl" package="C0805K" value="1u" x="9.525" y="9.2075" smashed="yes" rot="MR90">
-<attribute name="NAME" x="10.795" y="10.4267" size="1.016" layer="26" rot="MR90"/>
+<attribute name="NAME" x="11.1125" y="10.4267" size="1.016" layer="26" rot="MR90"/>
 </element>
 <element name="R1" library="bart_rcl" package="R0603" value="10k" x="5.715" y="6.0325" smashed="yes" rot="MR180">
-<attribute name="NAME" x="5.3848" y="3.3909" size="1.016" layer="26" rot="MR90"/>
+<attribute name="NAME" x="6.7691" y="3.7973" size="1.016" layer="26" rot="MR0"/>
 </element>
 <element name="R2" library="bart_rcl" package="R0603" value="10k" x="5.715" y="9.8425" smashed="yes" rot="MR180">
-<attribute name="NAME" x="5.4991" y="10.9728" size="1.016" layer="26" rot="MR90"/>
+<attribute name="NAME" x="6.8072" y="11.2141" size="1.016" layer="26" rot="MR0"/>
 </element>
 <element name="C6" library="SquantorRCL" package="C0603K" value="100n" x="9.5758" y="9.144" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.8783" y="5.169" size="1.016" layer="25" rot="R90"/>
@@ -2856,7 +2859,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="15.5188" y1="10.8934" x2="15.5188" y2="11.8231" width="0.3048" layer="1"/>
 <wire x1="15.5188" y1="11.8231" x2="16.1163" y2="12.4206" width="0.3048" layer="1"/>
 <wire x1="16.1163" y1="12.4206" x2="16.8656" y2="12.4206" width="0.3048" layer="1"/>
-<wire x1="20.2438" y1="8.1902" x2="20.2438" y2="10.9781" width="0.6096" layer="16"/>
+<wire x1="20.2438" y1="7.8727" x2="20.2438" y2="10.9781" width="0.6096" layer="16"/>
 <wire x1="20.2438" y1="10.9781" x2="20.0713" y2="10.5156" width="0.6096" layer="16"/>
 <wire x1="16.8656" y1="12.4206" x2="17.4625" y2="13.0175" width="0.3048" layer="1"/>
 <wire x1="17.4625" y1="13.0175" x2="18.0975" y2="13.0175" width="0.3048" layer="1"/>
@@ -2869,7 +2872,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="LPC812" pad="14"/>
 <contactref element="Q1" pad="1"/>
 <contactref element="C2" pad="1"/>
-<wire x1="15.7988" y1="8.1902" x2="15.7988" y2="10.9781" width="0.6096" layer="16"/>
+<wire x1="15.7988" y1="7.8727" x2="15.7988" y2="10.9781" width="0.6096" layer="16"/>
 <wire x1="15.7988" y1="10.9781" x2="15.9713" y2="10.5156" width="0.6096" layer="16"/>
 <wire x1="15.9713" y1="10.5156" x2="15.9713" y2="13.4313" width="0.6096" layer="16"/>
 <wire x1="15.9713" y1="13.4313" x2="16.8275" y2="14.2875" width="0.6096" layer="16"/>
@@ -2887,8 +2890,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="C4" pad="2"/>
-<via x="22.1869" y="6.7056" extent="1-16" drill="0.4" shape="octagon"/>
-<wire x1="22.1869" y1="6.7056" x2="24.0538" y2="6.7056" width="0.6096" layer="1"/>
+<via x="22.1869" y="5.4356" extent="1-16" drill="0.4" shape="octagon"/>
 <polygon width="0.254" layer="1" isolate="0.3048">
 <vertex x="0" y="15.875"/>
 <vertex x="26.035" y="15.875"/>
@@ -2898,8 +2900,8 @@ Please make sure your boards conform to these design rules.</description>
 <polygon width="0.254" layer="16" isolate="0.3048">
 <vertex x="0" y="15.875"/>
 <vertex x="13.6525" y="15.875"/>
-<vertex x="13.6525" y="6.985"/>
-<vertex x="25.9969" y="6.985"/>
+<vertex x="13.6525" y="6.35"/>
+<vertex x="25.9969" y="6.35"/>
 <vertex x="26.035" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
@@ -2907,8 +2909,6 @@ Please make sure your boards conform to these design rules.</description>
 <via x="11.7475" y="9.525" extent="1-16" drill="0.4" shape="octagon"/>
 <wire x1="24.0538" y1="10.5156" x2="22.1869" y2="10.5156" width="0.6096" layer="1"/>
 <wire x1="22.1869" y1="10.5156" x2="22.1869" y2="7.9756" width="0.6096" layer="1"/>
-<wire x1="22.1869" y1="7.9756" x2="22.1869" y2="6.7056" width="0.6096" layer="1"/>
-<wire x1="24.0538" y1="7.9756" x2="22.1869" y2="7.9756" width="0.6096" layer="1"/>
 <contactref element="JP2" pad="6"/>
 <contactref element="JP2" pad="6"/>
 <contactref element="U$2" pad="P$2"/>

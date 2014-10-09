@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9,19 +9,19 @@
 <grid distance="0.3175" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.635" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -121,7 +121,7 @@
 <wire x1="31.115" y1="15.875" x2="0" y2="15.875" width="0" layer="20"/>
 <wire x1="0" y1="15.875" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="31.115" y2="0" width="0" layer="20"/>
-<text x="29.21" y="3.4925" size="1.016" layer="22" rot="MR90">V2014.10.08</text>
+<text x="27.305" y="3.81" size="1.016" layer="22" rot="MR0">V2014.10.08</text>
 <text x="1.905" y="3.175" size="0.6096" layer="25" rot="R90">3.3V</text>
 <text x="3.175" y="2.8575" size="0.6096" layer="25" rot="R90">GND</text>
 <text x="6.985" y="3.175" size="0.6096" layer="25" rot="R90">17</text>
@@ -2758,6 +2758,9 @@ Please make sure your boards conform to these design rules.</description>
 <autorouter>
 <pass name="Default">
 <param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
 <param name="PrefDir.1" value="|"/>
 <param name="PrefDir.2" value="0"/>
@@ -2864,7 +2867,7 @@ Please make sure your boards conform to these design rules.</description>
 <attribute name="VALUE" x="23.0632" y="5.7912" size="1.016" layer="27" rot="R90"/>
 </element>
 <element name="U$2" library="bart_ic" package="SOT23-3" value="TS9011" x="2.54" y="8.255" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="5.9563" y="6.7056" size="1.016" layer="28" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="4.4069" y="8.8138" size="1.016" layer="28" ratio="10" rot="MR180"/>
 </element>
 <element name="C4" library="bart_rcl" package="C0805K" value="1u" x="2.8575" y="4.7625" smashed="yes" rot="MR180">
 <attribute name="NAME" x="2.1717" y="3.4925" size="1.016" layer="26" rot="MR180"/>
@@ -2939,7 +2942,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C5" pad="2"/>
 <contactref element="C4" pad="2"/>
 <contactref element="U$2" pad="1"/>
-<via x="27.2669" y="5.4356" extent="1-16" drill="0.4" shape="octagon"/>
+<via x="27.2669" y="6.0706" extent="1-16" drill="0.4" shape="octagon"/>
 <polygon width="0.254" layer="1" isolate="0.3048">
 <vertex x="0" y="15.875"/>
 <vertex x="31.115" y="15.875"/>
@@ -2963,8 +2966,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.6963" y1="13.0175" x2="17.6963" y2="13.4187" width="0.3048" layer="1"/>
 <wire x1="17.6963" y1="13.4187" x2="16.8275" y2="14.2875" width="0.3048" layer="1"/>
 <wire x1="17.6582" y1="13.0556" x2="17.6963" y2="13.0175" width="0.3048" layer="1"/>
-<wire x1="29.1338" y1="10.5156" x2="27.2669" y2="10.5156" width="0.6096" layer="1"/>
-<wire x1="27.2669" y1="10.5156" x2="27.2669" y2="7.9756" width="0.6096" layer="1"/>
 <contactref element="U$1" pad="P$2"/>
 <contactref element="U$4" pad="P$2"/>
 <contactref element="U$3" pad="P$2"/>
