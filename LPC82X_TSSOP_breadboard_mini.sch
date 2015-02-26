@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7613,125 +7613,6 @@ Epson Toyocom FCC-255</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="LPC800">
-<description>NXP LPC800 Cortex M0+ MCUs</description>
-<packages>
-<package name="TSSOP20">
-<description>TSSOP20 0.65mm pitch</description>
-<wire x1="-3.1646" y1="-2.2828" x2="3.1646" y2="-2.2828" width="0.2032" layer="51"/>
-<wire x1="3.1646" y1="2.2828" x2="3.1646" y2="-2.2828" width="0.2032" layer="21"/>
-<wire x1="3.1646" y1="2.2828" x2="-3.1646" y2="2.2828" width="0.2032" layer="51"/>
-<wire x1="-3.1646" y1="-2.2828" x2="-3.1646" y2="2.2828" width="0.2032" layer="21"/>
-<circle x="-2.2756" y="-1.2192" radius="0.4572" width="0.2032" layer="21"/>
-<smd name="1" x="-2.925" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="2" x="-2.275" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="3" x="-1.625" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="4" x="-0.975" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="5" x="-0.325" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="6" x="0.325" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="7" x="0.975" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="8" x="1.625" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="13" x="1.625" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="14" x="0.975" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="15" x="0.325" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="16" x="-0.325" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="17" x="-0.975" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="18" x="-1.625" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="19" x="-2.275" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="20" x="-2.925" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="9" x="2.275" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="10" x="2.925" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="12" x="2.275" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="11" x="2.925" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<text x="-3.5456" y="-2.0828" size="0.6096" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<rectangle x1="-3.0266" y1="-3.121" x2="-2.8234" y2="-2.2828" layer="51"/>
-<rectangle x1="-2.3766" y1="-3.121" x2="-2.1734" y2="-2.2828" layer="51"/>
-<rectangle x1="-1.7266" y1="-3.121" x2="-1.5234" y2="-2.2828" layer="51"/>
-<rectangle x1="-1.0766" y1="-3.121" x2="-0.8734" y2="-2.2828" layer="51"/>
-<rectangle x1="-0.4266" y1="-3.121" x2="-0.2234" y2="-2.2828" layer="51"/>
-<rectangle x1="0.2234" y1="-3.121" x2="0.4266" y2="-2.2828" layer="51"/>
-<rectangle x1="0.8734" y1="-3.121" x2="1.0766" y2="-2.2828" layer="51"/>
-<rectangle x1="1.5234" y1="-3.121" x2="1.7266" y2="-2.2828" layer="51"/>
-<rectangle x1="1.5234" y1="2.2828" x2="1.7266" y2="3.121" layer="51"/>
-<rectangle x1="0.8734" y1="2.2828" x2="1.0766" y2="3.121" layer="51"/>
-<rectangle x1="0.2234" y1="2.2828" x2="0.4266" y2="3.121" layer="51"/>
-<rectangle x1="-0.4266" y1="2.2828" x2="-0.2234" y2="3.121" layer="51"/>
-<rectangle x1="-1.0766" y1="2.2828" x2="-0.8734" y2="3.121" layer="51"/>
-<rectangle x1="-1.7266" y1="2.2828" x2="-1.5234" y2="3.121" layer="51"/>
-<rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
-<rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
-<rectangle x1="2.1734" y1="-3.121" x2="2.3766" y2="-2.2828" layer="51"/>
-<rectangle x1="2.8234" y1="-3.121" x2="3.0266" y2="-2.2828" layer="51"/>
-<rectangle x1="2.1734" y1="2.2828" x2="2.3766" y2="3.121" layer="51"/>
-<rectangle x1="2.8234" y1="2.2828" x2="3.0266" y2="3.121" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="LPC812M101">
-<pin name="VDD" x="-27.94" y="12.7" length="middle"/>
-<pin name="VSS" x="-27.94" y="10.16" length="middle"/>
-<pin name="PIO0_0/ACMP_I1/TDO" x="-27.94" y="7.62" length="middle"/>
-<pin name="PIO0_1/ACMP_I2/CLKIN/TDI" x="-27.94" y="5.08" length="middle"/>
-<pin name="PIO0_2/SWDIO/TMS" x="-27.94" y="2.54" length="middle"/>
-<pin name="PIO0_3/SWCLK/TCK" x="-27.94" y="0" length="middle"/>
-<pin name="PIO0_4/WAKEUP/TRST" x="-27.94" y="-2.54" length="middle"/>
-<pin name="PIO0_5/RESET" x="-27.94" y="-5.08" length="middle"/>
-<pin name="PIO0_6/VDDCMP" x="-27.94" y="-7.62" length="middle"/>
-<pin name="PIO0_7" x="-27.94" y="-10.16" length="middle"/>
-<pin name="PIO0_8/XTALIN" x="27.94" y="12.7" length="middle" rot="R180"/>
-<pin name="PIO0_9/XTALOUT" x="27.94" y="10.16" length="middle" rot="R180"/>
-<pin name="PIO0_10" x="27.94" y="7.62" length="middle" rot="R180"/>
-<pin name="PIO0_11" x="27.94" y="5.08" length="middle" rot="R180"/>
-<pin name="PIO0_12" x="27.94" y="2.54" length="middle" rot="R180"/>
-<pin name="PIO0_13" x="27.94" y="0" length="middle" rot="R180"/>
-<pin name="PIO0_14" x="27.94" y="-2.54" length="middle" rot="R180"/>
-<pin name="PIO0_15" x="27.94" y="-5.08" length="middle" rot="R180"/>
-<pin name="PIO0_16" x="27.94" y="-7.62" length="middle" rot="R180"/>
-<pin name="PIO0_17" x="27.94" y="-10.16" length="middle" rot="R180"/>
-<wire x1="-22.86" y1="15.24" x2="-22.86" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="-12.7" x2="22.86" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="22.86" y1="-12.7" x2="22.86" y2="15.24" width="0.254" layer="94"/>
-<wire x1="22.86" y1="15.24" x2="-22.86" y2="15.24" width="0.254" layer="94"/>
-<text x="-22.86" y="-15.24" size="1.27" layer="95">&gt;NAME</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="LPC812M101JDH20">
-<gates>
-<gate name="G$1" symbol="LPC812M101" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TSSOP20">
-<connects>
-<connect gate="G$1" pin="PIO0_0/ACMP_I1/TDO" pad="19"/>
-<connect gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI" pad="12"/>
-<connect gate="G$1" pin="PIO0_10" pad="9"/>
-<connect gate="G$1" pin="PIO0_11" pad="8"/>
-<connect gate="G$1" pin="PIO0_12" pad="3"/>
-<connect gate="G$1" pin="PIO0_13" pad="2"/>
-<connect gate="G$1" pin="PIO0_14" pad="20"/>
-<connect gate="G$1" pin="PIO0_15" pad="11"/>
-<connect gate="G$1" pin="PIO0_16" pad="10"/>
-<connect gate="G$1" pin="PIO0_17" pad="1"/>
-<connect gate="G$1" pin="PIO0_2/SWDIO/TMS" pad="7"/>
-<connect gate="G$1" pin="PIO0_3/SWCLK/TCK" pad="6"/>
-<connect gate="G$1" pin="PIO0_4/WAKEUP/TRST" pad="5"/>
-<connect gate="G$1" pin="PIO0_5/RESET" pad="4"/>
-<connect gate="G$1" pin="PIO0_6/VDDCMP" pad="18"/>
-<connect gate="G$1" pin="PIO0_7" pad="17"/>
-<connect gate="G$1" pin="PIO0_8/XTALIN" pad="14"/>
-<connect gate="G$1" pin="PIO0_9/XTALOUT" pad="13"/>
-<connect gate="G$1" pin="VDD" pad="15"/>
-<connect gate="G$1" pin="VSS" pad="16"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SquantorRCL">
 <description>&lt;b&gt;Resistors, Capacitors, Inductors&lt;/b&gt;&lt;p&gt;
 Based on the previous libraries:
@@ -11983,6 +11864,125 @@ TODO silkscreen checks for PCB manufacturing.</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="LPC800">
+<description>NXP LPC800 Cortex M0+ MCUs</description>
+<packages>
+<package name="TSSOP20">
+<description>TSSOP20 0.65mm pitch</description>
+<wire x1="-3.1646" y1="-2.2828" x2="3.1646" y2="-2.2828" width="0.2032" layer="51"/>
+<wire x1="3.1646" y1="2.2828" x2="3.1646" y2="-2.2828" width="0.2032" layer="21"/>
+<wire x1="3.1646" y1="2.2828" x2="-3.1646" y2="2.2828" width="0.2032" layer="51"/>
+<wire x1="-3.1646" y1="-2.2828" x2="-3.1646" y2="2.2828" width="0.2032" layer="21"/>
+<circle x="-2.2756" y="-1.2192" radius="0.4572" width="0.2032" layer="21"/>
+<smd name="1" x="-2.925" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="2" x="-2.275" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="3" x="-1.625" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="4" x="-0.975" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="5" x="-0.325" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="6" x="0.325" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="7" x="0.975" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="8" x="1.625" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="13" x="1.625" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="14" x="0.975" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="15" x="0.325" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="16" x="-0.325" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="17" x="-0.975" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="18" x="-1.625" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="19" x="-2.275" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="20" x="-2.925" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="9" x="2.275" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="10" x="2.925" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="12" x="2.275" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="11" x="2.925" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<text x="-3.5456" y="-2.0828" size="0.6096" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<rectangle x1="-3.0266" y1="-3.121" x2="-2.8234" y2="-2.2828" layer="51"/>
+<rectangle x1="-2.3766" y1="-3.121" x2="-2.1734" y2="-2.2828" layer="51"/>
+<rectangle x1="-1.7266" y1="-3.121" x2="-1.5234" y2="-2.2828" layer="51"/>
+<rectangle x1="-1.0766" y1="-3.121" x2="-0.8734" y2="-2.2828" layer="51"/>
+<rectangle x1="-0.4266" y1="-3.121" x2="-0.2234" y2="-2.2828" layer="51"/>
+<rectangle x1="0.2234" y1="-3.121" x2="0.4266" y2="-2.2828" layer="51"/>
+<rectangle x1="0.8734" y1="-3.121" x2="1.0766" y2="-2.2828" layer="51"/>
+<rectangle x1="1.5234" y1="-3.121" x2="1.7266" y2="-2.2828" layer="51"/>
+<rectangle x1="1.5234" y1="2.2828" x2="1.7266" y2="3.121" layer="51"/>
+<rectangle x1="0.8734" y1="2.2828" x2="1.0766" y2="3.121" layer="51"/>
+<rectangle x1="0.2234" y1="2.2828" x2="0.4266" y2="3.121" layer="51"/>
+<rectangle x1="-0.4266" y1="2.2828" x2="-0.2234" y2="3.121" layer="51"/>
+<rectangle x1="-1.0766" y1="2.2828" x2="-0.8734" y2="3.121" layer="51"/>
+<rectangle x1="-1.7266" y1="2.2828" x2="-1.5234" y2="3.121" layer="51"/>
+<rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
+<rectangle x1="-3.0266" y1="2.2828" x2="-2.8234" y2="3.121" layer="51"/>
+<rectangle x1="2.1734" y1="-3.121" x2="2.3766" y2="-2.2828" layer="51"/>
+<rectangle x1="2.8234" y1="-3.121" x2="3.0266" y2="-2.2828" layer="51"/>
+<rectangle x1="2.1734" y1="2.2828" x2="2.3766" y2="3.121" layer="51"/>
+<rectangle x1="2.8234" y1="2.2828" x2="3.0266" y2="3.121" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LPC82XM101JDH20">
+<wire x1="-27.94" y1="12.7" x2="-27.94" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-27.94" y1="-15.24" x2="27.94" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-15.24" x2="27.94" y2="12.7" width="0.254" layer="94"/>
+<wire x1="27.94" y1="12.7" x2="-27.94" y2="12.7" width="0.254" layer="94"/>
+<text x="-27.94" y="-17.78" size="1.27" layer="95">&gt;NAME</text>
+<pin name="PIO0_23/ADC_3/ACMP_I4" x="-30.48" y="10.16" length="short"/>
+<pin name="PIO0_17/ADC_9" x="-30.48" y="7.62" length="short"/>
+<pin name="PIO0_13/ADC_10" x="-30.48" y="5.08" length="short"/>
+<pin name="PIO0_12" x="-30.48" y="2.54" length="short"/>
+<pin name="RESET/PIO0_5" x="-30.48" y="0" length="short"/>
+<pin name="PIO0_4/ADC_11/WAKEUP/TRST" x="-30.48" y="-2.54" length="short"/>
+<pin name="SWCLK/PIO0_3/TCK" x="-30.48" y="-5.08" length="short"/>
+<pin name="SWDIO/PIO0_2/TMS" x="-30.48" y="-7.62" length="short"/>
+<pin name="PIO0_11/I2C0_SDA" x="-30.48" y="-10.16" length="short"/>
+<pin name="PIO0_10/I2C0_SCL" x="-30.48" y="-12.7" length="short"/>
+<pin name="PIO0_15" x="30.48" y="-12.7" length="short" rot="R180"/>
+<pin name="PIO0_1/ACMP_I2/CLKIN/TDI" x="30.48" y="-10.16" length="short" rot="R180"/>
+<pin name="PIO0_9/XTALOUT" x="30.48" y="-7.62" length="short" rot="R180"/>
+<pin name="PIO0_8/XTALIN" x="30.48" y="-5.08" length="short" rot="R180"/>
+<pin name="VDD" x="30.48" y="-2.54" length="short" rot="R180"/>
+<pin name="VSS" x="30.48" y="0" length="short" rot="R180"/>
+<pin name="VREFN" x="30.48" y="2.54" length="short" rot="R180"/>
+<pin name="VREFP" x="30.48" y="5.08" length="short" rot="R180"/>
+<pin name="PIO0_0/ACMP_I1/TDO" x="30.48" y="7.62" length="short" rot="R180"/>
+<pin name="PIO0_14/ADC_2/ACMP_I3" x="30.48" y="10.16" length="short" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LPC82XM101JDH20">
+<gates>
+<gate name="G$1" symbol="LPC82XM101JDH20" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSSOP20">
+<connects>
+<connect gate="G$1" pin="PIO0_0/ACMP_I1/TDO" pad="19"/>
+<connect gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI" pad="12"/>
+<connect gate="G$1" pin="PIO0_10/I2C0_SCL" pad="10"/>
+<connect gate="G$1" pin="PIO0_11/I2C0_SDA" pad="9"/>
+<connect gate="G$1" pin="PIO0_12" pad="4"/>
+<connect gate="G$1" pin="PIO0_13/ADC_10" pad="3"/>
+<connect gate="G$1" pin="PIO0_14/ADC_2/ACMP_I3" pad="20"/>
+<connect gate="G$1" pin="PIO0_15" pad="11"/>
+<connect gate="G$1" pin="PIO0_17/ADC_9" pad="2"/>
+<connect gate="G$1" pin="PIO0_23/ADC_3/ACMP_I4" pad="1"/>
+<connect gate="G$1" pin="PIO0_4/ADC_11/WAKEUP/TRST" pad="6"/>
+<connect gate="G$1" pin="PIO0_8/XTALIN" pad="14"/>
+<connect gate="G$1" pin="PIO0_9/XTALOUT" pad="13"/>
+<connect gate="G$1" pin="RESET/PIO0_5" pad="5"/>
+<connect gate="G$1" pin="SWCLK/PIO0_3/TCK" pad="7"/>
+<connect gate="G$1" pin="SWDIO/PIO0_2/TMS" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="15"/>
+<connect gate="G$1" pin="VREFN" pad="17"/>
+<connect gate="G$1" pin="VREFP" pad="18"/>
+<connect gate="G$1" pin="VSS" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -11997,7 +11997,6 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <part name="Q1" library="bart_crystals" deviceset="CRYSTAL" device="SMD_5.0X3.2" value="12MHz"/>
 <part name="C2" library="SquantorRCL" deviceset="C-EU" device="C0603K" value="22p"/>
 <part name="C3" library="SquantorRCL" deviceset="C-EU" device="C0603K" value="22p"/>
-<part name="LPC812" library="LPC800" deviceset="LPC812M101JDH20" device=""/>
 <part name="VSS5" library="supply1" deviceset="VSS" device=""/>
 <part name="VDD3" library="supply1" deviceset="VDD" device=""/>
 <part name="JP3" library="SquantorConnectors" deviceset="PINHD-2X5" device="SMD_1.27_SMD" value="JTAG"/>
@@ -12027,6 +12026,7 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <part name="U$4" library="SquantorButtons" deviceset="TACT_2PIN" device=""/>
 <part name="VSS1" library="supply1" deviceset="VSS" device=""/>
 <part name="VSS8" library="supply1" deviceset="VSS" device=""/>
+<part name="U$5" library="LPC800" deviceset="LPC82XM101JDH20" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -12037,9 +12037,8 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <instance part="Q1" gate="G$1" x="55.88" y="15.24"/>
 <instance part="C2" gate="G$1" x="48.26" y="10.16"/>
 <instance part="C3" gate="G$1" x="63.5" y="10.16"/>
-<instance part="LPC812" gate="G$1" x="81.28" y="99.06"/>
-<instance part="VSS5" gate="G$1" x="48.26" y="109.22" rot="R270"/>
-<instance part="VDD3" gate="G$1" x="48.26" y="111.76" rot="R90"/>
+<instance part="VSS5" gate="G$1" x="144.78" y="101.6" rot="MR270"/>
+<instance part="VDD3" gate="G$1" x="144.78" y="99.06" rot="MR90"/>
 <instance part="JP3" gate="A" x="116.84" y="55.88"/>
 <instance part="VDD4" gate="G$1" x="104.14" y="66.04"/>
 <instance part="VSS6" gate="G$1" x="104.14" y="45.72"/>
@@ -12048,8 +12047,8 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <instance part="VSS3" gate="G$1" x="63.5" y="2.54"/>
 <instance part="VSS4" gate="G$1" x="124.46" y="7.62"/>
 <instance part="VDD5" gate="G$1" x="124.46" y="20.32"/>
-<instance part="VSS7" gate="G$1" x="63.5" y="58.42" rot="R270"/>
-<instance part="VDD2" gate="G$1" x="63.5" y="55.88" rot="R90"/>
+<instance part="VSS7" gate="G$1" x="50.8" y="58.42" rot="R270"/>
+<instance part="VDD2" gate="G$1" x="50.8" y="55.88" rot="R90"/>
 <instance part="VSS9" gate="G$1" x="187.96" y="66.04" rot="R90"/>
 <instance part="VSS10" gate="G$1" x="187.96" y="45.72" rot="R90"/>
 <instance part="R1" gate="G$1" x="149.86" y="45.72"/>
@@ -12067,16 +12066,12 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <instance part="U$4" gate="G$1" x="172.72" y="27.94"/>
 <instance part="VSS1" gate="G$1" x="187.96" y="27.94" rot="R90"/>
 <instance part="VSS8" gate="G$1" x="187.96" y="83.82" rot="R90"/>
+<instance part="U$5" gate="G$1" x="99.06" y="101.6"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="PIO0_9" class="0">
-<segment>
-<wire x1="66.04" y1="50.8" x2="58.42" y2="50.8" width="0.1524" layer="91"/>
-<label x="58.42" y="50.8" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="3"/>
-</segment>
 <segment>
 <wire x1="63.5" y1="12.7" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="15.24" x2="63.5" y2="25.4" width="0.1524" layer="91"/>
@@ -12088,17 +12083,17 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_9/XTALOUT"/>
-<wire x1="109.22" y1="109.22" x2="111.76" y2="109.22" width="0.1524" layer="91"/>
-<label x="111.76" y="109.22" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$1" pin="PIO0_9/XTALOUT"/>
+<wire x1="129.54" y1="93.98" x2="132.08" y2="93.98" width="0.1524" layer="91"/>
+<label x="132.08" y="93.98" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="3"/>
+<wire x1="66.04" y1="50.8" x2="60.96" y2="50.8" width="0.1524" layer="91"/>
+<label x="60.96" y="50.8" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="PIO0_8" class="0">
-<segment>
-<wire x1="66.04" y1="53.34" x2="58.42" y2="53.34" width="0.1524" layer="91"/>
-<label x="58.42" y="53.34" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="4"/>
-</segment>
 <segment>
 <wire x1="48.26" y1="12.7" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="15.24" x2="48.26" y2="27.94" width="0.1524" layer="91"/>
@@ -12110,17 +12105,17 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <pinref part="C2" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_8/XTALIN"/>
-<wire x1="109.22" y1="111.76" x2="111.76" y2="111.76" width="0.1524" layer="91"/>
-<label x="111.76" y="111.76" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$1" pin="PIO0_8/XTALIN"/>
+<wire x1="129.54" y1="96.52" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
+<label x="132.08" y="96.52" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="4"/>
+<wire x1="66.04" y1="53.34" x2="60.96" y2="53.34" width="0.1524" layer="91"/>
+<label x="60.96" y="53.34" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 <net name="VSS" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="VSS"/>
-<wire x1="53.34" y1="109.22" x2="50.8" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="VSS5" gate="G$1" pin="VSS"/>
-</segment>
 <segment>
 <pinref part="JP3" gate="A" pin="3"/>
 <wire x1="114.3" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
@@ -12148,11 +12143,6 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <pinref part="VSS4" gate="G$1" pin="VSS"/>
 </segment>
 <segment>
-<pinref part="VSS7" gate="G$1" pin="VSS"/>
-<pinref part="JP2" gate="A" pin="6"/>
-<pinref part="JP2" gate="A" pin="6"/>
-</segment>
-<segment>
 <pinref part="VSS9" gate="G$1" pin="VSS"/>
 <pinref part="U$1" gate="G$1" pin="2"/>
 </segment>
@@ -12173,13 +12163,19 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <pinref part="U$3" gate="G$1" pin="2"/>
 <pinref part="VSS8" gate="G$1" pin="VSS"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VSS"/>
+<pinref part="VSS5" gate="G$1" pin="VSS"/>
+<wire x1="129.54" y1="101.6" x2="142.24" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="6"/>
+<pinref part="JP2" gate="A" pin="6"/>
+<pinref part="VSS7" gate="G$1" pin="VSS"/>
+<wire x1="66.04" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VDD" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="VDD"/>
-<wire x1="53.34" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="VDD3" gate="G$1" pin="VDD"/>
-</segment>
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
 <wire x1="114.3" y1="60.96" x2="104.14" y2="60.96" width="0.1524" layer="91"/>
@@ -12189,11 +12185,6 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
 <pinref part="VDD5" gate="G$1" pin="VDD"/>
-</segment>
-<segment>
-<pinref part="VDD2" gate="G$1" pin="VDD"/>
-<pinref part="JP2" gate="A" pin="5"/>
-<pinref part="JP2" gate="A" pin="5"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -12208,88 +12199,53 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <pinref part="VDD8" gate="G$1" pin="VDD"/>
 <wire x1="27.94" y1="12.7" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="PIO0_0" class="0">
 <segment>
-<wire x1="66.04" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
-<label x="58.42" y="66.04" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="9"/>
+<pinref part="U$5" gate="G$1" pin="VDD"/>
+<pinref part="VDD3" gate="G$1" pin="VDD"/>
+<wire x1="129.54" y1="99.06" x2="142.24" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
-<wire x1="53.34" y1="106.68" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
-<label x="50.8" y="106.68" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
-<net name="PIO0_1" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI"/>
-<wire x1="53.34" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
-<label x="50.8" y="104.14" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="48.26" x2="58.42" y2="48.26" width="0.1524" layer="91"/>
-<label x="58.42" y="48.26" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="JP2" gate="A" pin="5"/>
+<pinref part="JP2" gate="A" pin="5"/>
+<pinref part="VDD2" gate="G$1" pin="VDD"/>
+<wire x1="66.04" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PIO0_2" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_2/SWDIO/TMS"/>
-<wire x1="53.34" y1="101.6" x2="50.8" y2="101.6" width="0.1524" layer="91"/>
-<label x="50.8" y="101.6" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<wire x1="25.4" y1="53.34" x2="33.02" y2="53.34" width="0.1524" layer="91"/>
-<label x="33.02" y="53.34" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="7"/>
-</segment>
 <segment>
 <pinref part="JP3" gate="A" pin="2"/>
 <wire x1="121.92" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
 <label x="127" y="60.96" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="SWDIO/PIO0_2/TMS"/>
+<wire x1="68.58" y1="93.98" x2="66.04" y2="93.98" width="0.1524" layer="91"/>
+<label x="66.04" y="93.98" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="8"/>
+<wire x1="25.4" y1="50.8" x2="30.48" y2="50.8" width="0.1524" layer="91"/>
+<label x="30.48" y="50.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PIO0_3" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_3/SWCLK/TCK"/>
-<wire x1="53.34" y1="99.06" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
-<label x="50.8" y="99.06" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<wire x1="25.4" y1="55.88" x2="33.02" y2="55.88" width="0.1524" layer="91"/>
-<label x="33.02" y="55.88" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="6"/>
-</segment>
 <segment>
 <pinref part="JP3" gate="A" pin="4"/>
 <wire x1="121.92" y1="58.42" x2="127" y2="58.42" width="0.1524" layer="91"/>
 <label x="127" y="58.42" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="PIO0_4" class="0">
 <segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_4/WAKEUP/TRST"/>
-<wire x1="53.34" y1="96.52" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
-<label x="50.8" y="96.52" size="1.778" layer="95" rot="R180"/>
+<pinref part="U$5" gate="G$1" pin="SWCLK/PIO0_3/TCK"/>
+<wire x1="68.58" y1="96.52" x2="66.04" y2="96.52" width="0.1524" layer="91"/>
+<label x="66.04" y="96.52" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="58.42" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
-<label x="33.02" y="58.42" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="5"/>
+<pinref part="JP1" gate="A" pin="7"/>
+<wire x1="25.4" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+<label x="30.48" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIO0_5" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_5/RESET"/>
-<wire x1="53.34" y1="93.98" x2="50.8" y2="93.98" width="0.1524" layer="91"/>
-<label x="50.8" y="93.98" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<wire x1="25.4" y1="60.96" x2="33.02" y2="60.96" width="0.1524" layer="91"/>
-<label x="33.02" y="60.96" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="4"/>
-</segment>
 <segment>
 <pinref part="JP3" gate="A" pin="10"/>
 <wire x1="121.92" y1="50.8" x2="127" y2="50.8" width="0.1524" layer="91"/>
@@ -12306,102 +12262,30 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <wire x1="157.48" y1="83.82" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
 <junction x="157.48" y="66.04"/>
 </segment>
-</net>
-<net name="PIO0_6" class="0">
 <segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_6/VDDCMP"/>
-<wire x1="53.34" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
-<label x="50.8" y="91.44" size="1.778" layer="95" rot="R180"/>
+<pinref part="U$5" gate="G$1" pin="RESET/PIO0_5"/>
+<wire x1="68.58" y1="101.6" x2="66.04" y2="101.6" width="0.1524" layer="91"/>
+<label x="66.04" y="101.6" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="66.04" y1="63.5" x2="58.42" y2="63.5" width="0.1524" layer="91"/>
-<label x="58.42" y="63.5" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="8"/>
-</segment>
-</net>
-<net name="PIO0_7" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_7"/>
-<wire x1="53.34" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
-<label x="50.8" y="88.9" size="1.778" layer="95" rot="R180"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
-<label x="58.42" y="60.96" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="7"/>
+<pinref part="JP1" gate="A" pin="5"/>
+<wire x1="25.4" y1="58.42" x2="30.48" y2="58.42" width="0.1524" layer="91"/>
+<label x="30.48" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIO0_17" class="0">
 <segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_17"/>
-<wire x1="109.22" y1="88.9" x2="111.76" y2="88.9" width="0.1524" layer="91"/>
-<label x="111.76" y="88.9" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$1" pin="PIO0_17/ADC_9"/>
+<wire x1="68.58" y1="109.22" x2="66.04" y2="109.22" width="0.1524" layer="91"/>
+<label x="66.04" y="109.22" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="68.58" x2="33.02" y2="68.58" width="0.1524" layer="91"/>
-<label x="33.02" y="68.58" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="1"/>
-</segment>
-</net>
-<net name="PIO0_16" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_16"/>
-<wire x1="109.22" y1="91.44" x2="111.76" y2="91.44" width="0.1524" layer="91"/>
-<label x="111.76" y="91.44" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="25.4" y1="45.72" x2="33.02" y2="45.72" width="0.1524" layer="91"/>
-<label x="33.02" y="45.72" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="10"/>
-</segment>
-</net>
-<net name="PIO0_15" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_15"/>
-<wire x1="109.22" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91"/>
-<label x="111.76" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="45.72" x2="58.42" y2="45.72" width="0.1524" layer="91"/>
-<label x="58.42" y="45.72" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="1"/>
-</segment>
-</net>
-<net name="PIO0_14" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_14"/>
-<wire x1="109.22" y1="96.52" x2="111.76" y2="96.52" width="0.1524" layer="91"/>
-<label x="111.76" y="96.52" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="66.04" y1="68.58" x2="58.42" y2="68.58" width="0.1524" layer="91"/>
-<label x="58.42" y="68.58" size="1.778" layer="95" rot="R180"/>
-<pinref part="JP2" gate="A" pin="10"/>
-</segment>
-</net>
-<net name="PIO0_13" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_13"/>
-<wire x1="109.22" y1="99.06" x2="111.76" y2="99.06" width="0.1524" layer="91"/>
-<label x="111.76" y="99.06" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="25.4" y1="66.04" x2="33.02" y2="66.04" width="0.1524" layer="91"/>
-<label x="33.02" y="66.04" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="2"/>
+<wire x1="25.4" y1="66.04" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
+<label x="30.48" y="66.04" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIO0_12" class="0">
-<segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_12"/>
-<wire x1="109.22" y1="101.6" x2="111.76" y2="101.6" width="0.1524" layer="91"/>
-<label x="111.76" y="101.6" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="25.4" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
-<label x="33.02" y="63.5" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="3"/>
-</segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="154.94" y1="45.72" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
@@ -12413,29 +12297,147 @@ TODO silkscreen checks for PCB manufacturing.</description>
 <wire x1="157.48" y1="27.94" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
 <junction x="157.48" y="45.72"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_12"/>
+<wire x1="68.58" y1="104.14" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
+<label x="66.04" y="104.14" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="4"/>
+<wire x1="25.4" y1="60.96" x2="30.48" y2="60.96" width="0.1524" layer="91"/>
+<label x="30.48" y="60.96" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PIO0_23" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_23/ADC_3/ACMP_I4"/>
+<wire x1="68.58" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
+<label x="66.04" y="111.76" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="1"/>
+<wire x1="25.4" y1="68.58" x2="30.48" y2="68.58" width="0.1524" layer="91"/>
+<label x="30.48" y="68.58" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PIO0_13" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_13/ADC_10"/>
+<wire x1="68.58" y1="106.68" x2="66.04" y2="106.68" width="0.1524" layer="91"/>
+<label x="66.04" y="106.68" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="3"/>
+<wire x1="25.4" y1="63.5" x2="30.48" y2="63.5" width="0.1524" layer="91"/>
+<label x="30.48" y="63.5" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PIO0_4" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_4/ADC_11/WAKEUP/TRST"/>
+<wire x1="68.58" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
+<label x="66.04" y="99.06" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="A" pin="6"/>
+<wire x1="25.4" y1="55.88" x2="30.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="30.48" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="PIO0_11" class="0">
 <segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_11"/>
-<wire x1="109.22" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91"/>
-<label x="111.76" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$1" pin="PIO0_11/I2C0_SDA"/>
+<wire x1="68.58" y1="91.44" x2="66.04" y2="91.44" width="0.1524" layer="91"/>
+<label x="66.04" y="91.44" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
-<label x="33.02" y="50.8" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="8"/>
+<pinref part="JP1" gate="A" pin="9"/>
+<wire x1="25.4" y1="48.26" x2="30.48" y2="48.26" width="0.1524" layer="91"/>
+<label x="30.48" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="PIO0_10" class="0">
 <segment>
-<pinref part="LPC812" gate="G$1" pin="PIO0_10"/>
-<wire x1="109.22" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
-<label x="111.76" y="106.68" size="1.778" layer="95"/>
+<pinref part="U$5" gate="G$1" pin="PIO0_10/I2C0_SCL"/>
+<wire x1="68.58" y1="88.9" x2="66.04" y2="88.9" width="0.1524" layer="91"/>
+<label x="66.04" y="88.9" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="25.4" y1="48.26" x2="33.02" y2="48.26" width="0.1524" layer="91"/>
-<label x="33.02" y="48.26" size="1.778" layer="95"/>
-<pinref part="JP1" gate="A" pin="9"/>
+<pinref part="JP1" gate="A" pin="10"/>
+<wire x1="25.4" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
+<label x="30.48" y="45.72" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PIO0_15" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_15"/>
+<wire x1="129.54" y1="88.9" x2="132.08" y2="88.9" width="0.1524" layer="91"/>
+<label x="132.08" y="88.9" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="1"/>
+<wire x1="66.04" y1="45.72" x2="60.96" y2="45.72" width="0.1524" layer="91"/>
+<label x="60.96" y="45.72" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="PIO0_1" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI"/>
+<wire x1="129.54" y1="91.44" x2="132.08" y2="91.44" width="0.1524" layer="91"/>
+<label x="132.08" y="91.44" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="2"/>
+<wire x1="66.04" y1="48.26" x2="60.96" y2="48.26" width="0.1524" layer="91"/>
+<label x="60.96" y="48.26" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="VREFN" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="VREFN"/>
+<wire x1="129.54" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
+<label x="132.08" y="104.14" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="7"/>
+<wire x1="66.04" y1="60.96" x2="60.96" y2="60.96" width="0.1524" layer="91"/>
+<label x="60.96" y="60.96" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="VREF_P" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="VREFP"/>
+<wire x1="129.54" y1="106.68" x2="132.08" y2="106.68" width="0.1524" layer="91"/>
+<label x="132.08" y="106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="8"/>
+<wire x1="66.04" y1="63.5" x2="60.96" y2="63.5" width="0.1524" layer="91"/>
+<label x="60.96" y="63.5" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="PIO0_0" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
+<wire x1="129.54" y1="109.22" x2="132.08" y2="109.22" width="0.1524" layer="91"/>
+<label x="132.08" y="109.22" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="9"/>
+<wire x1="66.04" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
+<label x="60.96" y="66.04" size="1.778" layer="95" rot="R180"/>
+</segment>
+</net>
+<net name="PIO0_14" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_14/ADC_2/ACMP_I3"/>
+<wire x1="129.54" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<label x="132.08" y="111.76" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="A" pin="10"/>
+<wire x1="66.04" y1="68.58" x2="60.96" y2="68.58" width="0.1524" layer="91"/>
+<label x="60.96" y="68.58" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
