@@ -21,6 +21,7 @@ I am working on combining the lpc8xx project makefile together with this [pretty
 Status
 ======
 
+ - 2017/01/07 Some reorganisation, switched to kicad
  - 2014/04/18 V1.0 boards ordered at OSHpark
  - 2014/05/10 V1.0 boards received and assembled
  - 2014/05/11 V2014.05.11 boards ordered at OSHpark
@@ -40,4 +41,9 @@ Pictures
 ![Front](images/lpc812_breakout_bboard.jpg)
 
 ## Schematic ##
-![Front](LPC812-breakout-JTAG-schematic.png)
+![Front](images/LPC812-breakout-JTAG-schematic.png)
+
+# TODO's #
+* Convert boards from eagle to kicad.
+* Start with LPC82X breakouts
+
