@@ -1,4 +1,4 @@
-update=za 07 jan 2017 23:48:41 CET
+update=ma 09 jan 2017 22:54:34 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,6 +23,8 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
+[general]
+version=1
 [eeschema]
 version=1
 LibDir=
@@ -56,5 +58,6 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-[general]
-version=1
+LibName30=/home/abilos/projects/public/SquantorPcbComponentLibrary/kicad/SquantorButtons
+LibName31=/home/abilos/projects/public/SquantorPcbComponentLibrary/kicad/SquantorNxp
+LibName32=/home/abilos/projects/public/SquantorPcbComponentLibrary/kicad/SquantorConnectors
