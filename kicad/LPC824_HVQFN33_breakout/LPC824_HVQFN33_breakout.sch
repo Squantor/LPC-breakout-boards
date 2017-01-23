@@ -49,329 +49,329 @@ $EndDescr
 $Comp
 L C C1
 U 1 1 58740B30
-P 3300 800
-F 0 "C1" H 3325 900 50  0000 L CNN
-F 1 "C" H 3325 700 50  0000 L CNN
-F 2 "SquantorRcl:C_0603" H 3338 650 50  0001 C CNN
-F 3 "" H 3300 800 50  0000 C CNN
-	1    3300 800 
+P 4500 1550
+F 0 "C1" H 4525 1650 50  0000 L CNN
+F 1 "100n" H 4525 1450 50  0000 L CNN
+F 2 "SquantorRcl:C_0402" H 4538 1400 50  0001 C CNN
+F 3 "" H 4500 1550 50  0000 C CNN
+	1    4500 1550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3150 800  2950 800 
+	4350 1550 4150 1550
 Wire Wire Line
-	3450 800  3650 800 
-Text Label 3500 800  0    60   ~ 0
+	4650 1550 4850 1550
+Text Label 4700 1550 0    60   ~ 0
 VCC
-Text Label 2950 800  0    60   ~ 0
+Text Label 4150 1550 0    60   ~ 0
 GND
 $Comp
 L LPC824M201JHI33 M1
 U 1 1 58740BAD
-P 3350 1950
-F 0 "M1" H 2750 3050 45  0000 L BNN
-F 1 "LPC824M201JHI33" H 2750 850 45  0000 L BNN
-F 2 "SquantorIC:SOT617-3" H 3380 2100 20  0001 C CNN
-F 3 "" H 3350 1950 60  0000 C CNN
-	1    3350 1950
+P 4550 2700
+F 0 "M1" H 3950 3800 45  0000 L BNN
+F 1 "LPC824M201JHI33" H 3950 1600 45  0000 L BNN
+F 2 "SquantorIC:SOT617-3" H 4580 2850 20  0001 C CNN
+F 3 "" H 4550 2700 60  0000 C CNN
+	1    4550 2700
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3350 2950 3350 3250
-Text Label 3350 3250 1    60   ~ 0
+	4550 3700 4550 4000
+Text Label 4550 4000 1    60   ~ 0
 GND
 Wire Wire Line
-	4050 2550 4400 2550
+	5250 3300 5600 3300
 Wire Wire Line
-	4050 2450 4400 2450
+	5250 3200 5600 3200
 Wire Wire Line
-	4050 2350 4400 2350
-Text Label 4100 2550 0    60   ~ 0
+	5250 3100 5600 3100
+Text Label 5300 3300 0    60   ~ 0
 VCC
-Text Label 4100 2450 0    60   ~ 0
+Text Label 5300 3200 0    60   ~ 0
 AGND
-Text Label 4100 2350 0    60   ~ 0
+Text Label 5300 3100 0    60   ~ 0
 AREF
 Wire Wire Line
-	1650 1050 2050 1050
+	2850 1800 3250 1800
 Wire Wire Line
-	750  2950 1150 2950
+	1950 3700 2350 3700
 Wire Wire Line
-	1650 2950 2050 2950
+	2850 3700 3250 3700
 Wire Wire Line
-	750  2850 1150 2850
+	1950 3600 2350 3600
 Wire Wire Line
-	750  1050 1150 1050
+	1950 1800 2350 1800
 Wire Wire Line
-	2650 1150 2250 1150
+	3850 1900 3450 1900
 Wire Wire Line
-	2650 1250 2250 1250
+	3850 2000 3450 2000
 Wire Wire Line
-	2650 1350 2250 1350
+	3850 2100 3450 2100
 Wire Wire Line
-	2650 1450 2250 1450
+	3850 2200 3450 2200
 Wire Wire Line
-	2650 1550 2250 1550
+	3850 2300 3450 2300
 Wire Wire Line
-	2650 1650 2250 1650
+	3850 2400 3450 2400
 Wire Wire Line
-	2650 1750 2250 1750
+	3850 2500 3450 2500
 Wire Wire Line
-	2650 1850 2250 1850
-Text Label 2250 1150 0    60   ~ 0
+	3850 2600 3450 2600
+Text Label 3450 1900 0    60   ~ 0
 PIO0_13
-Text Label 2250 1250 0    60   ~ 0
+Text Label 3450 2000 0    60   ~ 0
 PIO0_12
-Text Label 2250 1350 0    60   ~ 0
+Text Label 3450 2100 0    60   ~ 0
 PIO0_5
-Text Label 2250 1450 0    60   ~ 0
+Text Label 3450 2200 0    60   ~ 0
 PIO0_4
-Text Label 2250 1550 0    60   ~ 0
+Text Label 3450 2300 0    60   ~ 0
 PIO0_28
-Text Label 2250 1650 0    60   ~ 0
+Text Label 3450 2400 0    60   ~ 0
 PIO0_3
-Text Label 2250 1750 0    60   ~ 0
+Text Label 3450 2500 0    60   ~ 0
 PIO0_2
-Text Label 2250 1850 0    60   ~ 0
+Text Label 3450 2600 0    60   ~ 0
 PIO0_11
 Wire Wire Line
-	2650 2050 2250 2050
+	3850 2800 3450 2800
 Wire Wire Line
-	2650 2150 2250 2150
+	3850 2900 3450 2900
 Wire Wire Line
-	2250 2250 2650 2250
+	3450 3000 3850 3000
 Wire Wire Line
-	2650 2350 2250 2350
+	3850 3100 3450 3100
 Wire Wire Line
-	2650 2450 2250 2450
+	3850 3200 3450 3200
 Wire Wire Line
-	2650 2550 2250 2550
+	3850 3300 3450 3300
 Wire Wire Line
-	2650 2650 2250 2650
+	3850 3400 3450 3400
 Wire Wire Line
-	2650 2750 2250 2750
+	3850 3500 3450 3500
 Wire Wire Line
-	1650 1150 2050 1150
+	2850 1900 3250 1900
 Wire Wire Line
-	1650 1250 2050 1250
+	2850 2000 3250 2000
 Wire Wire Line
-	1650 1350 2050 1350
+	2850 2100 3250 2100
 Wire Wire Line
-	1650 1450 2050 1450
+	2850 2200 3250 2200
 Wire Wire Line
-	1650 1550 2050 1550
+	2850 2300 3250 2300
 Wire Wire Line
-	1650 1650 2050 1650
+	2850 2400 3250 2400
 Wire Wire Line
-	1650 1750 2050 1750
+	2850 2500 3250 2500
 Wire Wire Line
-	750  1150 1150 1150
+	1950 1900 2350 1900
 Wire Wire Line
-	750  1250 1150 1250
+	1950 2000 2350 2000
 Wire Wire Line
-	1150 1350 750  1350
+	2350 2100 1950 2100
 Wire Wire Line
-	750  1450 1150 1450
+	1950 2200 2350 2200
 Wire Wire Line
-	1150 1550 750  1550
+	2350 2300 1950 2300
 Wire Wire Line
-	1150 1650 750  1650
+	2350 2400 1950 2400
 Wire Wire Line
-	1150 1750 750  1750
-Text Label 1700 1050 0    60   ~ 0
+	2350 2500 1950 2500
+Text Label 2900 1800 0    60   ~ 0
 PIO0_12
-Text Label 750  1050 0    60   ~ 0
+Text Label 1950 1800 0    60   ~ 0
 PIO0_13
-Text Label 2250 2050 0    60   ~ 0
+Text Label 3450 2800 0    60   ~ 0
 PIO0_10
-Text Label 2250 2150 0    60   ~ 0
+Text Label 3450 2900 0    60   ~ 0
 PIO0_16
-Text Label 2250 2250 0    60   ~ 0
+Text Label 3450 3000 0    60   ~ 0
 PIO0_27
-Text Label 2250 2350 0    60   ~ 0
+Text Label 3450 3100 0    60   ~ 0
 PIO0_26
-Text Label 2250 2450 0    60   ~ 0
+Text Label 3450 3200 0    60   ~ 0
 PIO0_25
-Text Label 2250 2550 0    60   ~ 0
+Text Label 3450 3300 0    60   ~ 0
 PIO0_24
-Text Label 2250 2650 0    60   ~ 0
+Text Label 3450 3400 0    60   ~ 0
 PIO0_15
-Text Label 2250 2750 0    60   ~ 0
+Text Label 3450 3500 0    60   ~ 0
 PIO0_1
-Text Label 1700 1150 0    60   ~ 0
+Text Label 2900 1900 0    60   ~ 0
 PIO0_4
-Text Label 750  1150 0    60   ~ 0
+Text Label 1950 1900 0    60   ~ 0
 PIO0_5
-Text Label 1700 1250 0    60   ~ 0
+Text Label 2900 2000 0    60   ~ 0
 PIO0_3
-Text Label 750  1250 0    60   ~ 0
+Text Label 1950 2000 0    60   ~ 0
 PIO0_28
-Text Label 1700 1350 0    60   ~ 0
+Text Label 2900 2100 0    60   ~ 0
 PIO0_11
-Text Label 750  1350 0    60   ~ 0
+Text Label 1950 2100 0    60   ~ 0
 PIO0_2
-Text Label 1700 1450 0    60   ~ 0
+Text Label 2900 2200 0    60   ~ 0
 PIO0_16
-Text Label 750  1450 0    60   ~ 0
+Text Label 1950 2200 0    60   ~ 0
 PIO0_10
-Text Label 1700 1550 0    60   ~ 0
+Text Label 2900 2300 0    60   ~ 0
 PIO0_26
-Text Label 750  1550 0    60   ~ 0
+Text Label 1950 2300 0    60   ~ 0
 PIO0_27
-Text Label 1700 1650 0    60   ~ 0
+Text Label 2900 2400 0    60   ~ 0
 PIO0_24
-Text Label 750  1650 0    60   ~ 0
+Text Label 1950 2400 0    60   ~ 0
 PIO0_25
-Text Label 1700 1750 0    60   ~ 0
+Text Label 2900 2500 0    60   ~ 0
 PIO0_1
-Text Label 750  1750 0    60   ~ 0
+Text Label 1950 2500 0    60   ~ 0
 PIO0_15
 $Comp
 L PINS_2X09 J1
 U 1 1 58784732
-P 1400 1450
-F 0 "J1" H 1300 2000 60  0000 C CNN
-F 1 "PINS_2X09" H 1400 900 60  0000 C CNN
-F 2 "SquantorConnectors:Header-0254-2X09-H010" H 1400 1800 60  0001 C CNN
-F 3 "" H 1400 1800 60  0001 C CNN
-	1    1400 1450
+P 2600 2200
+F 0 "J1" H 2500 2750 60  0000 C CNN
+F 1 "PINS_2X09" H 2600 1650 60  0000 C CNN
+F 2 "SquantorConnectors:Header-0254-2X09-H010" H 2600 2550 60  0001 C CNN
+F 3 "" H 2600 2550 60  0001 C CNN
+	1    2600 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L PINS_2X09 J2
 U 1 1 587847B0
-P 1400 2750
-F 0 "J2" H 1300 3300 60  0000 C CNN
-F 1 "PINS_2X09" H 1400 2200 60  0000 C CNN
-F 2 "SquantorConnectors:Header-0254-2X09-H010" H 1400 3100 60  0001 C CNN
-F 3 "" H 1400 3100 60  0001 C CNN
-	1    1400 2750
+P 2600 3500
+F 0 "J2" H 2500 4050 60  0000 C CNN
+F 1 "PINS_2X09" H 2600 2950 60  0000 C CNN
+F 2 "SquantorConnectors:Header-0254-2X09-H010" H 2600 3850 60  0001 C CNN
+F 3 "" H 2600 3850 60  0001 C CNN
+	1    2600 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 1850 750  1850
+	2350 2600 1950 2600
 Wire Wire Line
-	1650 1850 2050 1850
-Text Label 750  1850 0    60   ~ 0
+	2850 2600 3250 2600
+Text Label 1950 2600 0    60   ~ 0
 GND
-Text Label 1700 1850 0    60   ~ 0
+Text Label 2900 2600 0    60   ~ 0
 GND
 Wire Wire Line
-	1150 2350 750  2350
+	2350 3100 1950 3100
 Wire Wire Line
-	1150 2750 750  2750
+	2350 3500 1950 3500
 Wire Wire Line
-	1150 2650 750  2650
+	2350 3400 1950 3400
 Wire Wire Line
-	1150 2550 750  2550
+	2350 3300 1950 3300
 Wire Wire Line
-	1150 2450 750  2450
+	2350 3200 1950 3200
 Wire Wire Line
-	1650 2350 2050 2350
+	2850 3100 3250 3100
 Wire Wire Line
-	1650 2450 2050 2450
+	2850 3200 3250 3200
 Wire Wire Line
-	1650 2850 2050 2850
+	2850 3600 3250 3600
 Wire Wire Line
-	1650 2750 2050 2750
+	2850 3500 3250 3500
 Wire Wire Line
-	1650 2650 2050 2650
+	2850 3400 3250 3400
 Wire Wire Line
-	1650 2550 2050 2550
+	2850 3300 3250 3300
 Wire Wire Line
-	1150 3050 750  3050
+	2350 3800 1950 3800
 Wire Wire Line
-	1150 3150 750  3150
+	2350 3900 1950 3900
 Wire Wire Line
-	1650 3150 2050 3150
+	2850 3900 3250 3900
 Wire Wire Line
-	1650 3050 2050 3050
+	2850 3800 3250 3800
 Wire Wire Line
-	4050 2750 4400 2750
+	5250 3500 5600 3500
 Wire Wire Line
-	4050 2650 4400 2650
-Text Label 4100 2650 0    60   ~ 0
+	5250 3400 5600 3400
+Text Label 5300 3400 0    60   ~ 0
 PIO0_8
-Text Label 4100 2750 0    60   ~ 0
+Text Label 5300 3500 0    60   ~ 0
 PIO0_9
 Wire Wire Line
-	4050 2250 4400 2250
+	5250 3000 5600 3000
 Wire Wire Line
-	4050 2150 4400 2150
+	5250 2900 5600 2900
 Wire Wire Line
-	4050 2050 4400 2050
-Text Label 4100 2250 0    60   ~ 0
+	5250 2800 5600 2800
+Text Label 5300 3000 0    60   ~ 0
 PIO0_7
-Text Label 4100 2150 0    60   ~ 0
+Text Label 5300 2900 0    60   ~ 0
 PIO0_6
-Text Label 4100 2050 0    60   ~ 0
+Text Label 5300 2800 0    60   ~ 0
 PIO0_0
-Text Label 750  3150 0    60   ~ 0
+Text Label 1950 3900 0    60   ~ 0
 GND
-Text Label 1700 3150 0    60   ~ 0
+Text Label 2900 3900 0    60   ~ 0
 GND
-Text Label 750  3050 0    60   ~ 0
+Text Label 1950 3800 0    60   ~ 0
 PIO0_9
-Text Label 1700 3050 0    60   ~ 0
+Text Label 2900 3800 0    60   ~ 0
 PIO0_8
-Text Label 750  2950 0    60   ~ 0
+Text Label 1950 3700 0    60   ~ 0
 VCC
 Wire Wire Line
-	4050 1850 4400 1850
+	5250 2600 5600 2600
 Wire Wire Line
-	4050 1750 4400 1750
+	5250 2500 5600 2500
 Wire Wire Line
-	4050 1650 4400 1650
+	5250 2400 5600 2400
 Wire Wire Line
-	4050 1550 4400 1550
+	5250 2300 5600 2300
 Wire Wire Line
-	4050 1450 4400 1450
+	5250 2200 5600 2200
 Wire Wire Line
-	4050 1350 4400 1350
+	5250 2100 5600 2100
 Wire Wire Line
-	4050 1250 4400 1250
+	5250 2000 5600 2000
 Wire Wire Line
-	4050 1150 4400 1150
-Text Label 4100 1850 0    60   ~ 0
+	5250 1900 5600 1900
+Text Label 5300 2600 0    60   ~ 0
 PIO0_14
-Text Label 4100 1750 0    60   ~ 0
+Text Label 5300 2500 0    60   ~ 0
 PIO0_23
-Text Label 4100 1650 0    60   ~ 0
+Text Label 5300 2400 0    60   ~ 0
 PIO0_22
-Text Label 4100 1550 0    60   ~ 0
+Text Label 5300 2300 0    60   ~ 0
 PIO0_21
-Text Label 4100 1450 0    60   ~ 0
+Text Label 5300 2200 0    60   ~ 0
 PIO0_20
-Text Label 4100 1350 0    60   ~ 0
+Text Label 5300 2100 0    60   ~ 0
 PIO0_19
-Text Label 4100 1250 0    60   ~ 0
+Text Label 5300 2000 0    60   ~ 0
 PIO0_18
-Text Label 4100 1150 0    60   ~ 0
+Text Label 5300 1900 0    60   ~ 0
 PIO0_17
-Text Label 1700 2350 0    60   ~ 0
+Text Label 2900 3100 0    60   ~ 0
 PIO0_17
-Text Label 750  2350 0    60   ~ 0
+Text Label 1950 3100 0    60   ~ 0
 PIO0_18
-Text Label 1700 2450 0    60   ~ 0
+Text Label 2900 3200 0    60   ~ 0
 PIO0_19
-Text Label 750  2450 0    60   ~ 0
+Text Label 1950 3200 0    60   ~ 0
 PIO0_20
-Text Label 1700 2550 0    60   ~ 0
+Text Label 2900 3300 0    60   ~ 0
 PIO0_21
-Text Label 750  2550 0    60   ~ 0
+Text Label 1950 3300 0    60   ~ 0
 PIO0_22
-Text Label 1700 2650 0    60   ~ 0
+Text Label 2900 3400 0    60   ~ 0
 PIO0_23
-Text Label 750  2650 0    60   ~ 0
+Text Label 1950 3400 0    60   ~ 0
 PIO0_14
-Text Label 1700 2750 0    60   ~ 0
+Text Label 2900 3500 0    60   ~ 0
 PIO0_0
-Text Label 750  2750 0    60   ~ 0
+Text Label 1950 3500 0    60   ~ 0
 PIO0_6
-Text Label 1700 2850 0    60   ~ 0
+Text Label 2900 3600 0    60   ~ 0
 PIO0_7
-Text Label 750  2850 0    60   ~ 0
+Text Label 1950 3600 0    60   ~ 0
 AREF
-Text Label 1700 2950 0    60   ~ 0
+Text Label 2900 3700 0    60   ~ 0
 AGND
 $EndSCHEMATC
