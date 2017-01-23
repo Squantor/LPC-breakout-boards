@@ -179,9 +179,9 @@ Wire Wire Line
 Wire Wire Line
 	1150 1750 750  1750
 Text Label 1700 1050 0    60   ~ 0
-PIO0_13
-Text Label 750  1050 0    60   ~ 0
 PIO0_12
+Text Label 750  1050 0    60   ~ 0
+PIO0_13
 Text Label 2250 2050 0    60   ~ 0
 PIO0_10
 Text Label 2250 2150 0    60   ~ 0
@@ -199,33 +199,33 @@ PIO0_15
 Text Label 2250 2750 0    60   ~ 0
 PIO0_1
 Text Label 1700 1150 0    60   ~ 0
-PIO0_5
-Text Label 750  1150 0    60   ~ 0
 PIO0_4
+Text Label 750  1150 0    60   ~ 0
+PIO0_5
 Text Label 1700 1250 0    60   ~ 0
-PIO0_28
-Text Label 750  1250 0    60   ~ 0
 PIO0_3
+Text Label 750  1250 0    60   ~ 0
+PIO0_28
 Text Label 1700 1350 0    60   ~ 0
-PIO0_2
-Text Label 750  1350 0    60   ~ 0
 PIO0_11
+Text Label 750  1350 0    60   ~ 0
+PIO0_2
 Text Label 1700 1450 0    60   ~ 0
-PIO0_10
-Text Label 750  1450 0    60   ~ 0
 PIO0_16
+Text Label 750  1450 0    60   ~ 0
+PIO0_10
 Text Label 1700 1550 0    60   ~ 0
-PIO0_27
-Text Label 750  1550 0    60   ~ 0
 PIO0_26
+Text Label 750  1550 0    60   ~ 0
+PIO0_27
 Text Label 1700 1650 0    60   ~ 0
-PIO0_25
-Text Label 750  1650 0    60   ~ 0
 PIO0_24
+Text Label 750  1650 0    60   ~ 0
+PIO0_25
 Text Label 1700 1750 0    60   ~ 0
-PIO0_15
-Text Label 750  1750 0    60   ~ 0
 PIO0_1
+Text Label 750  1750 0    60   ~ 0
+PIO0_15
 $Comp
 L PINS_2X09 J1
 U 1 1 58784732
@@ -307,13 +307,71 @@ PIO0_6
 Text Label 4100 2050 0    60   ~ 0
 PIO0_0
 Text Label 750  3150 0    60   ~ 0
-PIO0_9
+GND
 Text Label 1700 3150 0    60   ~ 0
-PIO0_8
+GND
 Text Label 750  3050 0    60   ~ 0
-VCC
+PIO0_9
 Text Label 1700 3050 0    60   ~ 0
-AGND
+PIO0_8
 Text Label 750  2950 0    60   ~ 0
+VCC
+Wire Wire Line
+	4050 1850 4400 1850
+Wire Wire Line
+	4050 1750 4400 1750
+Wire Wire Line
+	4050 1650 4400 1650
+Wire Wire Line
+	4050 1550 4400 1550
+Wire Wire Line
+	4050 1450 4400 1450
+Wire Wire Line
+	4050 1350 4400 1350
+Wire Wire Line
+	4050 1250 4400 1250
+Wire Wire Line
+	4050 1150 4400 1150
+Text Label 4100 1850 0    60   ~ 0
+PIO0_14
+Text Label 4100 1750 0    60   ~ 0
+PIO0_23
+Text Label 4100 1650 0    60   ~ 0
+PIO0_22
+Text Label 4100 1550 0    60   ~ 0
+PIO0_21
+Text Label 4100 1450 0    60   ~ 0
+PIO0_20
+Text Label 4100 1350 0    60   ~ 0
+PIO0_19
+Text Label 4100 1250 0    60   ~ 0
+PIO0_18
+Text Label 4100 1150 0    60   ~ 0
+PIO0_17
+Text Label 1700 2350 0    60   ~ 0
+PIO0_17
+Text Label 750  2350 0    60   ~ 0
+PIO0_18
+Text Label 1700 2450 0    60   ~ 0
+PIO0_19
+Text Label 750  2450 0    60   ~ 0
+PIO0_20
+Text Label 1700 2550 0    60   ~ 0
+PIO0_21
+Text Label 750  2550 0    60   ~ 0
+PIO0_22
+Text Label 1700 2650 0    60   ~ 0
+PIO0_23
+Text Label 750  2650 0    60   ~ 0
+PIO0_14
+Text Label 1700 2750 0    60   ~ 0
+PIO0_0
+Text Label 750  2750 0    60   ~ 0
+PIO0_6
+Text Label 1700 2850 0    60   ~ 0
+PIO0_7
+Text Label 750  2850 0    60   ~ 0
 AREF
+Text Label 1700 2950 0    60   ~ 0
+AGND
 $EndSCHEMATC
