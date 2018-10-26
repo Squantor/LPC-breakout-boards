@@ -662,4 +662,271 @@ Text Label 9900 3600 2    50   ~ 0
 PIO0_27
 Text Label 9900 3700 2    50   ~ 0
 PIO0_28
+Wire Wire Line
+	1150 850  1100 850 
+Wire Wire Line
+	1700 850  1650 850 
+Wire Wire Line
+	1150 950  1100 950 
+Wire Wire Line
+	1150 1050 1100 1050
+Wire Wire Line
+	1150 1150 1100 1150
+Wire Wire Line
+	1150 1250 1100 1250
+Wire Wire Line
+	1150 1350 1100 1350
+Wire Wire Line
+	1150 1450 1100 1450
+Wire Wire Line
+	1150 1550 1100 1550
+Wire Wire Line
+	1650 950  1700 950 
+Wire Wire Line
+	1650 1050 1700 1050
+Wire Wire Line
+	1650 1150 1700 1150
+Wire Wire Line
+	1650 1250 1700 1250
+Wire Wire Line
+	1650 1350 1700 1350
+Wire Wire Line
+	1650 1450 1700 1450
+Wire Wire Line
+	1650 1550 1700 1550
+Text Label 1100 850  2    50   ~ 0
+PIO0_28
+Text Label 1700 850  0    50   ~ 0
+PIO0_3
+Text Label 1100 950  2    50   ~ 0
+PIO0_2
+Text Label 1700 950  0    50   ~ 0
+PIO0_11
+Text Label 1100 1050 2    50   ~ 0
+PIO0_10
+Text Label 1700 1050 0    50   ~ 0
+PIO0_16
+Text Label 1100 1150 2    50   ~ 0
+PIO0_27
+Text Label 1700 1150 0    50   ~ 0
+PIO0_26
+Text Label 1100 1250 2    50   ~ 0
+PIO0_25
+Text Label 1700 1250 0    50   ~ 0
+PIO0_24
+Text Label 1100 1350 2    50   ~ 0
+PIO0_15
+Text Label 1700 1350 0    50   ~ 0
+PIO0_1
+Text Label 1100 1450 2    50   ~ 0
+PIO0_9
+Text Label 1700 1450 0    50   ~ 0
+PIO0_8
+$Comp
+L power:VSS #PWR?
+U 1 1 5BDB8CCF
+P 1100 1550
+F 0 "#PWR?" H 1100 1400 50  0001 C CNN
+F 1 "VSS" V 1118 1678 50  0000 L CNN
+F 2 "" H 1100 1550 50  0001 C CNN
+F 3 "" H 1100 1550 50  0001 C CNN
+	1    1100 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VSS #PWR?
+U 1 1 5BDB8D06
+P 1700 1550
+F 0 "#PWR?" H 1700 1400 50  0001 C CNN
+F 1 "VSS" V 1717 1678 50  0000 L CNN
+F 2 "" H 1700 1550 50  0001 C CNN
+F 3 "" H 1700 1550 50  0001 C CNN
+	1    1700 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1100 2000 1150 2000
+Wire Wire Line
+	1150 2100 1100 2100
+Wire Wire Line
+	1100 2200 1150 2200
+Wire Wire Line
+	1150 2300 1100 2300
+Wire Wire Line
+	1150 2400 1100 2400
+Wire Wire Line
+	1150 2500 1100 2500
+Wire Wire Line
+	1150 2600 1100 2600
+Wire Wire Line
+	1150 2700 1100 2700
+Wire Wire Line
+	1650 2700 1700 2700
+Wire Wire Line
+	1700 2600 1650 2600
+Wire Wire Line
+	1650 2500 1700 2500
+Wire Wire Line
+	1700 2400 1650 2400
+Wire Wire Line
+	1650 2300 1700 2300
+Wire Wire Line
+	1700 2200 1650 2200
+Wire Wire Line
+	1650 2100 1700 2100
+Wire Wire Line
+	1700 2000 1650 2000
+$Comp
+L power:VDD #PWR?
+U 1 1 5BE0F6C3
+P 1700 2700
+F 0 "#PWR?" H 1700 2550 50  0001 C CNN
+F 1 "VDD" V 1717 2828 50  0000 L CNN
+F 2 "" H 1700 2700 50  0001 C CNN
+F 3 "" H 1700 2700 50  0001 C CNN
+	1    1700 2700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5BE0F73C
+P 1100 2700
+F 0 "#PWR?" H 1100 2550 50  0001 C CNN
+F 1 "VDD" V 1118 2827 50  0000 L CNN
+F 2 "" H 1100 2700 50  0001 C CNN
+F 3 "" H 1100 2700 50  0001 C CNN
+	1    1100 2700
+	0    -1   -1   0   
+$EndComp
+Text Label 1700 2600 0    50   ~ 0
+PIO0_7
+Text Label 1100 2600 2    50   ~ 0
+PIO0_6
+Text Label 1700 2500 0    50   ~ 0
+PIO0_0
+Text Label 1100 2500 2    50   ~ 0
+PIO0_14
+Text Label 1700 2400 0    50   ~ 0
+PIO0_23
+Text Label 1100 2400 2    50   ~ 0
+PIO0_22
+Text Label 1700 2300 0    50   ~ 0
+PIO0_21
+Text Label 1100 2300 2    50   ~ 0
+PIO0_20
+Text Label 1700 2200 0    50   ~ 0
+PIO0_19
+Text Label 1100 2200 2    50   ~ 0
+PIO0_18
+Text Label 1700 2100 0    50   ~ 0
+PIO0_17
+Text Label 1100 2100 2    50   ~ 0
+PIO0_13
+Text Label 1700 2000 0    50   ~ 0
+PIO0_12
+Text Label 1100 2000 2    50   ~ 0
+PIO0_4
+$Comp
+L Device:C C?
+U 1 1 5BE10538
+P 10350 6050
+F 0 "C?" H 10465 6096 50  0000 L CNN
+F 1 "18p" H 10465 6005 50  0000 L CNN
+F 2 "SquantorRcl:C_0402" H 10388 5900 50  0001 C CNN
+F 3 "~" H 10350 6050 50  0001 C CNN
+	1    10350 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5BE10822
+P 9950 6050
+F 0 "C?" H 10065 6096 50  0000 L CNN
+F 1 "18p" H 10065 6005 50  0000 L CNN
+F 2 "SquantorRcl:C_0402" H 9988 5900 50  0001 C CNN
+F 3 "~" H 9950 6050 50  0001 C CNN
+	1    9950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VSS #PWR?
+U 1 1 5BE1086A
+P 9950 6250
+F 0 "#PWR?" H 9950 6100 50  0001 C CNN
+F 1 "VSS" H 9968 6423 50  0000 C CNN
+F 2 "" H 9950 6250 50  0001 C CNN
+F 3 "" H 9950 6250 50  0001 C CNN
+	1    9950 6250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VSS #PWR?
+U 1 1 5BE10924
+P 10350 6250
+F 0 "#PWR?" H 10350 6100 50  0001 C CNN
+F 1 "VSS" H 10368 6423 50  0000 C CNN
+F 2 "" H 10350 6250 50  0001 C CNN
+F 3 "" H 10350 6250 50  0001 C CNN
+	1    10350 6250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9950 6200 9950 6250
+Wire Wire Line
+	10350 6200 10350 6250
+$Comp
+L Device:Crystal_GND23 Y?
+U 1 1 5BE1D5EF
+P 10150 5650
+F 0 "Y?" H 9950 5850 50  0000 L CNN
+F 1 "12MHz" H 10400 5450 50  0000 L CNN
+F 2 "" H 10150 5650 50  0001 C CNN
+F 3 "~" H 10150 5650 50  0001 C CNN
+	1    10150 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 5650 9950 5650
+Wire Wire Line
+	9950 5650 9950 5900
+Wire Wire Line
+	10300 5650 10350 5650
+Wire Wire Line
+	10350 5650 10350 5900
+Wire Wire Line
+	9950 5650 9900 5650
+Connection ~ 9950 5650
+Wire Wire Line
+	10350 5650 10400 5650
+Connection ~ 10350 5650
+$Comp
+L power:VSS #PWR?
+U 1 1 5BE44749
+P 10150 5900
+F 0 "#PWR?" H 10150 5750 50  0001 C CNN
+F 1 "VSS" H 10050 5900 50  0000 C CNN
+F 2 "" H 10150 5900 50  0001 C CNN
+F 3 "" H 10150 5900 50  0001 C CNN
+	1    10150 5900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VSS #PWR?
+U 1 1 5BE44786
+P 10150 5400
+F 0 "#PWR?" H 10150 5250 50  0001 C CNN
+F 1 "VSS" H 10250 5400 50  0000 C CNN
+F 2 "" H 10150 5400 50  0001 C CNN
+F 3 "" H 10150 5400 50  0001 C CNN
+	1    10150 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 5450 10150 5400
+Wire Wire Line
+	10150 5900 10150 5850
+Text Label 9900 5650 2    50   ~ 0
+XTAL_IN
+Text Label 10400 5650 0    50   ~ 0
+XTAL_OUT
 $EndSCHEMATC
