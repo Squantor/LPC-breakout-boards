@@ -623,9 +623,9 @@ PIO0_6
 Text Label 9800 1400 2    50   ~ 0
 PIO0_7
 Text Label 9800 1500 2    50   ~ 0
-PIO0_8
+PIO0_8-XTALIN
 Text Label 9800 1600 2    50   ~ 0
-PIO0_9
+PIO0_9-XTALOUT
 Text Label 9800 1700 2    50   ~ 0
 PIO0_10
 Text Label 9800 1800 2    50   ~ 0
@@ -880,7 +880,7 @@ U 1 1 5BE1D5EF
 P 10150 5650
 F 0 "Y?" H 9950 5850 50  0000 L CNN
 F 1 "12MHz" H 10400 5450 50  0000 L CNN
-F 2 "" H 10150 5650 50  0001 C CNN
+F 2 "SquantorCrystal:Crystal_3225_4" H 10150 5650 50  0001 C CNN
 F 3 "~" H 10150 5650 50  0001 C CNN
 	1    10150 5650
 	1    0    0    -1  
@@ -926,7 +926,53 @@ Wire Wire Line
 Wire Wire Line
 	10150 5900 10150 5850
 Text Label 9900 5650 2    50   ~ 0
-XTAL_IN
+XTALIN
 Text Label 10400 5650 0    50   ~ 0
-XTAL_OUT
+XTALOUT
+$Comp
+L SquantorSpecial:SolderJumper_3way_1conn SJ?
+U 1 1 5BE59C36
+P 8900 6200
+F 0 "SJ?" H 9000 6350 50  0000 C CNN
+F 1 "SolderJumper_3way_1conn" H 8900 6100 50  0000 C CNN
+F 2 "" H 8900 6200 50  0001 C CNN
+F 3 "" H 8900 6200 50  0001 C CNN
+	1    8900 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SquantorSpecial:SolderJumper_3way_1conn SJ?
+U 1 1 5BE59D00
+P 7700 6200
+F 0 "SJ?" H 7850 6350 50  0000 R CNN
+F 1 "SolderJumper_3way_1conn" H 8250 6100 50  0000 R CNN
+F 2 "" H 7700 6200 50  0001 C CNN
+F 3 "" H 7700 6200 50  0001 C CNN
+	1    7700 6200
+	1    0    0    -1  
+$EndComp
+Text Label 8000 6200 0    50   ~ 0
+XTALIN
+Text Label 9200 6200 0    50   ~ 0
+XTALOUT
+Text Label 7700 6000 1    50   ~ 0
+PIO0_8-XTALIN
+Text Label 7400 6200 2    50   ~ 0
+PIO0_8
+Text Label 8900 6000 1    50   ~ 0
+PIO0_9-XTALOUT
+Text Label 8600 6200 2    50   ~ 0
+PIO0_9
+Wire Wire Line
+	7950 6200 8000 6200
+Wire Wire Line
+	7700 6050 7700 6000
+Wire Wire Line
+	7450 6200 7400 6200
+Wire Wire Line
+	8650 6200 8600 6200
+Wire Wire Line
+	8900 6050 8900 6000
+Wire Wire Line
+	9150 6200 9200 6200
 $EndSCHEMATC
