@@ -408,9 +408,9 @@ Wire Wire Line
 Wire Wire Line
 	1450 3400 1400 3400
 Text Label 1400 3400 2    50   ~ 0
-SWDIO
+PIO0_2
 Text Label 1400 3500 2    50   ~ 0
-SWDCLK
+PIO0_3
 $Comp
 L Device:R R?
 U 1 1 5BD34D15
@@ -434,7 +434,7 @@ U 1 1 5BD368FA
 P 1850 4600
 F 0 "S?" H 1600 4700 60  0000 C CNN
 F 1 "2pin_tact_switch" H 1850 4831 60  0000 C CNN
-F 2 "" H 1850 4600 60  0001 C CNN
+F 2 "SquantorButtons:TD-85XU" H 1850 4600 60  0001 C CNN
 F 3 "" H 1850 4600 60  0001 C CNN
 	1    1850 4600
 	1    0    0    -1  
@@ -445,7 +445,7 @@ U 1 1 5BD36EE3
 P 1850 5100
 F 0 "S?" H 1600 5200 60  0000 C CNN
 F 1 "2pin_tact_switch" H 1850 5331 60  0000 C CNN
-F 2 "" H 1850 5100 60  0001 C CNN
+F 2 "SquantorButtons:TD-85XU" H 1850 5100 60  0001 C CNN
 F 3 "" H 1850 5100 60  0001 C CNN
 	1    1850 5100
 	1    0    0    -1  
@@ -546,4 +546,120 @@ Text Label 1500 4600 2    50   ~ 0
 RESET
 Text Label 1500 5100 2    50   ~ 0
 PIO0_12
+Text Label 9800 1200 2    50   ~ 0
+RESET
+Wire Wire Line
+	9850 1200 9800 1200
+Wire Wire Line
+	9850 1000 9800 1000
+Wire Wire Line
+	9850 900  9800 900 
+Text Label 9800 1900 2    50   ~ 0
+PIO0_12
+Wire Wire Line
+	9850 1900 9800 1900
+Wire Wire Line
+	9850 700  9800 700 
+Wire Wire Line
+	9850 800  9800 800 
+Wire Wire Line
+	9850 1100 9800 1100
+Wire Wire Line
+	9850 1300 9800 1300
+Wire Wire Line
+	9850 1400 9800 1400
+Wire Wire Line
+	9850 1500 9800 1500
+Wire Wire Line
+	9800 1600 9850 1600
+Wire Wire Line
+	9850 1700 9800 1700
+Wire Wire Line
+	9850 1800 9800 1800
+Wire Wire Line
+	9850 2000 9800 2000
+Wire Wire Line
+	9850 2100 9800 2100
+Wire Wire Line
+	9850 2200 9800 2200
+Wire Wire Line
+	9950 2500 9900 2500
+Wire Wire Line
+	9950 2600 9900 2600
+Wire Wire Line
+	9950 2700 9900 2700
+Wire Wire Line
+	9950 2800 9900 2800
+Wire Wire Line
+	9950 2900 9900 2900
+Wire Wire Line
+	9950 3000 9900 3000
+Wire Wire Line
+	9950 3100 9900 3100
+Wire Wire Line
+	9950 3200 9900 3200
+Wire Wire Line
+	9950 3300 9900 3300
+Wire Wire Line
+	9950 3400 9900 3400
+Wire Wire Line
+	9950 3500 9900 3500
+Wire Wire Line
+	9950 3600 9900 3600
+Wire Wire Line
+	9950 3700 9900 3700
+Text Label 9800 700  2    50   ~ 0
+PIO0_0
+Text Label 9800 800  2    50   ~ 0
+PIO0_1
+Text Label 9800 1100 2    50   ~ 0
+PIO0_4
+Text Label 9800 900  2    50   ~ 0
+PIO0_2
+Text Label 9800 1000 2    50   ~ 0
+PIO0_3
+Text Label 9800 1300 2    50   ~ 0
+PIO0_6
+Text Label 9800 1400 2    50   ~ 0
+PIO0_7
+Text Label 9800 1500 2    50   ~ 0
+PIO0_8
+Text Label 9800 1600 2    50   ~ 0
+PIO0_9
+Text Label 9800 1700 2    50   ~ 0
+PIO0_10
+Text Label 9800 1800 2    50   ~ 0
+PIO0_11
+Text Label 9800 2000 2    50   ~ 0
+PIO0_13
+Text Label 9800 2100 2    50   ~ 0
+PIO0_14
+Text Label 9800 2200 2    50   ~ 0
+PIO0_15
+Text Label 9900 2500 2    50   ~ 0
+PIO0_16
+Text Label 9900 2600 2    50   ~ 0
+PIO0_17
+Text Label 9900 2700 2    50   ~ 0
+PIO0_18
+Text Label 9900 2800 2    50   ~ 0
+PIO0_19
+Text Label 9900 2900 2    50   ~ 0
+PIO0_20
+Text Label 9900 3000 2    50   ~ 0
+PIO0_21
+Text Label 9900 3100 2    50   ~ 0
+PIO0_22
+Text Label 9900 3200 2    50   ~ 0
+PIO0_23
+Text Label 9900 3300 2    50   ~ 0
+PIO0_24
+Text Label 9900 3400 2    50   ~ 0
+PIO0_25
+Text Label 9900 3500 2    50   ~ 0
+PIO0_26
+Text Label 9900 3600 2    50   ~ 0
+PIO0_27
+Text Label 9900 3700 2    50   ~ 0
+PIO0_28
 $EndSCHEMATC
