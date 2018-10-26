@@ -1,4 +1,7 @@
+*plots*
+rescue-backup
+*rescue.lib
 *.net
-*.bak
-*cache.lib
 *.kicad_pcb-bak
+*.bak
+
