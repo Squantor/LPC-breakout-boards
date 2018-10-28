@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:LPC82X_JHI33_2layer-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -432,7 +433,7 @@ L SquantorButtons:2pin_tact_switch S1
 U 1 1 5BD368FA
 P 1850 4600
 F 0 "S1" H 1600 4700 60  0000 C CNN
-F 1 "2pin_tact_switch" H 1850 4831 60  0000 C CNN
+F 1 "Reset" H 1850 4831 60  0000 C CNN
 F 2 "SquantorButtons:TD-85XU" H 1850 4600 60  0001 C CNN
 F 3 "" H 1850 4600 60  0001 C CNN
 	1    1850 4600
@@ -443,7 +444,7 @@ L SquantorButtons:2pin_tact_switch S2
 U 1 1 5BD36EE3
 P 1850 5100
 F 0 "S2" H 1600 5200 60  0000 C CNN
-F 1 "2pin_tact_switch" H 1850 5331 60  0000 C CNN
+F 1 "Boot" H 1850 5331 60  0000 C CNN
 F 2 "SquantorButtons:TD-85XU" H 1850 5100 60  0001 C CNN
 F 3 "" H 1850 5100 60  0001 C CNN
 	1    1850 5100
