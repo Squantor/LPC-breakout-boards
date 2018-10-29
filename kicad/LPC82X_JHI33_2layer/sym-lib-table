@@ -8,5 +8,5 @@
   (lib (name SquantorPCBOutline)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorPCBOutline.lib)(options "")(descr ""))
   (lib (name SquantorProto)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorProto.lib)(options "")(descr ""))
   (lib (name SquantorSpecial)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorSpecial.lib)(options "")(descr ""))
-  (lib (name SquantorLabels)(type Legacy)(uri /home/abilos/projects/public/LPC-breakout-boards/kicad/squantorPcbLibrary/SquantorLabels.lib)(options "")(descr ""))
+  (lib (name SquantorLabels)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorLabels.lib)(options "")(descr ""))
 )
