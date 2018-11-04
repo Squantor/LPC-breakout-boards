@@ -9,4 +9,5 @@
   (lib (name SquantorPCBOutline)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorPCBOutline.lib)(options "")(descr ""))
   (lib (name SquantorProto)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorProto.lib)(options "")(descr ""))
   (lib (name SquantorSpecial)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorSpecial.lib)(options "")(descr ""))
+  (lib (name LPC82X_JDH20-rescue)(type Legacy)(uri ${KIPRJMOD}/LPC82X_JDH20-rescue.lib)(options "")(descr ""))
 )
