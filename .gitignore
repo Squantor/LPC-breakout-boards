@@ -4,3 +4,6 @@ rescue-backup
 *.kicad_pcb-bak
 *.bak
 
+# ignoring plot zips
+*.zip
+
