@@ -2,7 +2,8 @@ G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,5.0.1-33cea8e~68~ubuntu18.04.1*
 G04 #@! TF.CreationDate,2018-11-21T22:32:26+01:00*
 G04 #@! TF.ProjectId,LPC82X_JHI33_2layer,4C50433832585F4A484933335F326C61,rev?*
 G04 #@! TF.SameCoordinates,Original*
-G04 #@! TF.FileFunction,Profile,NP*
+G04 #@! TF.FileFunction,Paste,Bot*
+G04 #@! TF.FilePolarity,Positive*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
 G04 Created by KiCad (PCBNEW 5.0.1-33cea8e~68~ubuntu18.04.1) date wo 21 nov 2018 22:32:26 CET*
@@ -10,15 +11,5 @@ G04 Created by KiCad (PCBNEW 5.0.1-33cea8e~68~ubuntu18.04.1) date wo 21 nov 2018
 %LPD*%
 G01*
 G04 APERTURE LIST*
-%ADD10C,0.150000*%
 G04 APERTURE END LIST*
-D10*
-X77100000Y-118400000D02*
-X77100000Y-94900000D01*
-X100700000Y-118400000D02*
-X77100000Y-118400000D01*
-X100700000Y-94900000D02*
-X100700000Y-118400000D01*
-X77100000Y-94900000D02*
-X100700000Y-94900000D01*
 M02*
