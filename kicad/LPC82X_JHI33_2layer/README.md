@@ -13,4 +13,6 @@ Still some things need to be done:
 * update Readme.md with pictures and BOM
 ## BOM
 TBD/TODO: Most parts ordered from farnell.com
-
+## Pictures
+Here is a picture of V20181102 that has a ton of solder bridging, next revision will also have a stencil for more proper assembly.
+![V20181102 with tons of solder bridges](media/V20181102_fail.jpg)
