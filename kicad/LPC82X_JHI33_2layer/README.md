@@ -4,11 +4,10 @@ This is a LPC824 breakout for the QFN33 package, all GPIO's are brought out and 
 This breakout can be used in prototyping PCB as the breakout headers match the 2.54mm pitch of such a PCB.
 ## TODO's
 Still some things need to be done:
-* Fix crystal footprint
-* layout again (Redo)
-* Review after a day (Redo)
-* Produce [OSHpark](https://oshpark.com/shared_projects/i9AZPwPX) (Redo)
-* Assemble (failed, redo)
+* layout (Done)
+* Review after a day (Done)
+* Produce [OSHpark](https://oshpark.com/shared_projects/i9AZPwPX) (WIP)
+* Assemble (redo)
 * Test (blinky!)
 * update Readme.md with pictures and BOM
 ## BOM
