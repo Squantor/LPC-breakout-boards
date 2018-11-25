@@ -6,7 +6,7 @@ This breakout can be used in prototyping PCB as the breakout headers match the 2
 Still some things need to be done:
 * layout (Done)
 * Review after a day (Done)
-* Produce [OSHpark](https://oshpark.com/shared_projects/i9AZPwPX) (WIP)
+* Produce [OSHpark](https://oshpark.com/shared_projects/RuvO87MR) (WIP)
 * Assemble (redo)
 * Test (blinky!)
 * update Readme.md with pictures and BOM
