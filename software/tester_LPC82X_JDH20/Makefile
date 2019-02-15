@@ -1,11 +1,12 @@
 # get project settings project settings
 include src/Makefile.inc
 
-INCLUDES += -Imcu
+INCLUDES += -Imcu -I../lpc_chip_82x/inc
 LIBDIR += -L"./ld"
-RLIBDIR += $(LIBDIR)
+LIBS += -llpc_chip_82x
+RLIBDIR += $(LIBDIR) -L"../lpc_chip_82x/bin/release"
 RLIBS += $(LIBS)
-DLIBDIR += $(LIBDIR)
+DLIBDIR += $(LIBDIR) -L"../lpc_chip_82x/bin/debug"
 DLIBS += $(LIBS)
 
 # Toolchain settings
@@ -80,11 +81,12 @@ DEPS = $(OBJECTS:.o=.d)
 
 # Standard, non-optimized release build
 release: dirs
-	# make lpc_chip library if needed
+	$(MAKE) -C ../lpc_chip_82x release
 	$(MAKE) all --no-print-directory
 
 # Debug build for gdb debugging
 debug: dirs
+	$(MAKE) -C ../lpc_chip_82x debug
 	$(MAKE) all --no-print-directory
 
 # Create the directories used in the build
@@ -96,6 +98,7 @@ dirs:
 clean_debug:
 clean_release:
 clean:
+	$(MAKE) -C ../lpc_chip_82x clean
 	$(RM) -r build
 	$(RM) -r bin
 
