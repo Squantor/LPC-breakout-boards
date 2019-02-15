@@ -46,6 +46,13 @@ extern "C"
     }
 }
 
+void delayTicks(uint32_t ticksToWait)
+{
+    uint32_t ticksMax = ticks + ticksToWait;
+    while(ticks < ticksMax)
+        ;
+}
+
 // TODO type that couples GPIO to PIO pin as these two are disjoint in the LPC824
 // all the testable pins, smart to set all pins in proximity
 uint8_t boardPinTable[] = {23, 17, 13, 12, 4, 11, 10, 15, 1, 0, 14};
@@ -54,10 +61,13 @@ uint8_t boardPinTable[] = {23, 17, 13, 12, 4, 11, 10, 15, 1, 0, 14};
 bool testGpio(uint8_t pinTable[], uint8_t tableIndex)
 {
     uint8_t currentPin = pinTable[tableIndex];
-    // turn to input
-    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentPin);
+        // quickly turn on to high to charge the capacitor up to max
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentPin);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentPin, false);
+    delayTicks(10);
     uint32_t ticksLoHiStart = ticks;
     uint32_t ticksLoHiEnd = ticksLoHiStart;
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentPin);
     // turn on pullup
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO15, PIN_MODE_PULLUP);
     // wait until high
@@ -65,8 +75,12 @@ bool testGpio(uint8_t pinTable[], uint8_t tableIndex)
     {
         ticksLoHiEnd = ticks;
     }
-    volatile uint32_t ticksLoHi = ticksLoHiEnd - ticksLoHiStart;
-
+    uint32_t ticksLoHi = ticksLoHiEnd - ticksLoHiStart;
+    // quickly turn on to high to charge the capacitor up to max
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentPin);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentPin, true);
+    delayTicks(10);
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentPin);
     uint32_t ticksHiLoStart = ticks;
     uint32_t ticksHiLoEnd = ticksHiLoStart;
     // turn off pullup, turn on pulldown
@@ -76,11 +90,11 @@ bool testGpio(uint8_t pinTable[], uint8_t tableIndex)
     {
         ticksHiLoEnd = ticks;
     }
-    volatile uint32_t ticksHiLo = ticksHiLoEnd - ticksHiLoStart;
+    uint32_t ticksHiLo = ticksHiLoEnd - ticksHiLoStart;
     // turn to output, low
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO15, PIN_MODE_INACTIVE);
-    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, 15);
-    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, 15, false);
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentPin);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentPin, false);
     return((ticksHiLo < maxTicksHiLo) && (ticksLoHi < maxTicksLoHi));
 }
 
@@ -95,6 +109,7 @@ int main()
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO8, PIN_MODE_INACTIVE);
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE);
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO15, PIN_MODE_INACTIVE);
+    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO12, PIN_MODE_INACTIVE);
     //Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
     Chip_GPIO_Init(LPC_GPIO_PORT);
     Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, 15);
