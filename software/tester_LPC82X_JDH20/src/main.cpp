@@ -36,9 +36,27 @@ extern "C"
         ticks++;
     }
 }
+
+// all the testable pins, smart to set all pins in proximity
+uint8_t boardPinTable[] = {23, 17, 13, 12, 4, 11, 10, 15, 1, 0, 14};
+
+uint8_t testGpio(uint8_t pinTable[], uint8_t tableIndex)
+{
+    uint8_t currentPin = pinTable[tableIndex];
+    // turn to input
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentPin);
+    // turn on pullup
+    
+    // loop
+    // turn off pullup
+    // loop
+    // turn to output, low
+}
+
 int main()
 {
     uint32_t currentTicks = 0;
+    uint8_t testresult = 0;
     Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_SWM);
     Chip_SWM_FixedPinEnable(SWM_FIXED_XTALIN, true);
     Chip_SWM_FixedPinEnable(SWM_FIXED_XTALOUT, true);
@@ -46,13 +64,27 @@ int main()
     Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_IOCON);
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO8, PIN_MODE_INACTIVE);
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE);
-    Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
+    //Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
     Chip_GPIO_Init(LPC_GPIO_PORT);
     Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, 15);
-	Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, 15, true);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, 15, true);
     Chip_SetupXtalClocking();
     SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / 10);
+    
+    // set all pins to output and low
+    for(int i = 0; 
+        i < (sizeof(boardPinTable) / sizeof(boardPinTable[0])); 
+        i+= sizeof(boardPinTable[0])
+        )
+    {
+        Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, boardPinTable[i]);
+        Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, boardPinTable[i], false);
+    }
+    // test each pin
+    testresult |= testGpio(boardPinTable, 8);
+    // breakpoint for all okay
+    // breakpoint for error
     
     while (1) {
         if(currentTicks != ticks)
