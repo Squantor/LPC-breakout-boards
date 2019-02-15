@@ -8,9 +8,9 @@ CPP_SOURCES = src/startup.cpp src/main.cpp
 S_SOURCES = 
 INCLUDES = -Iinc
 LIBDIR = 
-LIBS = 
+LIBS = -lgcc
 RLIBDIR = 
-DEFINES = -mcpu=cortex-m0 -mthumb
+DEFINES = -DCORE_M0PLUS
 COMPILE_CXX_FLAGS = -mcpu=cortex-m0 -mthumb
 COMPILE_CPP_FLAGS = -mcpu=cortex-m0 -mthumb
 COMPILE_ASM_FLAGS =

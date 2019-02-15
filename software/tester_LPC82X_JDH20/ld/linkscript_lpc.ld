@@ -33,6 +33,10 @@ GNU ld documentation and numerous other public resources.
 
 */
 
+GROUP (
+  "libgcc.a"
+)
+
 ENTRY(Reset_Handler)
 
 SECTIONS {
