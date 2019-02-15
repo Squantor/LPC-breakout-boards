@@ -25,6 +25,12 @@ SOFTWARE.
 #include <stdint.h>
 #include <chip.h>
 
+/* 
+maximum transition times for Low to High and High to Low. These values are
+derived from charging a 2.2uF capacitor and multiplied by 3 to make sure we
+have sufficient margin.
+ */
+
 const uint32_t maxTicksLoHi = 150;
 const uint32_t maxTicksHiLo = 210;
 
