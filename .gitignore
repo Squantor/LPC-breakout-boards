@@ -7,3 +7,33 @@ rescue-backup
 # ignoring plot zips
 *.zip
 
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+build/
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+bin/
+
+#miscellanious generated files
+*.log
+
+#eclipse stuff
+.settings/
+
