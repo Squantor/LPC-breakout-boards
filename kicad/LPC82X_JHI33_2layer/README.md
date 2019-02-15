@@ -17,7 +17,7 @@ Due to the general shortage of passive components, where mentioned, just whateve
 * 0402 100Ohm resistors for series dampening of programming lines
 * 0402 100KOhm resistors for pullup on Reset, SWDIO and pulldown on SWDCLK
 * 0603 1uF 6.3V (generic)
-* LPC824 microcontroller [Farnell](https://uk.farnell.com/2448376)
+* LPC824 microcontroller [Farnell](https://uk.farnell.com/2890181)
 * 12MHz crystal (optional) [Farnell](https://uk.farnell.com/2853917)
 * The header I usually get from this vendor on [Ebay](https://www.ebay.com/usr/yixue2010), bit slow shipping and not the cheapest but the parts are good, he has a pretty sizable selection of connectors. 
 ## Pictures
@@ -25,7 +25,7 @@ This is one of the first PCB's that I assembled with a stencil, leadfree solder 
 
 ![V20181124 solder paste stencilled](media/V20181124_stenciled.jpg)
 
-![V20181124 components placed](media/V20181124_stenciled.jpg)
+![V20181124 components placed](media/V20181124_placed.jpg)
 
 ![V20181124 soldered](media/V20181124_soldered.jpg)
 
