@@ -27,6 +27,6 @@ This is one of the first PCB's that I assembled with a stencil, leadfree solder 
 
 ![V20181124 components placed](media/V20181124_stenciled.jpg)
 
-![V20181124 soldered](V20181124_soldered.jpg)
+![V20181124 soldered](media/V20181124_soldered.jpg)
 
 TODO, pictures of V20181124 on a bed of nails testing jig.
