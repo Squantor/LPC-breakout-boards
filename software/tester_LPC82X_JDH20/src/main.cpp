@@ -77,7 +77,6 @@ const ioPair boardPinTable[] =
 };
 const int boardPinCount = sizeof(boardPinTable) / sizeof(boardPinTable[0]);
 
-// TODO, create timeout so the routine does not get stuck
 // true for okay, false for timeout
 bool testGpio(const uint8_t gpioPin, const CHIP_PINx_T ioconPin)
 {
@@ -91,7 +90,8 @@ bool testGpio(const uint8_t gpioPin, const CHIP_PINx_T ioconPin)
     // turn on pullup
     Chip_IOCON_PinSetMode(LPC_IOCON, ioconPin, PIN_MODE_PULLUP);
     // wait until high 
-    while(!Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, gpioPin))
+    while(  !Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, gpioPin) && 
+            ticksLoHiEnd < maxTicksHiLo + maxTicksLoHi )
     {
         ticksLoHiEnd = ticks;
     }
@@ -106,7 +106,8 @@ bool testGpio(const uint8_t gpioPin, const CHIP_PINx_T ioconPin)
     // turn off pullup, turn on pulldown
     Chip_IOCON_PinSetMode(LPC_IOCON, ioconPin, PIN_MODE_PULLDN);
     // wait until low
-    while(Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, gpioPin))
+    while(  Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, gpioPin) && 
+            ticksHiLoEnd < ticksHiLoStart + maxTicksHiLo )
     {
         ticksHiLoEnd = ticks;
     }
@@ -130,8 +131,6 @@ int main()
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE); 
     //Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
     Chip_GPIO_Init(LPC_GPIO_PORT);
-    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, 15);
-    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, 15, false);
     Chip_SetupXtalClocking();
     SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / 1000);
