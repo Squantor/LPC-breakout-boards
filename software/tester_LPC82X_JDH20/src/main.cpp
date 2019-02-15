@@ -36,7 +36,8 @@ const uint32_t maxTicksHiLo = 210;
 
 const uint32_t OscRateIn = 12000000;
 const uint32_t ExtRateIn = 0;
-volatile uint32_t ticks = 0;
+typedef uint32_t timeTicks;
+volatile timeTicks ticks = 0;
 
 extern "C"
 {
@@ -46,55 +47,74 @@ extern "C"
     }
 }
 
-void delayTicks(uint32_t ticksToWait)
+void delayTicks(timeTicks ticksToWait)
 {
-    uint32_t ticksMax = ticks + ticksToWait;
+    timeTicks ticksMax = ticks + ticksToWait;
     while(ticks < ticksMax)
         ;
 }
 
-// TODO type that couples GPIO to PIO pin as these two are disjoint in the LPC824
-// all the testable pins, smart to set all pins in proximity
-uint8_t boardPinTable[] = {23, 17, 13, 12, 4, 11, 10, 15, 1, 0, 14};
+typedef struct {
+    uint8_t gpioPin;
+    CHIP_PINx_T ioconPin;
+} ioPair;
 
-// true for okay, false for timeout
-bool testGpio(uint8_t pinTable[], uint8_t tableIndex)
+const ioPair boardPinTable[] =
 {
-    uint8_t currentPin = pinTable[tableIndex];
-        // quickly turn on to high to charge the capacitor up to max
-    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentPin);
-    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentPin, false);
+    {23, IOCON_PIO23},
+    {17, IOCON_PIO17},
+    {13, IOCON_PIO13},
+    {12, IOCON_PIO12},
+    {4, IOCON_PIO4},
+    // we cant test these pins, they are not allowed to float
+    // See UM10800 page 90, chapter 8.3 of IOCON peripheral
+    //{11, IOCON_PIO11},
+    //{10, IOCON_PIO10},
+    {15, IOCON_PIO15},
+    {1, IOCON_PIO1},
+    {0, IOCON_PIO0},
+    {14, IOCON_PIO14},
+};
+const int boardPinCount = sizeof(boardPinTable) / sizeof(boardPinTable[0]);
+
+// TODO, create timeout so the routine does not get stuck
+// true for okay, false for timeout
+bool testGpio(const uint8_t gpioPin, const CHIP_PINx_T ioconPin)
+{
+    // discharge capacitor
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, gpioPin);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0,gpioPin, false);
     delayTicks(10);
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, gpioPin);
     uint32_t ticksLoHiStart = ticks;
     uint32_t ticksLoHiEnd = ticksLoHiStart;
-    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentPin);
     // turn on pullup
-    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO15, PIN_MODE_PULLUP);
-    // wait until high
-    while(!Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, currentPin))
+    Chip_IOCON_PinSetMode(LPC_IOCON, ioconPin, PIN_MODE_PULLUP);
+    // wait until high 
+    while(!Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, gpioPin))
     {
         ticksLoHiEnd = ticks;
     }
     uint32_t ticksLoHi = ticksLoHiEnd - ticksLoHiStart;
-    // quickly turn on to high to charge the capacitor up to max
-    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentPin);
-    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentPin, true);
+    // charge capacitor
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0,gpioPin);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, gpioPin, true);
     delayTicks(10);
-    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentPin);
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, gpioPin);
     uint32_t ticksHiLoStart = ticks;
     uint32_t ticksHiLoEnd = ticksHiLoStart;
     // turn off pullup, turn on pulldown
-    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO15, PIN_MODE_PULLDN);
+    Chip_IOCON_PinSetMode(LPC_IOCON, ioconPin, PIN_MODE_PULLDN);
     // wait until low
-    while(Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, currentPin))
+    while(Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, gpioPin))
     {
         ticksHiLoEnd = ticks;
     }
     uint32_t ticksHiLo = ticksHiLoEnd - ticksHiLoStart;
     // turn to output, low
-    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO15, PIN_MODE_INACTIVE);
-    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentPin);
-    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentPin, false);
+    Chip_IOCON_PinSetMode(LPC_IOCON, ioconPin, PIN_MODE_INACTIVE);
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, gpioPin);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, gpioPin, false);
     return((ticksHiLo < maxTicksHiLo) && (ticksLoHi < maxTicksLoHi));
 }
 
@@ -107,9 +127,7 @@ int main()
     Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_SWM);
     Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_IOCON);
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO8, PIN_MODE_INACTIVE);
-    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE);
-    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO15, PIN_MODE_INACTIVE);
-    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO12, PIN_MODE_INACTIVE);
+    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE); 
     //Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
     Chip_GPIO_Init(LPC_GPIO_PORT);
     Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, 15);
@@ -118,17 +136,19 @@ int main()
     SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / 1000);
     
-    // set all pins to output and low
-    for(uint32_t i = 0; 
-        i < (sizeof(boardPinTable) / sizeof(boardPinTable[0])); 
-        i+= sizeof(boardPinTable[0])
-        )
+    // set all pins to output and low with no pullups
+    for(int i = 0; i < boardPinCount; i++)
     {
-        Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, boardPinTable[i]);
-        Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, boardPinTable[i], false);
+        ioPair currentPair = boardPinTable[i];
+        Chip_IOCON_PinSetMode(LPC_IOCON, currentPair.ioconPin, PIN_MODE_INACTIVE);
+        Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentPair.gpioPin);
+        Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentPair.gpioPin, false);
     }
     // test each pin
-    allPinsGood &= testGpio(boardPinTable, 7);
+    for(int i = 0; i < boardPinCount; i++)
+    {
+        allPinsGood &= testGpio(boardPinTable[i].gpioPin, boardPinTable[i].ioconPin);
+    }
     // breakpoint for all okay
     if(allPinsGood == true)
         __BKPT(1);
