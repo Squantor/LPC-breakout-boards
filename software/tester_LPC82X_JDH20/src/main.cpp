@@ -47,13 +47,18 @@ int main()
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO8, PIN_MODE_INACTIVE);
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE);
     Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
+    Chip_GPIO_Init(LPC_GPIO_PORT);
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, 15);
+	Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, 15, true);
     Chip_SetupXtalClocking();
     SystemCoreClockUpdate();
-    SysTick_Config(SystemCoreClock / 4);
+    SysTick_Config(SystemCoreClock / 10);
+    
     while (1) {
-        while(currentTicks != ticks)
+        if(currentTicks != ticks)
         {
             currentTicks = ticks;
+            Chip_GPIO_SetPinToggle(LPC_GPIO_PORT, 0, 15);
         }
         __WFI();
     }

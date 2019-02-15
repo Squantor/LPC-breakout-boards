@@ -53,8 +53,7 @@ set mem inaccessible-by-default off
 set {int}0x40048000 = 2
 load bin/debug/breakout_tester.elf
 set {int}0x40048000 = 2
-compare-sections
-b main</PostConnectCommands>
+compare-sections</PostConnectCommands>
         <StartupCommands/>
       </Debugger>
       <PreBuild/>
@@ -100,8 +99,7 @@ set mem inaccessible-by-default off
 set {int}0x40048000 = 2
 file bin/release/breakout_tester.elf
 set {int}0x40048000 = 2
-compare-sections
-b main</PostConnectCommands>
+compare-sections</PostConnectCommands>
         <StartupCommands/>
       </Debugger>
       <PreBuild/>
