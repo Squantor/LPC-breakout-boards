@@ -1,5 +1,5 @@
 [submodule "kicad/squantorPcbLibrary"]
-	path = kicad/squantorPcbLibrary
+	path = hardware/squantorPcbLibrary
 	url = https://github.com/Squantor/squantorPcbLibrary.git
 [submodule "software/lpc_chip_82x"]
 	path = software/lpc_chip_82x
