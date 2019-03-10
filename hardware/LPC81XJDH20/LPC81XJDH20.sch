@@ -527,18 +527,18 @@ Wire Wire Line
 $Comp
 L power:VSS #PWR0115
 U 1 1 5BE8C0B0
-P 3800 2850
-F 0 "#PWR0115" H 3800 2700 50  0001 C CNN
-F 1 "VSS" V 3817 2978 50  0000 L CNN
-F 2 "" H 3800 2850 50  0001 C CNN
-F 3 "" H 3800 2850 50  0001 C CNN
-	1    3800 2850
+P 3800 2750
+F 0 "#PWR0115" H 3800 2600 50  0001 C CNN
+F 1 "VSS" V 3817 2878 50  0000 L CNN
+F 2 "" H 3800 2750 50  0001 C CNN
+F 3 "" H 3800 2750 50  0001 C CNN
+	1    3800 2750
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	3800 2850 3850 2850
+	3800 2750 3850 2750
 Wire Wire Line
-	4950 2850 4900 2850
+	4950 2750 4900 2750
 $Comp
 L SquantorNxp:LPC812M101JDH20 U3
 U 2 1 5C85ACA1
@@ -574,38 +574,18 @@ PIO0_7
 Text Label 6000 3700 2    50   ~ 0
 PIO0_16
 $Comp
-L SquantorConnectorsNamed:LPC81XJDH20_breakout_left U1
-U 1 1 5C87C3F2
-P 4150 3300
-F 0 "U1" H 4100 3900 50  0000 L CNN
-F 1 "LPC81XJDH20_breakout_left" H 3300 2700 50  0000 L CNN
-F 2 "SquantorConnectorsNamed:LPC81XJDH20_breakout_left" H 4000 3300 50  0001 C CNN
-F 3 "" H 4000 3300 50  0001 C CNN
-	1    4150 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L SquantorConnectorsNamed:LPC81XJDH20_breakout_right U2
-U 1 1 5C87C475
-P 4600 3300
-F 0 "U2" H 4600 3900 50  0000 C CNN
-F 1 "LPC81XJDH20_breakout_right" H 4250 2700 50  0000 C CNN
-F 2 "SquantorConnectorsNamed:LPC81XJDH20_breakout_right" H 4450 3300 50  0001 C CNN
-F 3 "" H 4450 3300 50  0001 C CNN
-	1    4600 3300
-	-1   0    0    -1  
-$EndComp
-$Comp
 L power:VDD #PWR0116
 U 1 1 5BE8C138
-P 4950 2850
-F 0 "#PWR0116" H 4950 2700 50  0001 C CNN
-F 1 "VDD" V 4967 2978 50  0000 L CNN
-F 2 "" H 4950 2850 50  0001 C CNN
-F 3 "" H 4950 2850 50  0001 C CNN
-	1    4950 2850
+P 4950 2750
+F 0 "#PWR0116" H 4950 2600 50  0001 C CNN
+F 1 "VDD" V 4967 2878 50  0000 L CNN
+F 2 "" H 4950 2750 50  0001 C CNN
+F 3 "" H 4950 2750 50  0001 C CNN
+	1    4950 2750
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	3850 2850 3800 2850
 Wire Wire Line
 	3850 2950 3800 2950
 Wire Wire Line
@@ -623,10 +603,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 3650 3800 3650
 Wire Wire Line
-	3850 3750 3800 3750
-Wire Wire Line
-	4900 3750 4950 3750
-Wire Wire Line
 	4900 3650 4950 3650
 Wire Wire Line
 	4900 3550 4950 3550
@@ -642,40 +618,77 @@ Wire Wire Line
 	4900 3050 4950 3050
 Wire Wire Line
 	4900 2950 4950 2950
-Text Label 3800 2950 2    50   ~ 0
+Wire Wire Line
+	4900 2850 4950 2850
+Text Label 3800 2850 2    50   ~ 0
 PIO0_3
-Text Label 3800 3050 2    50   ~ 0
+Text Label 3800 2950 2    50   ~ 0
 PIO0_2
-Text Label 3800 3150 2    50   ~ 0
+Text Label 3800 3050 2    50   ~ 0
 PIO0_11
-Text Label 3800 3250 2    50   ~ 0
+Text Label 3800 3150 2    50   ~ 0
 PIO0_10
-Text Label 3800 3350 2    50   ~ 0
+Text Label 3800 3250 2    50   ~ 0
 PIO0_16
-Text Label 3800 3450 2    50   ~ 0
+Text Label 3800 3350 2    50   ~ 0
 PIO0_15
-Text Label 3800 3550 2    50   ~ 0
+Text Label 3800 3450 2    50   ~ 0
 PIO0_1
-Text Label 3800 3650 2    50   ~ 0
+Text Label 3800 3550 2    50   ~ 0
 PIO0_9
-Text Label 3800 3750 2    50   ~ 0
+Text Label 3800 3650 2    50   ~ 0
 PIO0_8
-Text Label 4950 3750 0    50   ~ 0
-PIO0_7
 Text Label 4950 3650 0    50   ~ 0
-PIO0_6
+PIO0_7
 Text Label 4950 3550 0    50   ~ 0
-PIO0_0
+PIO0_6
 Text Label 4950 3450 0    50   ~ 0
-PIO0_14
+PIO0_0
 Text Label 4950 3350 0    50   ~ 0
-PIO0_17
+PIO0_14
 Text Label 4950 3250 0    50   ~ 0
-PIO0_13
+PIO0_17
 Text Label 4950 3150 0    50   ~ 0
-PIO0_12
+PIO0_13
 Text Label 4950 3050 0    50   ~ 0
-RESET
+PIO0_12
 Text Label 4950 2950 0    50   ~ 0
+RESET
+Text Label 4950 2850 0    50   ~ 0
 PIO0_4
+$Comp
+L SquantorConnectorsNamed:LPC81XJDH20_breakout_left J1
+U 1 1 5C8C5F75
+P 4150 3200
+F 0 "J1" H 4100 3800 50  0000 L CNN
+F 1 "LPC81XJDH20_breakout_left" H 3300 2600 50  0000 L CNN
+F 2 "SquantorConnectorsNamed:LPC81XJDH20_breakout_left" H 4000 3200 50  0001 C CNN
+F 3 "" H 4000 3200 50  0001 C CNN
+	1    4150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SquantorConnectorsNamed:LPC81XJDH20_breakout_right J3
+U 1 1 5C8C5FF2
+P 4600 3200
+F 0 "J3" H 4600 3800 50  0000 C CNN
+F 1 "LPC81XJDH20_breakout_right" H 4250 2600 50  0000 C CNN
+F 2 "SquantorConnectorsNamed:LPC81XJDH20_breakout_right" H 4450 3200 50  0001 C CNN
+F 3 "" H 4450 3200 50  0001 C CNN
+	1    4600 3200
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 3950 5150
+NoConn ~ 3950 5250
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5C8D2992
+P 6100 4750
+F 0 "#FLG0101" H 6100 4825 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 4924 50  0000 C CNN
+F 2 "" H 6100 4750 50  0001 C CNN
+F 3 "~" H 6100 4750 50  0001 C CNN
+	1    6100 4750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
