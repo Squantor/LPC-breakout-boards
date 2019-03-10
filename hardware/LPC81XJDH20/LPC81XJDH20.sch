@@ -527,111 +527,18 @@ Wire Wire Line
 $Comp
 L power:VSS #PWR0115
 U 1 1 5BE8C0B0
-P 4000 2850
-F 0 "#PWR0115" H 4000 2700 50  0001 C CNN
-F 1 "VSS" V 4017 2978 50  0000 L CNN
-F 2 "" H 4000 2850 50  0001 C CNN
-F 3 "" H 4000 2850 50  0001 C CNN
-	1    4000 2850
+P 3800 2850
+F 0 "#PWR0115" H 3800 2700 50  0001 C CNN
+F 1 "VSS" V 3817 2978 50  0000 L CNN
+F 2 "" H 3800 2850 50  0001 C CNN
+F 3 "" H 3800 2850 50  0001 C CNN
+	1    3800 2850
 	0    -1   -1   0   
 $EndComp
-$Comp
-L power:VDD #PWR0116
-U 1 1 5BE8C138
-P 4750 2850
-F 0 "#PWR0116" H 4750 2700 50  0001 C CNN
-F 1 "VDD" V 4767 2978 50  0000 L CNN
-F 2 "" H 4750 2850 50  0001 C CNN
-F 3 "" H 4750 2850 50  0001 C CNN
-	1    4750 2850
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	4000 2850 4050 2850
+	3800 2850 3850 2850
 Wire Wire Line
-	4750 2850 4700 2850
-Text Label 4000 2950 2    50   ~ 0
-PIO0_4
-Text Label 4000 3050 2    50   ~ 0
-PIO0_3
-Text Label 4000 3150 2    50   ~ 0
-PIO0_2
-Text Label 4000 3250 2    50   ~ 0
-PIO0_11
-Text Label 4000 3350 2    50   ~ 0
-PIO0_10
-Text Label 4000 3450 2    50   ~ 0
-PIO0_15
-Text Label 4000 3550 2    50   ~ 0
-PIO0_1
-Text Label 4000 3650 2    50   ~ 0
-PIO0_9
-Text Label 4750 3650 0    50   ~ 0
-PIO0_8
-$Comp
-L Connector_Generic:Conn_01x09 J1
-U 1 1 5BE90F57
-P 4250 3250
-F 0 "J1" H 4169 2717 50  0000 C CNN
-F 1 "Conn_01x09" H 4169 2626 50  0000 C CNN
-F 2 "SquantorConnectors:Header-0254-1X09-H010" H 4250 3250 50  0001 C CNN
-F 3 "~" H 4250 3250 50  0001 C CNN
-	1    4250 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x09 J3
-U 1 1 5BE90FB3
-P 4500 3250
-F 0 "J3" H 4420 2625 50  0000 C CNN
-F 1 "Conn_01x09" H 4420 2716 50  0000 C CNN
-F 2 "SquantorConnectors:Header-0254-1X09-H010" H 4500 3250 50  0001 C CNN
-F 3 "~" H 4500 3250 50  0001 C CNN
-	1    4500 3250
-	-1   0    0    1   
-$EndComp
-Text Label 4750 3550 0    50   ~ 0
-PIO0_0
-Text Label 4750 3450 0    50   ~ 0
-PIO0_14
-Text Label 4750 3250 0    50   ~ 0
-PIO0_17
-Text Label 4750 3150 0    50   ~ 0
-PIO0_13
-Text Label 4750 3050 0    50   ~ 0
-PIO0_12
-Text Label 4750 2950 0    50   ~ 0
-RESET
-Wire Wire Line
-	4000 2950 4050 2950
-Wire Wire Line
-	4000 3050 4050 3050
-Wire Wire Line
-	4050 3150 4000 3150
-Wire Wire Line
-	4000 3250 4050 3250
-Wire Wire Line
-	4050 3350 4000 3350
-Wire Wire Line
-	4000 3450 4050 3450
-Wire Wire Line
-	4050 3550 4000 3550
-Wire Wire Line
-	4000 3650 4050 3650
-Wire Wire Line
-	4700 3650 4750 3650
-Wire Wire Line
-	4750 3550 4700 3550
-Wire Wire Line
-	4700 3450 4750 3450
-Wire Wire Line
-	4700 3250 4750 3250
-Wire Wire Line
-	4750 3150 4700 3150
-Wire Wire Line
-	4700 3050 4750 3050
-Wire Wire Line
-	4750 2950 4700 2950
+	4950 2850 4900 2850
 $Comp
 L SquantorNxp:LPC812M101JDH20 U?
 U 2 1 5C85ACA1
@@ -666,4 +573,109 @@ Text Label 6000 2800 2    50   ~ 0
 PIO0_7
 Text Label 6000 3700 2    50   ~ 0
 PIO0_16
+$Comp
+L SquantorConnectorsNamed:LPC81XJDH20_breakout_left U?
+U 1 1 5C87C3F2
+P 4150 3300
+F 0 "U?" H 4100 3900 50  0000 L CNN
+F 1 "LPC81XJDH20_breakout_left" H 3300 2700 50  0000 L CNN
+F 2 "" H 4000 3300 50  0001 C CNN
+F 3 "" H 4000 3300 50  0001 C CNN
+	1    4150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SquantorConnectorsNamed:LPC81XJDH20_breakout_right U?
+U 1 1 5C87C475
+P 4600 3300
+F 0 "U?" H 4600 3900 50  0000 C CNN
+F 1 "LPC81XJDH20_breakout_right" H 4250 2700 50  0000 C CNN
+F 2 "" H 4450 3300 50  0001 C CNN
+F 3 "" H 4450 3300 50  0001 C CNN
+	1    4600 3300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR0116
+U 1 1 5BE8C138
+P 4950 2850
+F 0 "#PWR0116" H 4950 2700 50  0001 C CNN
+F 1 "VDD" V 4967 2978 50  0000 L CNN
+F 2 "" H 4950 2850 50  0001 C CNN
+F 3 "" H 4950 2850 50  0001 C CNN
+	1    4950 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3850 2950 3800 2950
+Wire Wire Line
+	3850 3050 3800 3050
+Wire Wire Line
+	3850 3150 3800 3150
+Wire Wire Line
+	3850 3250 3800 3250
+Wire Wire Line
+	3850 3350 3800 3350
+Wire Wire Line
+	3850 3450 3800 3450
+Wire Wire Line
+	3850 3550 3800 3550
+Wire Wire Line
+	3850 3650 3800 3650
+Wire Wire Line
+	3850 3750 3800 3750
+Wire Wire Line
+	4900 3750 4950 3750
+Wire Wire Line
+	4900 3650 4950 3650
+Wire Wire Line
+	4900 3550 4950 3550
+Wire Wire Line
+	4900 3450 4950 3450
+Wire Wire Line
+	4900 3350 4950 3350
+Wire Wire Line
+	4900 3250 4950 3250
+Wire Wire Line
+	4900 3150 4950 3150
+Wire Wire Line
+	4900 3050 4950 3050
+Wire Wire Line
+	4900 2950 4950 2950
+Text Label 3800 2950 2    50   ~ 0
+PIO0_3
+Text Label 3800 3050 2    50   ~ 0
+PIO0_2
+Text Label 3800 3150 2    50   ~ 0
+PIO0_11
+Text Label 3800 3250 2    50   ~ 0
+PIO0_10
+Text Label 3800 3350 2    50   ~ 0
+PIO0_16
+Text Label 3800 3450 2    50   ~ 0
+PIO0_15
+Text Label 3800 3550 2    50   ~ 0
+PIO0_1
+Text Label 3800 3650 2    50   ~ 0
+PIO0_9
+Text Label 3800 3750 2    50   ~ 0
+PIO0_8
+Text Label 4950 3750 0    50   ~ 0
+PIO0_7
+Text Label 4950 3650 0    50   ~ 0
+PIO0_6
+Text Label 4950 3550 0    50   ~ 0
+PIO0_0
+Text Label 4950 3450 0    50   ~ 0
+PIO0_14
+Text Label 4950 3350 0    50   ~ 0
+PIO0_17
+Text Label 4950 3250 0    50   ~ 0
+PIO0_13
+Text Label 4950 3150 0    50   ~ 0
+PIO0_12
+Text Label 4950 3050 0    50   ~ 0
+RESET
+Text Label 4950 2950 0    50   ~ 0
+PIO0_4
 $EndSCHEMATC
