@@ -37,89 +37,6 @@ F 3 "" H 850 7350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
-U 1 1 5BD2C78F
-P 6400 5450
-F 0 "C7" H 6515 5496 50  0000 L CNN
-F 1 "100n" H 6515 5405 50  0000 L CNN
-F 2 "SquantorRcl:C_0402" H 6438 5300 50  0001 C CNN
-F 3 "~" H 6400 5450 50  0001 C CNN
-	1    6400 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C4
-U 1 1 5BD2C956
-P 6100 5450
-F 0 "C4" H 6215 5496 50  0000 L CNN
-F 1 "1u" H 6215 5405 50  0000 L CNN
-F 2 "SquantorRcl:C_0603" H 6138 5300 50  0001 C CNN
-F 3 "~" H 6100 5450 50  0001 C CNN
-	1    6100 5450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB2
-U 1 1 5BD2CA8D
-P 5950 5250
-F 0 "FB2" V 5713 5250 50  0000 C CNN
-F 1 "FB" V 6050 4800 50  0000 C CNN
-F 2 "SquantorRcl:C_0402" V 5880 5250 50  0001 C CNN
-F 3 "~" H 5950 5250 50  0001 C CNN
-	1    5950 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:Ferrite_Bead_Small FB3
-U 1 1 5BD2CAEC
-P 5950 5650
-F 0 "FB3" V 5713 5650 50  0000 C CNN
-F 1 "FB" V 6050 5350 50  0000 C CNN
-F 2 "SquantorRcl:C_0402" V 5880 5650 50  0001 C CNN
-F 3 "~" H 5950 5650 50  0001 C CNN
-	1    5950 5650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6050 5250 6100 5250
-Wire Wire Line
-	6650 5350 6600 5350
-Wire Wire Line
-	6600 5350 6600 5650
-Wire Wire Line
-	6600 5650 6400 5650
-Wire Wire Line
-	6100 5300 6100 5250
-Connection ~ 6100 5250
-Wire Wire Line
-	6100 5250 6400 5250
-Wire Wire Line
-	6100 5600 6100 5650
-Connection ~ 6100 5650
-Wire Wire Line
-	6100 5650 6050 5650
-Wire Wire Line
-	6400 5650 6400 5600
-Connection ~ 6400 5650
-Wire Wire Line
-	6400 5650 6100 5650
-Wire Wire Line
-	6400 5300 6400 5250
-Connection ~ 6400 5250
-Wire Wire Line
-	6400 5250 6650 5250
-$Comp
-L power:VSS #PWR0101
-U 1 1 5BD2CC6A
-P 5750 5650
-F 0 "#PWR0101" H 5750 5500 50  0001 C CNN
-F 1 "VSS" V 5768 5778 50  0000 L CNN
-F 2 "" H 5750 5650 50  0001 C CNN
-F 3 "" H 5750 5650 50  0001 C CNN
-	1    5750 5650
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C6
 U 1 1 5BD2CE0D
 P 6400 4950
@@ -193,10 +110,6 @@ Wire Wire Line
 Connection ~ 6400 5150
 Wire Wire Line
 	6400 5150 6100 5150
-Wire Wire Line
-	5850 5250 5800 5250
-Wire Wire Line
-	5850 5650 5750 5650
 $Comp
 L SquantorConnectors:JTAG_2X05 J2
 U 1 1 5BD303CB
@@ -299,70 +212,66 @@ Wire Wire Line
 	3600 5350 3500 5350
 Text Label 3500 5350 2    50   ~ 0
 RESET
-Text Label 5650 3000 2    50   ~ 0
+Text Label 6000 2600 2    50   ~ 0
 RESET
 Wire Wire Line
-	5700 3000 5650 3000
+	6050 2600 6000 2600
 Wire Wire Line
-	5700 2800 5650 2800
+	6050 2400 6000 2400
 Wire Wire Line
-	5700 2700 5650 2700
-Text Label 5650 3500 2    50   ~ 0
+	6050 2300 6000 2300
+Text Label 6000 3300 2    50   ~ 0
 PIO0_12
 Wire Wire Line
-	5700 3500 5650 3500
+	6050 3300 6000 3300
 Wire Wire Line
-	5700 2500 5650 2500
+	6050 2100 6000 2100
 Wire Wire Line
-	5700 2600 5650 2600
+	6050 2200 6000 2200
 Wire Wire Line
-	5700 2900 5650 2900
+	6050 2500 6000 2500
 Wire Wire Line
-	5700 3100 5650 3100
+	6050 2900 6000 2900
 Wire Wire Line
-	5650 3200 5700 3200
+	6000 3000 6050 3000
 Wire Wire Line
-	5700 3300 5650 3300
+	6050 3100 6000 3100
 Wire Wire Line
-	5700 3400 5650 3400
+	6050 3200 6000 3200
 Wire Wire Line
-	5700 3600 5650 3600
+	6050 3400 6000 3400
 Wire Wire Line
-	5700 3700 5650 3700
+	6050 3500 6000 3500
 Wire Wire Line
-	5700 3800 5650 3800
+	6050 3600 6000 3600
 Wire Wire Line
-	5700 3900 5650 3900
-Wire Wire Line
-	5700 4000 5650 4000
-Text Label 5650 2500 2    50   ~ 0
+	6050 3800 6000 3800
+Text Label 6000 2100 2    50   ~ 0
 PIO0_0
-Text Label 5650 2600 2    50   ~ 0
+Text Label 6000 2200 2    50   ~ 0
 PIO0_1
-Text Label 5650 2900 2    50   ~ 0
+Text Label 6000 2500 2    50   ~ 0
 PIO0_4
-Text Label 5650 2700 2    50   ~ 0
+Text Label 6000 2300 2    50   ~ 0
 PIO0_2
-Text Label 5650 2800 2    50   ~ 0
+Text Label 6000 2400 2    50   ~ 0
 PIO0_3
-Text Label 5650 3100 2    50   ~ 0
+Text Label 6000 2900 2    50   ~ 0
 PIO0_8
-Text Label 5650 3200 2    50   ~ 0
+Text Label 6000 3000 2    50   ~ 0
 PIO0_9
-Text Label 5650 3300 2    50   ~ 0
+Text Label 6000 3100 2    50   ~ 0
 PIO0_10
-Text Label 5650 3400 2    50   ~ 0
+Text Label 6000 3200 2    50   ~ 0
 PIO0_11
-Text Label 5650 3600 2    50   ~ 0
+Text Label 6000 3400 2    50   ~ 0
 PIO0_13
-Text Label 5650 3700 2    50   ~ 0
+Text Label 6000 3500 2    50   ~ 0
 PIO0_14
-Text Label 5650 3800 2    50   ~ 0
+Text Label 6000 3600 2    50   ~ 0
 PIO0_15
-Text Label 5650 3900 2    50   ~ 0
+Text Label 6000 3800 2    50   ~ 0
 PIO0_17
-Text Label 5650 4000 2    50   ~ 0
-PIO0_23
 $Comp
 L Device:C C5
 U 1 1 5BE10538
@@ -599,9 +508,6 @@ F 3 "" H 5750 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	5800 5250 5800 4750
-Connection ~ 5800 4750
-Wire Wire Line
 	5800 4750 5800 4700
 $Comp
 L SquantorSpecial:SolderJumper_2way_1conn SJ1
@@ -688,8 +594,6 @@ Text Label 4750 3550 0    50   ~ 0
 PIO0_0
 Text Label 4750 3450 0    50   ~ 0
 PIO0_14
-Text Label 4750 3350 0    50   ~ 0
-PIO0_23
 Text Label 4750 3250 0    50   ~ 0
 PIO0_17
 Text Label 4750 3150 0    50   ~ 0
@@ -721,8 +625,6 @@ Wire Wire Line
 Wire Wire Line
 	4700 3450 4750 3450
 Wire Wire Line
-	4750 3350 4700 3350
-Wire Wire Line
 	4700 3250 4750 3250
 Wire Wire Line
 	4750 3150 4700 3150
@@ -731,25 +633,37 @@ Wire Wire Line
 Wire Wire Line
 	4750 2950 4700 2950
 $Comp
-L SquantorNxp:LPC824M201JDH20 U1
-U 2 1 5BE68108
-P 6400 3100
-F 0 "U1" H 7119 2992 45  0000 L CNN
-F 1 "LPC824M201JDH20" H 7119 2908 45  0000 L CNN
-F 2 "SquantorIC:SOT360" H 6680 2750 20  0001 C CNN
-F 3 "" H 6650 2600 60  0000 C CNN
-	2    6400 3100
+L SquantorNxp:LPC812M101JDH20 U?
+U 2 1 5C85ACA1
+P 6700 2950
+F 0 "U?" H 7419 2996 50  0000 L CNN
+F 1 "LPC812M101JDH20" H 7419 2905 50  0000 L CNN
+F 2 "" H 6550 3200 50  0001 C CNN
+F 3 "" H 6550 3200 50  0001 C CNN
+	2    6700 2950
 	1    0    0    -1  
 $EndComp
 $Comp
-L SquantorNxp:LPC824M201JDH20 U1
-U 1 1 5BE681B3
-P 6900 5200
-F 0 "U1" H 7078 5242 45  0000 L CNN
-F 1 "LPC824M201JDH20" H 7078 5158 45  0000 L CNN
-F 2 "SquantorIC:SOT360" H 7180 4850 20  0001 C CNN
-F 3 "" H 7150 4700 60  0000 C CNN
-	1    6900 5200
+L SquantorNxp:LPC812M101JDH20 U?
+U 1 1 5C8610BF
+P 6850 5100
+F 0 "U?" H 6978 5146 50  0000 L CNN
+F 1 "LPC812M101JDH20" H 6978 5055 50  0000 L CNN
+F 2 "" H 6700 5350 50  0001 C CNN
+F 3 "" H 6700 5350 50  0001 C CNN
+	1    6850 5100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	6050 2700 6000 2700
+Wire Wire Line
+	6050 2800 6000 2800
+Wire Wire Line
+	6050 3700 6000 3700
+Text Label 6000 2700 2    50   ~ 0
+PIO0_6
+Text Label 6000 2800 2    50   ~ 0
+PIO0_7
+Text Label 6000 3700 2    50   ~ 0
+PIO0_16
 $EndSCHEMATC
