@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="tester_LPC82X_JDH20" Version="10.0.0" InternalType="">
-  <Plugins>
-    <Plugin Name="qmake">
-      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
-    </Plugin>
-  </Plugins>
-  <VirtualDirectory Name="mcu">
-    <File Name="mcu/isr_lpc82X.cpp"/>
-    <File Name="mcu/mcu_irq.cpp"/>
-    <File Name="mcu/isr_STM32F103C8.cpp"/>
-    <File Name="mcu/cortexm_irqs_lpc.cpp"/>
-    <File Name="mcu/cortexm_irqs_standard.cpp"/>
-    <File Name="mcu/cortexm_irqs.cpp"/>
-    <File Name="mcu/isr_lpc81X.cpp"/>
-  </VirtualDirectory>
-  <VirtualDirectory Name="inc">
-    <File Name="inc/cortexm_irqs.hpp"/>
+  <VirtualDirectory Name="platform">
+    <File Name="platform/isr_lpc82X.cpp"/>
+    <File Name="platform/isr_STM32F103C8.cpp"/>
+    <File Name="platform/STM32F103C8.cpp"/>
+    <File Name="platform/LPC824.cpp"/>
+    <File Name="platform/LPC812.cpp"/>
+    <File Name="platform/cortexm_irqs_lpc.cpp"/>
+    <File Name="platform/cortexm_irqs_standard.cpp"/>
+    <File Name="platform/isr_lpc81X.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
     <File Name="src/main.cpp"/>
     <File Name="src/startup.cpp"/>
   </VirtualDirectory>
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
   <Description/>
   <Dependencies/>
   <Settings Type="Dynamic Library">
