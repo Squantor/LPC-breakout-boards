@@ -42,7 +42,7 @@ SECTIONS {
         FILL(0xff)
         KEEP(*(.cortex_vectors))
         KEEP(*(.vendor_vectors))
-		. = ALIGN(4) ;
+        . = ALIGN(4) ;
         *(.text*)
         *(.rodata*)
 
