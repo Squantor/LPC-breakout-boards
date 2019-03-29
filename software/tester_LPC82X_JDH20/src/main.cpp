@@ -66,7 +66,7 @@ const ioPair boardPinTable[] =
     {13, IOCON_PIO13},
     {12, IOCON_PIO12},
     {4, IOCON_PIO4},
-    // we cant test these pins, they are not allowed to float
+    // we cant fully test these pins, they are open drain
     // See UM10800 page 90, chapter 8.3 of IOCON peripheral
     //{11, IOCON_PIO11},
     //{10, IOCON_PIO10},
