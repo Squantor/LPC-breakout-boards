@@ -14,10 +14,10 @@ ALIBDIR +=
 RLIBDIR += -L"../lpc_chip_82x/bin/release" -L"../squantorLibC/bin/CortexM0/release"
 DLIBDIR += -L"../lpc_chip_82x/bin/debug" -L"../squantorLibC/bin/CortexM0/debug"
 DEFINES = -DCORE_M0PLUS -D__USE_ROMDIVIDE
-COMPILE_C_FLAGS = -std=gnu11 -Wall -Wextra -Wno-main -fno-common -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -flto
-COMPILE_CXX_FLAGS = -std=c++17 -Wall -Wextra -Wno-main -fno-common -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions -flto
+COMPILE_C_FLAGS = -std=gnu11 -Wall -Wextra -Wno-main -fno-common -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections
+COMPILE_CXX_FLAGS = -std=c++17 -Wall -Wextra -Wno-main -fno-common -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions
 COMPILE_ASM_FLAGS = -c -x assembler-with-cpp
-LINK_FLAGS = -Wl,-flto
+LINK_FLAGS = -nostdlib -Xlinker --gc-sections -Xlinker -print-memory-usage
 
 #custom build rules
 pre-clean:

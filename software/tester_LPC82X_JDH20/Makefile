@@ -39,7 +39,7 @@ CXX_DEBUG_COMPILE_FLAGS = -O0 -g3
 ASM_RELEASE_COMPILE_FLAGS = 
 ASM_DEBUG_COMPILE_FLAGS = -g3
 
-LINK_FLAGS += -flto -nostdlib -Xlinker --gc-sections -Xlinker -print-memory-usage
+LINK_FLAGS +=
 LINK_FLAGS_RELEASE =
 LINK_FLAGS_DEBUG =
 LDSCRIPT = -T"ld/$(MCU).ld"
