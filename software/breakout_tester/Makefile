@@ -1,4 +1,4 @@
-# update per change V0004
+# update per change V0005
 # get project settings
 include src/Makefile.mk
 # get platform settings
@@ -19,7 +19,6 @@ RM = rm
 C_COMPILER = gcc
 CXX_COMPILER = g++
 GDB = gdb
-TOOLCHAIN_PREFIX = arm-none-eabi-
 SIZE = size
 AR = ar
 OBJDUMP = objdump
@@ -33,9 +32,9 @@ DEFINES += -DMCU_$(MCU)
 DEFINES_RELEASE = -DNDEBUG
 DEFINES_DEBUG = -DDEBUG
 C_RELEASE_COMPILE_FLAGS = -Os -g  
-C_DEBUG_COMPILE_FLAGS = -O0 -g3 
+C_DEBUG_COMPILE_FLAGS = -Og -g3 
 CXX_RELEASE_COMPILE_FLAGS = -Os -g 
-CXX_DEBUG_COMPILE_FLAGS = -O0 -g3
+CXX_DEBUG_COMPILE_FLAGS = -Og -g3
 ASM_RELEASE_COMPILE_FLAGS = 
 ASM_DEBUG_COMPILE_FLAGS = -g3
 
