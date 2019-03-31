@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="breakout_tester" Version="10.0.0" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
   <VirtualDirectory Name="src">
+    <File Name="src/lpc81xJDH20_breakout.cpp"/>
     <File Name="src/ticks.cpp"/>
     <File Name="src/gpio_tester.cpp"/>
     <File Name="src/lpc82xJDH20_breakout.cpp"/>
@@ -22,11 +28,6 @@
     <File Name="inc/gpio_tester.hpp"/>
     <File Name="inc/board.hpp"/>
   </VirtualDirectory>
-  <Plugins>
-    <Plugin Name="qmake">
-      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
-    </Plugin>
-  </Plugins>
   <Description/>
   <Dependencies/>
   <Settings Type="Executable">
