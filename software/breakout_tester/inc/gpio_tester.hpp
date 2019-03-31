@@ -21,15 +21,22 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-#ifndef BOARD_HPP
-#define BOARD_HPP
+#ifndef GPIO_TESTER_HPP
+#define GPIO_TESTER_HPP
 
-#include <gpio_tester.hpp>
+#include <chip.h>
 
-extern const ioTest_t boardPinTable[];
-extern const int boardPinCount;
+typedef struct {
+    uint8_t gpioDut;
+    CHIP_PINx_T ioconPin;
+    CHIP_PINx_T gpioPullUp;
+} ioTest_t;
 
-void boardInit(void);
+// setup all pins to a defined level/mode
+void gpioTestInit(const ioTest_t *pinTable, int size);
+
+// true for okay, false for timeout
+bool gpioTestEntry(const ioTest_t dut);
 
 
 #endif

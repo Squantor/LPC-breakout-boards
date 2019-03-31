@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="breakout_tester" Version="10.0.0" InternalType="">
   <VirtualDirectory Name="src">
+    <File Name="src/ticks.cpp"/>
+    <File Name="src/gpio_tester.cpp"/>
     <File Name="src/lpc82xJDH20_breakout.cpp"/>
     <File Name="src/main.cpp"/>
     <File Name="src/startup.cpp"/>
@@ -16,6 +18,8 @@
     <File Name="platform/isr_lpc81X.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="inc">
+    <File Name="inc/ticks.hpp"/>
+    <File Name="inc/gpio_tester.hpp"/>
     <File Name="inc/board.hpp"/>
   </VirtualDirectory>
   <Plugins>

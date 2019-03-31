@@ -9,7 +9,7 @@ include src/$(BOARD).mk
 
 # project settings
 C_SOURCES +=
-CXX_SOURCES += src/startup.cpp src/main.cpp
+CXX_SOURCES += src/startup.cpp src/main.cpp src/gpio_tester.cpp src/ticks.cpp
 S_SOURCES += src/aeabi_romdiv_patch.s
 INCLUDES += -Iinc -I../lpc_chip_82x/inc
 ALIBS += -llpc_chip_82x -lsqlibc

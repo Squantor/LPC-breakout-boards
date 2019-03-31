@@ -28,6 +28,24 @@ SOFTWARE.
 const uint32_t OscRateIn = 12000000;
 const uint32_t ExtRateIn = 0;
 
+const ioTest_t boardPinTable[] =
+{
+    {23, IOCON_PIO23, IOCON_PIO23},
+    {17, IOCON_PIO17, IOCON_PIO17},
+    {13, IOCON_PIO13, IOCON_PIO13},
+    {12, IOCON_PIO12, IOCON_PIO12},
+    {4, IOCON_PIO4, IOCON_PIO4},
+    // we cant fully test these pins, they are open drain
+    // See UM10800 page 90, chapter 8.3 of IOCON peripheral
+    {11, IOCON_PIO11, IOCON_PIO15},
+    {10, IOCON_PIO10, IOCON_PIO15},
+    {15, IOCON_PIO15, IOCON_PIO15},
+    {1, IOCON_PIO1, IOCON_PIO1},
+    {0, IOCON_PIO0, IOCON_PIO0},
+    {14, IOCON_PIO14, IOCON_PIO14},
+};
+const int boardPinCount = sizeof(boardPinTable) / sizeof(boardPinTable[0]);
+
 void boardInit(void)
 {
     Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_SWM);
@@ -42,5 +60,4 @@ void boardInit(void)
     Chip_SetupXtalClocking();
     SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / 1000);
-    
 }

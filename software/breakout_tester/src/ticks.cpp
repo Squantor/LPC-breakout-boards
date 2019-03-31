@@ -21,15 +21,21 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-#ifndef BOARD_HPP
-#define BOARD_HPP
+#include <ticks.hpp>
 
-#include <gpio_tester.hpp>
+volatile timeTicks ticks = 0;
 
-extern const ioTest_t boardPinTable[];
-extern const int boardPinCount;
+extern "C"
+{
+    void SysTick_Handler(void)
+    {
+        ticks++;
+    }
+}
 
-void boardInit(void);
-
-
-#endif
+void delayTicks(timeTicks ticksToWait)
+{
+    timeTicks ticksMax = ticks + ticksToWait;
+    while(ticks < ticksMax)
+        ;
+}
