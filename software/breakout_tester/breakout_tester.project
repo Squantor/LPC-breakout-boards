@@ -46,9 +46,11 @@
       <Environment EnvVarSetName="Default" DbgSetName="&lt;Use Defaults&gt;">
         <![CDATA[]]>
       </Environment>
-      <Debugger IsRemote="yes" RemoteHostName="localhost" RemoteHostPort="2000" DebuggerPath="../../../../../../../usr/bin/arm-none-eabi-gdb" IsExtended="yes">
+      <Debugger IsRemote="yes" RemoteHostName="/dev/ttyBmpGdb0" RemoteHostPort="" DebuggerPath="../../../../../../../usr/bin/arm-none-eabi-gdb" IsExtended="yes">
         <DebuggerSearchPaths/>
-        <PostConnectCommands>file bin/debug/breakout_tester.elf
+        <PostConnectCommands>monitor tpwr enable
+shell sleep 1
+file bin/debug/breakout_tester.elf
 monitor swdp_scan
 attach 1
 set mem inaccessible-by-default off
