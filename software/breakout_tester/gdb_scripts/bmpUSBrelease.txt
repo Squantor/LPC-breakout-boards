@@ -1,8 +1,12 @@
-file bin/debug/breakout_tester.elf
+file bin/release/breakout_tester.elf
 target extended-remote /dev/ttyBmpGdb0
+monitor tpwr enable
+shell sleep 1
 monitor swdp_scan
 attach 1
 set mem inaccessible-by-default off
-load bin/debug/breakout_tester.elf
+set {int}0x40048000 = 2
+load bin/release/breakout_tester.elf
+set {int}0x40048000 = 2
 compare-sections
 b main

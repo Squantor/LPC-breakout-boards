@@ -1,9 +1,0 @@
-file bin/debug/breakout_tester.elf
-target extended-remote localhost:2000
-monitor swdp_scan
-attach 1
-set mem inaccessible-by-default off
-load bin/debug/breakout_tester.elf
-compare-sections
-b main
-b Reset_Handler

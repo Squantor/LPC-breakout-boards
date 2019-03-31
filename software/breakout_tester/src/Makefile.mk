@@ -36,3 +36,18 @@ pre-release:
 pre-debug:
 	$(MAKE) -C ../lpc_chip_82x debug
 	$(MAKE) -C ../squantorLibC debug PLATFORM=CortexM0
+
+#project hardware specific commands
+gdbusbdebug: debug
+	$(TOOLCHAIN_PREFIX)$(GDB) -x ./gdb_scripts/bmpUSBdebug.txt
+
+gdbusbrelease: release
+	$(TOOLCHAIN_PREFIX)$(GDB) -x ./gdb_scripts/bmpUSBrelease.txt
+
+tpwrdisable:
+	$(TOOLCHAIN_PREFIX)$(GDB) -x ./gdb_scripts/bmpusb_tpwr_disable.txt
+
+tpwrenable:
+	$(TOOLCHAIN_PREFIX)$(GDB) -x ./gdb_scripts/bmpusb_tpwr_enable.txt
+
+.PHONY: gdbftdidebug gdbftdirelease gdbusbdebug gdbusbrelease tpwrdisable tpwrenable
