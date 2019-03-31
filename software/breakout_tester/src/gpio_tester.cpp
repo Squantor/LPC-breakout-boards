@@ -46,11 +46,12 @@ void gpioTestInit(const ioTest_t *pinTable, int size)
 
 bool gpioTestEntry(const ioTest_t dut)
 {
-    // discharge capacitor
-    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, dut.gpioDut);
-    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0,dut.gpioDut, false);
-    delayTicks(10);
     Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioDut);
+    // discharge capacitor
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, dut.gpioPullUp);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, dut.gpioPullUp, false);
+    delayTicks(10);
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioPullUp);
     uint32_t ticksLoHiStart = ticks;
     uint32_t ticksLoHiEnd = ticksLoHiStart;
     // turn on pullup
