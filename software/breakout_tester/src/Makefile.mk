@@ -2,7 +2,7 @@
 
 # project name
 BIN_NAME = breakout_tester
-BOARD = lpc82x_breakout
+BOARD = lpc82xJDH20_breakout
 
 #include board specific settings
 include src/$(BOARD).mk

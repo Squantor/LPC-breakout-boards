@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="breakout_tester" Version="10.0.0" InternalType="">
-  <VirtualDirectory Name="inc">
-    <File Name="inc/board.hpp"/>
+  <VirtualDirectory Name="src">
+    <File Name="src/lpc82xJDH20_breakout.cpp"/>
+    <File Name="src/main.cpp"/>
+    <File Name="src/startup.cpp"/>
   </VirtualDirectory>
-  <Plugins>
-    <Plugin Name="qmake">
-      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
-    </Plugin>
-  </Plugins>
   <VirtualDirectory Name="platform">
     <File Name="platform/isr_lpc82X.cpp"/>
     <File Name="platform/isr_STM32F103C8.cpp"/>
@@ -18,11 +15,14 @@
     <File Name="platform/cortexm_irqs_standard.cpp"/>
     <File Name="platform/isr_lpc81X.cpp"/>
   </VirtualDirectory>
-  <VirtualDirectory Name="src">
-    <File Name="src/lpc82x_breakout.cpp"/>
-    <File Name="src/main.cpp"/>
-    <File Name="src/startup.cpp"/>
+  <VirtualDirectory Name="inc">
+    <File Name="inc/board.hpp"/>
   </VirtualDirectory>
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
   <Description/>
   <Dependencies/>
   <Settings Type="Executable">
