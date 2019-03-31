@@ -49,14 +49,17 @@ const int boardPinCount = sizeof(boardPinTable) / sizeof(boardPinTable[0]);
 void boardInit(void)
 {
     Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_SWM);
-    Chip_SWM_FixedPinEnable(SWM_FIXED_XTALIN, true);
-    Chip_SWM_FixedPinEnable(SWM_FIXED_XTALOUT, true);
-    Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_SWM);
     Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_IOCON);
+    //Chip_SWM_FixedPinEnable(SWM_FIXED_XTALIN, true);
+    //Chip_SWM_FixedPinEnable(SWM_FIXED_XTALOUT, true);
+    LPC_SWM->PINENABLE0 = 0xFFFFFF83UL; /* XTALIN + XTALOUT + SWD pins*/
+    /* Configure the pins for XTALIN/XTALOUT. */
+    Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_SWM);
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO8, PIN_MODE_INACTIVE);
     Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE); 
     //Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
     Chip_GPIO_Init(LPC_GPIO_PORT);
+    //Chip_SetupIrcClocking();
     Chip_SetupXtalClocking();
     SystemCoreClockUpdate();
     SysTick_Config(SystemCoreClock / 1000);
