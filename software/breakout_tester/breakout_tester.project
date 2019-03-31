@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="breakout_tester" Version="10.0.0" InternalType="">
+  <VirtualDirectory Name="inc">
+    <File Name="inc/board.hpp"/>
+  </VirtualDirectory>
   <Plugins>
     <Plugin Name="qmake">
       <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
@@ -16,6 +19,7 @@
     <File Name="platform/isr_lpc81X.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="src">
+    <File Name="src/lpc82x_breakout.cpp"/>
     <File Name="src/main.cpp"/>
     <File Name="src/startup.cpp"/>
   </VirtualDirectory>

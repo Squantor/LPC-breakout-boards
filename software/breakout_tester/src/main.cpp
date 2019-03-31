@@ -24,6 +24,7 @@ SOFTWARE.
  */
 #include <stdint.h>
 #include <chip.h>
+#include <board.hpp>
 
 /* 
 maximum transition times for Low to High and High to Low. These values are
@@ -34,8 +35,6 @@ have sufficient margin.
 const uint32_t maxTicksLoHi = 150;
 const uint32_t maxTicksHiLo = 210;
 
-const uint32_t OscRateIn = 12000000;
-const uint32_t ExtRateIn = 0;
 typedef uint32_t timeTicks;
 volatile timeTicks ticks = 0;
 
@@ -122,18 +121,7 @@ bool testGpio(ioTest_t dut)
 int main()
 {
     bool allPinsGood = true;
-    Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_SWM);
-    Chip_SWM_FixedPinEnable(SWM_FIXED_XTALIN, true);
-    Chip_SWM_FixedPinEnable(SWM_FIXED_XTALOUT, true);
-    Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_SWM);
-    Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_IOCON);
-    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO8, PIN_MODE_INACTIVE);
-    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE); 
-    //Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
-    Chip_GPIO_Init(LPC_GPIO_PORT);
-    Chip_SetupXtalClocking();
-    SystemCoreClockUpdate();
-    SysTick_Config(SystemCoreClock / 1000);
+    boardInit();
     
     // set all pins to input
     for(int i = 0; i < boardPinCount; i++)
