@@ -1,4 +1,4 @@
-# update per change V0002
+# update per change V0004
 
 # project name
 BIN_NAME = breakout_tester
@@ -13,8 +13,8 @@ CXX_SOURCES += src/startup.cpp src/main.cpp src/gpio_tester.cpp src/ticks.cpp
 S_SOURCES += src/aeabi_romdiv_patch.s
 INCLUDES += -Iinc -I../lpc_chip_82x/inc
 ALIBS += -llpc_chip_82x -lsqlibc
-RLIBS += 
-DLIBS += 
+RLIBS +=
+DLIBS +=
 ALIBDIR +=
 RLIBDIR += -L"../lpc_chip_82x/bin/release" -L"../squantorLibC/bin/CortexM0/release"
 DLIBDIR += -L"../lpc_chip_82x/bin/debug" -L"../squantorLibC/bin/CortexM0/debug"
@@ -22,7 +22,7 @@ DEFINES += -DCORE_M0PLUS -D__USE_ROMDIVIDE
 COMPILE_C_FLAGS = -std=gnu11 -Wall -Wextra -Wno-main -fno-common -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections
 COMPILE_CXX_FLAGS = -std=c++17 -Wall -Wextra -Wno-main -fno-common -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -fno-rtti -fno-exceptions
 COMPILE_ASM_FLAGS = -c -x assembler-with-cpp
-LINK_FLAGS = -nostdlib -Xlinker --gc-sections -Xlinker -print-memory-usage
+LINK_FLAGS +=  -nostdlib -Wl,--gc-sections -Wl,-print-memory-usage
 
 #custom build rules
 pre-clean:

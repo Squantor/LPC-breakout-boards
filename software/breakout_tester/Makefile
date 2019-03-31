@@ -1,4 +1,4 @@
-# update per change V0005
+# update per change V0006
 # get project settings
 include src/Makefile.mk
 # get platform settings
