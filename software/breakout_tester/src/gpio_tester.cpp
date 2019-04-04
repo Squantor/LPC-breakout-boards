@@ -30,8 +30,8 @@ derived from charging a 2.2uF capacitor and multiplied by 3 to make sure we
 have sufficient margin.
  */
 
-const uint32_t maxTicksLoHi = 150;
-const uint32_t maxTicksHiLo = 210;
+const uint32_t maxTicksLoHi = 600;
+const uint32_t maxTicksHiLo = 600;
 
 void gpioTestInit(const ioTest_t *pinTable, int size)
 {
@@ -39,48 +39,57 @@ void gpioTestInit(const ioTest_t *pinTable, int size)
     for(int i = 0; i < size; i++)
     {
         ioTest_t currentGpioDut = pinTable[i];
-        Chip_IOCON_PinSetMode(LPC_IOCON, currentGpioDut.gpioPullUp, PIN_MODE_INACTIVE);
-        Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut);
+        // set all pins to output
+        Chip_IOCON_PinSetMode(LPC_IOCON, currentGpioDut.ioconDut, PIN_MODE_INACTIVE);
+        Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut, false);
+        Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut);     
     }
 }
 
 bool gpioTestEntry(const ioTest_t dut)
 {
+    // set DUT to input
     Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioDut);
-    // discharge capacitor
-    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, dut.gpioPullUp);
-    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, dut.gpioPullUp, false);
-    delayTicks(10);
-    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioPullUp);
+    Chip_IOCON_PinSetMode(LPC_IOCON, dut.ioconDut, PIN_MODE_INACTIVE);
+    // discharge capacitor via pull resistor
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, dut.gpioPull, false);
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, dut.gpioPull);
+    delayTicks(100);
     uint32_t ticksLoHiStart = ticks;
     uint32_t ticksLoHiEnd = ticksLoHiStart;
-    // turn on pullup
-    Chip_IOCON_PinSetMode(LPC_IOCON, dut.gpioPullUp, PIN_MODE_PULLUP);
+    // turn on pin
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, dut.gpioPull, true);
     // wait until high 
-    while(  !Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, dut.gpioDut) && 
+    while(!Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, dut.gpioDut) && 
             ticksLoHiEnd < maxTicksHiLo + maxTicksLoHi )
     {
         ticksLoHiEnd = ticks;
     }
     uint32_t ticksLoHi = ticksLoHiEnd - ticksLoHiStart;
-    // charge capacitor
-    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, dut.gpioPullUp);
-    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, dut.gpioPullUp, true);
-    delayTicks(10);
-    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioPullUp);
+    // wait until we charge capacitor fully
+    delayTicks(100);
     uint32_t ticksHiLoStart = ticks;
     uint32_t ticksHiLoEnd = ticksHiLoStart;
-    // turn off pullup, turn on pulldown
-    Chip_IOCON_PinSetMode(LPC_IOCON, dut.gpioPullUp, PIN_MODE_PULLDN);
+    // start discharging capacitor
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, dut.gpioPull, false);
     // wait until low
-    while(  Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, dut.gpioDut) && 
+    while(Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, dut.gpioDut) && 
             ticksHiLoEnd < ticksHiLoStart + maxTicksHiLo )
     {
         ticksHiLoEnd = ticks;
     }
     uint32_t ticksHiLo = ticksHiLoEnd - ticksHiLoStart;
-    // turn to output, low
-    Chip_IOCON_PinSetMode(LPC_IOCON, dut.gpioPullUp, PIN_MODE_INACTIVE);
+    // turn the pull pin to input again
+    Chip_IOCON_PinSetMode(LPC_IOCON, dut.ioconPull, PIN_MODE_INACTIVE);
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioPull);
+    // discharge cap
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, dut.gpioDut, false);
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, dut.gpioDut);     
+    delayTicks(100);
     Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioDut);
+    Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, dut.gpioPull, false);
+    Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, dut.gpioPull);     
+    delayTicks(100);
+    Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioPull);  
     return((ticksHiLo < maxTicksHiLo) && (ticksLoHi < maxTicksLoHi));
 }
