@@ -48,6 +48,8 @@ void gpioTestInit(const ioTest_t *pinTable, int size)
 
 bool gpioTestEntry(const ioTest_t dut)
 {
+    // TODO: all duts low to discharge all capacities
+    // TODO: all duts input to remove influence
     // set DUT to input
     Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, dut.gpioDut);
     Chip_IOCON_PinSetMode(LPC_IOCON, dut.ioconDut, PIN_MODE_INACTIVE);
