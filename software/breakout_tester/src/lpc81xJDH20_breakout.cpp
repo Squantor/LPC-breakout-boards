@@ -31,12 +31,12 @@ const uint32_t ExtRateIn = 0;
 const ioTest_t boardPinTable[] =
 {
     
-    {1, IOCON_PIO1, 15, IOCON_PIO15},
-    {15, IOCON_PIO15, 1, IOCON_PIO1},
-    {16, IOCON_PIO16, 15, IOCON_PIO15},
+    {1, IOCON_PIO1},
+    {15, IOCON_PIO15},
+    {16, IOCON_PIO16},
     // PIO10/11 are open drain pins for I2C
-    {11, IOCON_PIO11, 15, IOCON_PIO15},
-    {10, IOCON_PIO10, 15, IOCON_PIO15},
+    {11, IOCON_PIO11},
+    {10, IOCON_PIO10},
     /*{7, IOCON_PIO7, IOCON_PIO7},
     {6, IOCON_PIO6, IOCON_PIO6},
     {0, IOCON_PIO0, IOCON_PIO0},

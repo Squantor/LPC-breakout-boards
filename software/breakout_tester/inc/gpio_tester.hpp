@@ -30,9 +30,6 @@ typedef struct {
     // DUT pin
     uint8_t gpioDut;
     CHIP_PINx_T ioconDut;
-    // pull up and down are done by a different pin
-    uint8_t gpioPull;
-    CHIP_PINx_T ioconPull;
 } ioTest_t;
 
 // setup all pins to a defined level/mode
