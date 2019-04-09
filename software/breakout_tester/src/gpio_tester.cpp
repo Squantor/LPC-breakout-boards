@@ -35,10 +35,12 @@ const uint32_t maxTicksHiLo = 600;
 const uint32_t minTicksLoHi = 100;
 const uint32_t minTicksHiLo = 100;
 
-void gpioTestAllHigh(const ioTest_t *pinTable, const int size)
+void gpioTestAllHigh(const ioTest_t *pinTable, const int size, const int dut)
 {
     for(int i = 0; i < size; i++)
     {
+        if(i == dut)
+            continue;
         ioTest_t currentGpioDut = pinTable[i];
         Chip_IOCON_PinSetMode(LPC_IOCON, currentGpioDut.ioconDut, PIN_MODE_INACTIVE);
         Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut, true);
@@ -46,10 +48,12 @@ void gpioTestAllHigh(const ioTest_t *pinTable, const int size)
     }
 }
 
-void gpioTestAllLow(const ioTest_t *pinTable, const int size)
+void gpioTestAllLow(const ioTest_t *pinTable, const int size, const int dut)
 {
     for(int i = 0; i < size; i++)
     {
+        if(i == dut)
+            continue;
         ioTest_t currentGpioDut = pinTable[i];
         Chip_IOCON_PinSetMode(LPC_IOCON, currentGpioDut.ioconDut, PIN_MODE_INACTIVE);
         Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut, false);
@@ -57,10 +61,12 @@ void gpioTestAllLow(const ioTest_t *pinTable, const int size)
     }
 }
 
-void gpioTestAllInput(const ioTest_t *pinTable, const int size)
+void gpioTestAllInput(const ioTest_t *pinTable, const int size, const int dut)
 {
     for(int i = 0; i < size; i++)
     {
+        if(i == dut)
+            continue;
         ioTest_t currentGpioDut = pinTable[i];
         Chip_IOCON_PinSetMode(LPC_IOCON, currentGpioDut.ioconDut, PIN_MODE_INACTIVE);
         Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut);     
@@ -70,10 +76,14 @@ void gpioTestAllInput(const ioTest_t *pinTable, const int size)
 void gpioTestInit(const ioTest_t *pinTable, const int size)
 {
     // set all pins to input
-    gpioTestAllInput(pinTable, size);
+    gpioTestAllInput(pinTable, size, size+1);
 }
 
-
+bool gpioTestAll(const ioTest_t *pinTable, const int size)
+{
+    gpioTestAllLow(pinTable, size);
+    
+}
 
 bool gpioTestEntry(const ioTest_t dut)
 {
