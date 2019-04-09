@@ -33,17 +33,12 @@ int main()
     bool allPinsGood = true;
     boardInit();
     gpioTestInit(boardPinTable, boardPinCount);
-
-    // test each pin
-    for(int i = 0; i < boardPinCount; i++)
-    {
-        allPinsGood &= gpioTestEntry(boardPinTable[i]);
-    }
-    // breakpoint for all okay
-    if(allPinsGood == true)
+    // are all GPIO's okay?
+    if(gpioTestAll(boardPinTable, boardPinCount) == true)
+        // breakpoint for all okay
         __BKPT(1);
-    // breakpoint for error
     else
+        // breakpoint for error
         __BKPT(0);
     
     while (1) {

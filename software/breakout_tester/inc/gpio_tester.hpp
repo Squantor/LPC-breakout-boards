@@ -38,8 +38,7 @@ typedef struct {
 // setup all pins to a defined level/mode
 void gpioTestInit(const ioTest_t *pinTable, int size);
 
-// true for okay, false for timeout
-bool gpioTestEntry(const ioTest_t dut);
-
+// true for all fine, false in case of error
+bool gpioTestAll(const ioTest_t *pinTable, const int size);
 
 #endif
