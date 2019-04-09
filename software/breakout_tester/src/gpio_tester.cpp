@@ -32,19 +32,48 @@ have sufficient margin.
 
 const uint32_t maxTicksLoHi = 600;
 const uint32_t maxTicksHiLo = 600;
+const uint32_t minTicksLoHi = 100;
+const uint32_t minTicksHiLo = 100;
 
-void gpioTestInit(const ioTest_t *pinTable, int size)
+void gpioTestAllHigh(const ioTest_t *pinTable, const int size)
 {
-    // set all pins to input
     for(int i = 0; i < size; i++)
     {
         ioTest_t currentGpioDut = pinTable[i];
-        // set all pins to output
+        Chip_IOCON_PinSetMode(LPC_IOCON, currentGpioDut.ioconDut, PIN_MODE_INACTIVE);
+        Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut, true);
+        Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut);     
+    }
+}
+
+void gpioTestAllLow(const ioTest_t *pinTable, const int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        ioTest_t currentGpioDut = pinTable[i];
         Chip_IOCON_PinSetMode(LPC_IOCON, currentGpioDut.ioconDut, PIN_MODE_INACTIVE);
         Chip_GPIO_SetPinState(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut, false);
         Chip_GPIO_SetPinDIROutput(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut);     
     }
 }
+
+void gpioTestAllInput(const ioTest_t *pinTable, const int size)
+{
+    for(int i = 0; i < size; i++)
+    {
+        ioTest_t currentGpioDut = pinTable[i];
+        Chip_IOCON_PinSetMode(LPC_IOCON, currentGpioDut.ioconDut, PIN_MODE_INACTIVE);
+        Chip_GPIO_SetPinDIRInput(LPC_GPIO_PORT, 0, currentGpioDut.gpioDut);     
+    }
+}
+
+void gpioTestInit(const ioTest_t *pinTable, const int size)
+{
+    // set all pins to input
+    gpioTestAllInput(pinTable, size);
+}
+
+
 
 bool gpioTestEntry(const ioTest_t dut)
 {
