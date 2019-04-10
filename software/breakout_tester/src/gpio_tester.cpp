@@ -88,7 +88,7 @@ void gpioTestInit(const ioTest_t *pinTable, const int size)
     gpioTestAllInput(pinTable, size, size+1);
 }
 
-bool gpioTestAll(const ioTest_t *pinTable, const int size)
+int gpioTestAll(const ioTest_t *pinTable, const int size)
 {
     for(int i = 0; i < size; i++)
     {
@@ -128,8 +128,8 @@ bool gpioTestAll(const ioTest_t *pinTable, const int size)
             (ticksLoHi > maxTicksLoHi) ||
             (ticksLoHi < minTicksLoHi) )
         {
-            return false;
+            return i;
         }
     }
-    return true;
+    return size;
 }

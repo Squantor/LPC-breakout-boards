@@ -30,11 +30,12 @@ SOFTWARE.
 
 int main()
 {
-    bool allPinsGood = true;
+    int failing;
     boardInit();
     gpioTestInit(boardPinTable, boardPinCount);
     // are all GPIO's okay?
-    if(gpioTestAll(boardPinTable, boardPinCount) == true)
+    failing = gpioTestAll(boardPinTable, boardPinCount);
+    if(failing != boardPinCount)
         // breakpoint for all okay
         __BKPT(1);
     else

@@ -27,7 +27,6 @@ SOFTWARE.
 #include <chip.h>
 
 typedef struct {
-    // DUT pin
     uint8_t gpioDut;
     CHIP_PINx_T ioconDut;
 } ioTest_t;
@@ -35,7 +34,7 @@ typedef struct {
 // setup all pins to a defined level/mode
 void gpioTestInit(const ioTest_t *pinTable, int size);
 
-// true for all fine, false in case of error
-bool gpioTestAll(const ioTest_t *pinTable, const int size);
+// returns size for all pass, or index if that one fails
+int gpioTestAll(const ioTest_t *pinTable, const int size);
 
 #endif
