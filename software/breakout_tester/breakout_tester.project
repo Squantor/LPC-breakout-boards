@@ -30,7 +30,7 @@
   </VirtualDirectory>
   <Description/>
   <Dependencies/>
-  <Settings Type="Executable">
+  <Settings Type="Dynamic Library">
     <GlobalSettings>
       <Compiler Options="" C_Options="" Assembler="">
         <IncludePath Value="."/>
@@ -101,7 +101,9 @@ compare-sections</PostConnectCommands>
       </Environment>
       <Debugger IsRemote="yes" RemoteHostName="localhost" RemoteHostPort="2000" DebuggerPath="../../../../../../../usr/bin/arm-none-eabi-gdb" IsExtended="yes">
         <DebuggerSearchPaths/>
-        <PostConnectCommands>file bin/release/breakout_tester.elf
+        <PostConnectCommands>monitor tpwr enable
+shell sleep 1
+file bin/release/breakout_tester.elf
 monitor swdp_scan
 attach 1
 set mem inaccessible-by-default off
