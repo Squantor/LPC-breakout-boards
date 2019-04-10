@@ -35,7 +35,7 @@ int main()
     gpioTestInit(boardPinTable, boardPinCount);
     // are all GPIO's okay?
     failing = gpioTestAll(boardPinTable, boardPinCount);
-    if(failing != boardPinCount)
+    if(failing == boardPinCount)
         // breakpoint for all okay
         __BKPT(1);
     else

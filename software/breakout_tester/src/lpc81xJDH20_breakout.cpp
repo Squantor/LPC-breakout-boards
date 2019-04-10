@@ -30,7 +30,6 @@ const uint32_t ExtRateIn = 0;
 
 const ioTest_t boardPinTable[] =
 {
-    
     {1, IOCON_PIO1},
     {15, IOCON_PIO15},
     {16, IOCON_PIO16},
