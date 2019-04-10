@@ -11,9 +11,9 @@ RLIBS +=
 DLIBS +=
 ALIBDIR +=
 RLIBDIR += -L"../lpc_chip_82x/bin/release" \
--L"../squantorLibC/bin/CortexM0/release" \
+-L"../squantorLibC/bin/CortexM0/release"
 DLIBDIR += -L"../lpc_chip_82x/bin/debug" \
--L"../squantorLibC/bin/CortexM0/debug" \
+-L"../squantorLibC/bin/CortexM0/debug"
 
 #custom build rules
 pre-clean:
