@@ -13,4 +13,5 @@
   (lib (name SquantorRcl)(type KiCad)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorRcl.pretty)(options "")(descr ""))
   (lib (name SquantorSpecial)(type KiCad)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorSpecial.pretty)(options "")(descr ""))
   (lib (name SquantorUsb)(type KiCad)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorUsb.pretty)(options "")(descr ""))
+  (lib (name SquantorConnectorsNamed)(type KiCad)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorConnectorsNamed.pretty)(options "")(descr ""))
 )
