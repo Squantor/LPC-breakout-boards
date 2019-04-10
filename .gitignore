@@ -3,6 +3,7 @@ rescue-backup
 *.net
 *.kicad_pcb-bak
 *.bak
+fp-info-cache
 
 # ignoring plot zips
 *.zip
