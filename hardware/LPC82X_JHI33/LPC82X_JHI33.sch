@@ -209,35 +209,35 @@ Wire Wire Line
 Wire Wire Line
 	5850 5650 5750 5650
 $Comp
-L Connector_Generic:Conn_02x09_Odd_Even J1
+L SquantorConnectorsNamed:LPC82XJHI33_breakout_left J1
 U 1 1 5BD2E6A6
-P 3500 2700
-F 0 "J1" H 3550 3317 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 3550 3226 50  0000 C CNN
-F 2 "SquantorConnectors:Header-0254-2X09-H010" H 3500 2700 50  0001 C CNN
-F 3 "~" H 3500 2700 50  0001 C CNN
-	1    3500 2700
+P 3600 2600
+F 0 "J1" H 3600 3265 50  0000 C CNN
+F 1 "LPC82XJHI33_LEFT" H 3600 3174 50  0000 C CNN
+F 2 "SquantorConnectorsNamed:LPC82XJHI33_breakout_left" H 3600 2600 50  0001 C CNN
+F 3 "~" H 3600 2600 50  0001 C CNN
+	1    3600 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x09_Odd_Even J2
+L SquantorConnectorsNamed:LPC82XJHI33_breakout_right J2
 U 1 1 5BD2E711
-P 3500 3850
-F 0 "J2" H 3550 4467 50  0000 C CNN
-F 1 "Conn_02x09_Odd_Even" H 3550 4376 50  0000 C CNN
-F 2 "SquantorConnectors:Header-0254-2X09-H010" H 3500 3850 50  0001 C CNN
-F 3 "~" H 3500 3850 50  0001 C CNN
-	1    3500 3850
+P 3600 3850
+F 0 "J2" H 3600 4515 50  0000 C CNN
+F 1 "LPC82XJHI33_RIGHT" H 3600 4424 50  0000 C CNN
+F 2 "SquantorConnectorsNamed:LPC82XJHI33_breakout_right" H 3600 3850 50  0001 C CNN
+F 3 "~" H 3600 3850 50  0001 C CNN
+	1    3600 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3250 2300 3300 2300
+	3100 2200 3150 2200
 Wire Wire Line
-	3850 2300 3800 2300
+	4100 2200 4050 2200
 Wire Wire Line
-	3250 3450 3300 3450
+	3100 3450 3150 3450
 Wire Wire Line
-	3800 3450 3850 3450
+	4050 3450 4100 3450
 $Comp
 L SquantorConnectors:JTAG_2X05 J3
 U 1 1 5BD303CB
@@ -431,124 +431,124 @@ PIO0_27
 Text Label 5850 4150 2    50   ~ 0
 PIO0_28
 Wire Wire Line
-	3300 2400 3250 2400
+	3150 2300 3100 2300
 Wire Wire Line
-	3850 2400 3800 2400
+	4100 2300 4050 2300
 Wire Wire Line
-	3300 2500 3250 2500
+	3150 2400 3100 2400
 Wire Wire Line
-	3300 2600 3250 2600
+	3150 2500 3100 2500
 Wire Wire Line
-	3300 2700 3250 2700
+	3150 2600 3100 2600
 Wire Wire Line
-	3300 2800 3250 2800
+	3150 2700 3100 2700
 Wire Wire Line
-	3300 2900 3250 2900
+	3150 2800 3100 2800
 Wire Wire Line
-	3300 3000 3250 3000
+	3150 2900 3100 2900
 Wire Wire Line
-	3300 3100 3250 3100
+	3150 3000 3100 3000
 Wire Wire Line
-	3800 2500 3850 2500
+	4050 2400 4100 2400
 Wire Wire Line
-	3800 2600 3850 2600
+	4050 2500 4100 2500
 Wire Wire Line
-	3800 2700 3850 2700
+	4050 2600 4100 2600
 Wire Wire Line
-	3800 2800 3850 2800
+	4050 2700 4100 2700
 Wire Wire Line
-	3800 2900 3850 2900
+	4050 2800 4100 2800
 Wire Wire Line
-	3800 3000 3850 3000
+	4050 2900 4100 2900
 Wire Wire Line
-	3800 3100 3850 3100
-Text Label 3250 2400 2    50   ~ 0
+	4050 3000 4100 3000
+Text Label 3100 2300 2    50   ~ 0
 PIO0_28
-Text Label 3850 2400 0    50   ~ 0
+Text Label 4100 2300 0    50   ~ 0
 PIO0_3
-Text Label 3250 2500 2    50   ~ 0
+Text Label 3100 2400 2    50   ~ 0
 PIO0_2
-Text Label 3850 2500 0    50   ~ 0
+Text Label 4100 2400 0    50   ~ 0
 PIO0_11
-Text Label 3250 2600 2    50   ~ 0
+Text Label 3100 2500 2    50   ~ 0
 PIO0_10
-Text Label 3850 2600 0    50   ~ 0
+Text Label 4100 2500 0    50   ~ 0
 PIO0_16
-Text Label 3250 2700 2    50   ~ 0
+Text Label 3100 2600 2    50   ~ 0
 PIO0_27
-Text Label 3850 2700 0    50   ~ 0
+Text Label 4100 2600 0    50   ~ 0
 PIO0_26
-Text Label 3250 2800 2    50   ~ 0
+Text Label 3100 2700 2    50   ~ 0
 PIO0_25
-Text Label 3850 2800 0    50   ~ 0
+Text Label 4100 2700 0    50   ~ 0
 PIO0_24
-Text Label 3250 2900 2    50   ~ 0
+Text Label 3100 2800 2    50   ~ 0
 PIO0_15
-Text Label 3850 2900 0    50   ~ 0
+Text Label 4100 2800 0    50   ~ 0
 PIO0_1
-Text Label 3250 3000 2    50   ~ 0
+Text Label 3100 2900 2    50   ~ 0
 PIO0_9
-Text Label 3850 3000 0    50   ~ 0
+Text Label 4100 2900 0    50   ~ 0
 PIO0_8
 Wire Wire Line
-	3250 3550 3300 3550
+	3100 3550 3150 3550
 Wire Wire Line
-	3300 3650 3250 3650
+	3150 3650 3100 3650
 Wire Wire Line
-	3250 3750 3300 3750
+	3100 3750 3150 3750
 Wire Wire Line
-	3300 3850 3250 3850
+	3150 3850 3100 3850
 Wire Wire Line
-	3300 3950 3250 3950
+	3150 3950 3100 3950
 Wire Wire Line
-	3300 4050 3250 4050
+	3150 4050 3100 4050
 Wire Wire Line
-	3300 4150 3250 4150
+	3150 4150 3100 4150
 Wire Wire Line
-	3300 4250 3250 4250
+	3150 4250 3100 4250
 Wire Wire Line
-	3800 4250 3850 4250
+	4050 4250 4100 4250
 Wire Wire Line
-	3850 4150 3800 4150
+	4100 4150 4050 4150
 Wire Wire Line
-	3800 4050 3850 4050
+	4050 4050 4100 4050
 Wire Wire Line
-	3850 3950 3800 3950
+	4100 3950 4050 3950
 Wire Wire Line
-	3800 3850 3850 3850
+	4050 3850 4100 3850
 Wire Wire Line
-	3850 3750 3800 3750
+	4100 3750 4050 3750
 Wire Wire Line
-	3800 3650 3850 3650
+	4050 3650 4100 3650
 Wire Wire Line
-	3850 3550 3800 3550
-Text Label 3850 4150 0    50   ~ 0
+	4100 3550 4050 3550
+Text Label 4100 4150 0    50   ~ 0
 PIO0_7
-Text Label 3250 4150 2    50   ~ 0
+Text Label 3100 4150 2    50   ~ 0
 PIO0_6
-Text Label 3850 4050 0    50   ~ 0
+Text Label 4100 4050 0    50   ~ 0
 PIO0_0
-Text Label 3250 4050 2    50   ~ 0
+Text Label 3100 4050 2    50   ~ 0
 PIO0_14
-Text Label 3850 3950 0    50   ~ 0
+Text Label 4100 3950 0    50   ~ 0
 PIO0_23
-Text Label 3250 3950 2    50   ~ 0
+Text Label 3100 3950 2    50   ~ 0
 PIO0_22
-Text Label 3850 3850 0    50   ~ 0
+Text Label 4100 3850 0    50   ~ 0
 PIO0_21
-Text Label 3250 3850 2    50   ~ 0
+Text Label 3100 3850 2    50   ~ 0
 PIO0_20
-Text Label 3850 3750 0    50   ~ 0
+Text Label 4100 3750 0    50   ~ 0
 PIO0_19
-Text Label 3250 3750 2    50   ~ 0
+Text Label 3100 3750 2    50   ~ 0
 PIO0_18
-Text Label 3850 3650 0    50   ~ 0
+Text Label 4100 3650 0    50   ~ 0
 PIO0_17
-Text Label 3250 3650 2    50   ~ 0
+Text Label 3100 3650 2    50   ~ 0
 PIO0_13
-Text Label 3850 3550 0    50   ~ 0
+Text Label 4100 3550 0    50   ~ 0
 PIO0_12
-Text Label 3250 3550 2    50   ~ 0
+Text Label 3100 3550 2    50   ~ 0
 PIO0_4
 $Comp
 L Device:C C4
@@ -695,21 +695,21 @@ Wire Wire Line
 	5800 4300 5800 4250
 Wire Wire Line
 	5800 4250 5750 4250
-Text Label 3250 2300 2    50   ~ 0
+Text Label 3100 2200 2    50   ~ 0
 VDD
-Text Label 3850 2300 0    50   ~ 0
+Text Label 4100 2200 0    50   ~ 0
 VDD
-Text Label 3250 3100 2    50   ~ 0
+Text Label 3100 3000 2    50   ~ 0
 VSS
-Text Label 3850 3100 0    50   ~ 0
+Text Label 4100 3000 0    50   ~ 0
 VSS
-Text Label 3250 3450 2    50   ~ 0
+Text Label 3100 3450 2    50   ~ 0
 VSS
-Text Label 3850 3450 0    50   ~ 0
+Text Label 4100 3450 0    50   ~ 0
 VSS
-Text Label 3250 4250 2    50   ~ 0
+Text Label 3100 4250 2    50   ~ 0
 VDD
-Text Label 3850 4250 0    50   ~ 0
+Text Label 4100 4250 0    50   ~ 0
 VDD
 Text Label 4550 3050 1    50   ~ 0
 VSS
