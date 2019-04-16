@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name SquantorButtons)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorButtons.lib)(options "")(descr ""))
+  (lib (name SquantorConnectors)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorConnectors.lib)(options "")(descr ""))
+  (lib (name SquantorCrystal)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorCrystal.lib)(options "")(descr ""))
+  (lib (name SquantorDiodes)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorDiodes.lib)(options "")(descr ""))
+  (lib (name SquantorLabels)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorLabels.lib)(options "")(descr ""))
+  (lib (name SquantorLogic)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorLogic.lib)(options "")(descr ""))
+  (lib (name SquantorNxp)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorNxp.lib)(options "")(descr ""))
+  (lib (name SquantorPCBOutline)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorPCBOutline.lib)(options "")(descr ""))
+  (lib (name SquantorProto)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorProto.lib)(options "")(descr ""))
+  (lib (name SquantorSpecial)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorSpecial.lib)(options "")(descr ""))
+  (lib (name SquantorConnectorsNamed)(type Legacy)(uri ${KIPRJMOD}/../squantorPcbLibrary/SquantorConnectorsNamed.lib)(options "")(descr ""))
+)
