@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:LPC82X_JHI33-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -181,8 +180,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 4750 6400 4750
 Wire Wire Line
-	5850 4750 5800 4750
-Wire Wire Line
 	6100 4800 6100 4750
 Connection ~ 6100 4750
 Wire Wire Line
@@ -198,18 +195,16 @@ Wire Wire Line
 	6100 5100 6100 5150
 Connection ~ 6100 5150
 Wire Wire Line
-	6100 5150 5750 5150
+	6100 5150 5800 5150
 Wire Wire Line
 	6400 5100 6400 5150
 Connection ~ 6400 5150
 Wire Wire Line
 	6400 5150 6100 5150
 Wire Wire Line
-	5850 5250 5800 5250
-Wire Wire Line
-	5850 5650 5750 5650
+	5850 5650 5800 5650
 $Comp
-L SquantorConnectorsNamed:LPC82XJHI33_breakout_left J1
+L SquantorConnectorsNamed:LPC82XJHI33_breakout_analog_left J1
 U 1 1 5BD2E6A6
 P 3600 2600
 F 0 "J1" H 3600 3265 50  0000 C CNN
@@ -220,7 +215,7 @@ F 3 "~" H 3600 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SquantorConnectorsNamed:LPC82XJHI33_breakout_right J2
+L SquantorConnectorsNamed:LPC82XJHI33_breakout_analog_right J2
 U 1 1 5BD2E711
 P 3600 3850
 F 0 "J2" H 3600 4515 50  0000 C CNN
@@ -675,42 +670,22 @@ Wire Wire Line
 	3500 4500 3600 4500
 Wire Wire Line
 	3900 4500 3950 4500
-Wire Wire Line
-	5800 5250 5800 4750
-Connection ~ 5800 4750
-Wire Wire Line
-	5800 4750 5800 4700
-$Comp
-L SquantorSpecial:SolderJumper_2way_1conn SJ1
-U 1 1 5BDC2411
-P 5800 4500
-F 0 "SJ1" V 5754 4588 50  0000 L CNN
-F 1 "SolderJumper_2way_1conn" V 5845 4588 50  0000 L CNN
-F 2 "SquantorSpecial:solder_jumper_2way_conn" H 5800 4500 50  0001 C CNN
-F 3 "" H 5800 4500 50  0001 C CNN
-	1    5800 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 4300 5800 4250
-Wire Wire Line
-	5800 4250 5750 4250
 Text Label 3100 2200 2    50   ~ 0
 VDD
 Text Label 4100 2200 0    50   ~ 0
 VDD
 Text Label 3100 3000 2    50   ~ 0
-VSS
+AVSS
 Text Label 4100 3000 0    50   ~ 0
-VSS
+AVSS
 Text Label 3100 3450 2    50   ~ 0
 VSS
 Text Label 4100 3450 0    50   ~ 0
 VSS
 Text Label 3100 4250 2    50   ~ 0
-VDD
+AVDD
 Text Label 4100 4250 0    50   ~ 0
-VDD
+AVDD
 Text Label 4550 3050 1    50   ~ 0
 VSS
 Text Label 4550 3450 3    50   ~ 0
@@ -733,11 +708,11 @@ Wire Wire Line
 	4950 5550 5000 5550
 Wire Wire Line
 	5000 5350 5000 5550
-Text Label 5750 5150 2    50   ~ 0
+Text Label 5800 5150 2    50   ~ 0
 VSS
-Text Label 5750 5650 2    50   ~ 0
-VSS
-Text Label 5750 4250 2    50   ~ 0
+Text Label 5800 5650 2    50   ~ 0
+AVSS
+Text Label 5800 4750 2    50   ~ 0
 VDD
 Wire Wire Line
 	5900 6700 6300 6700
@@ -791,4 +766,29 @@ Wire Wire Line
 	6250 5650 6100 5650
 NoConn ~ 3950 5250
 NoConn ~ 3950 5150
+Text Label 5800 5250 2    50   ~ 0
+AVDD
+Wire Wire Line
+	5800 5250 5850 5250
+Wire Wire Line
+	5850 4750 5800 4750
+$Comp
+L Device:C C8
+U 1 1 5CBAB1E7
+P 4950 3250
+F 0 "C8" H 5065 3296 50  0000 L CNN
+F 1 "10u" H 5065 3205 50  0000 L CNN
+F 2 "SquantorRcl:C_0805" H 4988 3100 50  0001 C CNN
+F 3 "~" H 4950 3250 50  0001 C CNN
+	1    4950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3050 4950 3100
+Wire Wire Line
+	4950 3400 4950 3450
+Text Label 4950 3050 1    50   ~ 0
+AVSS
+Text Label 4950 3450 3    50   ~ 0
+AVDD
 $EndSCHEMATC
