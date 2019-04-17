@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:LPC82X_JHI33_analog-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -209,7 +210,7 @@ U 1 1 5BD2E6A6
 P 3600 2600
 F 0 "J1" H 3600 3265 50  0000 C CNN
 F 1 "LPC82XJHI33_LEFT" H 3600 3174 50  0000 C CNN
-F 2 "SquantorConnectorsNamed:LPC82XJHI33_breakout_left" H 3600 2600 50  0001 C CNN
+F 2 "SquantorConnectorsNamed:LPC82XJHI33_breakout_analog_left" H 3600 2600 50  0001 C CNN
 F 3 "~" H 3600 2600 50  0001 C CNN
 	1    3600 2600
 	1    0    0    -1  
@@ -220,7 +221,7 @@ U 1 1 5BD2E711
 P 3600 3850
 F 0 "J2" H 3600 4515 50  0000 C CNN
 F 1 "LPC82XJHI33_RIGHT" H 3600 4424 50  0000 C CNN
-F 2 "SquantorConnectorsNamed:LPC82XJHI33_breakout_right" H 3600 3850 50  0001 C CNN
+F 2 "SquantorConnectorsNamed:LPC82XJHI33_breakout_analog_right" H 3600 3850 50  0001 C CNN
 F 3 "~" H 3600 3850 50  0001 C CNN
 	1    3600 3850
 	1    0    0    -1  
