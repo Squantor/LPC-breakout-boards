@@ -1,0 +1,10 @@
+file bin/debug/lpc824_tryouts.elf
+target extended-remote /dev/ttyBmpGdb0
+monitor swdp_scan
+attach 1
+set mem inaccessible-by-default off
+set {int}0x40048000 = 2
+load bin/debug/lpc824_tryouts.elf
+set {int}0x40048000 = 2
+compare-sections
+b main
