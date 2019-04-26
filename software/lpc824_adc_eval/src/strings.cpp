@@ -27,7 +27,7 @@ Common used strings
 
 #include <strings.h>
 
-char strHello[] = "LPC824 playground\r\n";
+char strHello[] = "LPC824 ADC evaluator\r\n";
 char strAdcChan[] = "Channel: ";
 char strAdcValue[] = " value: ";
 char strCrLf[] = "\r\n";

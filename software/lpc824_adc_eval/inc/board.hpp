@@ -25,6 +25,8 @@ SOFTWARE.
 #define BOARD_HPP
 
 #define BOARD_ADC_CH 3
+#define UART_TX 27
+#define UART_RX 26
 
 void boardInit(void);
 

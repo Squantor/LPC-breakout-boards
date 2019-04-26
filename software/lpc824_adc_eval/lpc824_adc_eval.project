@@ -34,7 +34,7 @@
   <Dependencies/>
   <Dependencies Name="Debug"/>
   <Dependencies Name="Release"/>
-  <Settings Type="Executable">
+  <Settings Type="Dynamic Library">
     <GlobalSettings>
       <Compiler Options="" C_Options="" Assembler="">
         <IncludePath Value="."/>
@@ -55,14 +55,14 @@
       <Environment EnvVarSetName="Default" DbgSetName="&lt;Use Defaults&gt;">
         <![CDATA[]]>
       </Environment>
-      <Debugger IsRemote="yes" RemoteHostName="/dev/ttyBmpGdb0" RemoteHostPort="" DebuggerPath="../../../../../../usr/bin/arm-none-eabi-gdb" IsExtended="yes">
+      <Debugger IsRemote="yes" RemoteHostName="/dev/ttyBmpGdb0" RemoteHostPort="" DebuggerPath="../../../../../../../usr/bin/arm-none-eabi-gdb" IsExtended="yes">
         <DebuggerSearchPaths/>
-        <PostConnectCommands>file bin/debug/lpc824_tryouts.elf
+        <PostConnectCommands>file bin/debug/lpc824_adc_eval.elf
 monitor swdp_scan
 attach 1
 set mem inaccessible-by-default off
 set {int}0x40048000 = 2
-load bin/debug/lpc824_tryouts.elf
+load bin/debug/lpc824_adc_eval.elf
 set {int}0x40048000 = 2
 compare-sections</PostConnectCommands>
         <StartupCommands/>
@@ -101,17 +101,16 @@ compare-sections</PostConnectCommands>
       <Environment EnvVarSetName="&lt;Use Defaults&gt;" DbgSetName="&lt;Use Defaults&gt;">
         <![CDATA[]]>
       </Environment>
-      <Debugger IsRemote="yes" RemoteHostName="/dev/ttyBmpGdb0" RemoteHostPort="" DebuggerPath="../../../../../../usr/bin/arm-none-eabi-gdb" IsExtended="yes">
+      <Debugger IsRemote="yes" RemoteHostName="/dev/ttyBmpGdb0" RemoteHostPort="" DebuggerPath="../../../../../../../usr/bin/arm-none-eabi-gdb" IsExtended="yes">
         <DebuggerSearchPaths/>
-        <PostConnectCommands>file bin/release/lpc824_tryouts.elf
+        <PostConnectCommands>file bin/release/lpc824_adc_eval.elf
 monitor swdp_scan
 attach 1
 set mem inaccessible-by-default off
 set {int}0x40048000 = 2
-load bin/release/lpc824_tryouts.elf
+load bin/release/lpc824_adc_eval.elf
 set {int}0x40048000 = 2
-compare-sections
-b main</PostConnectCommands>
+compare-sections</PostConnectCommands>
         <StartupCommands/>
       </Debugger>
       <PreBuild/>

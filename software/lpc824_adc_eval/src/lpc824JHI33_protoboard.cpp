@@ -34,25 +34,6 @@ etcetera.
 const uint32_t OscRateIn = 12000000;
 const uint32_t ExtRateIn = 0;
 
-static inline void uartInit(void)
-{
-
-}
-
-static inline void ioconInit(void)
-{
-
-}
-
-static inline void gpioInit(void)
-{
-
-}
-
-static inline void setupInterrupts(void)
-{
-}
-
 void boardInit(void)
 {
     // setup switch matrix pinning
@@ -63,11 +44,13 @@ void boardInit(void)
     Chip_SWM_FixedPinEnable(SWM_FIXED_XTALIN, true);
     Chip_SWM_FixedPinEnable(SWM_FIXED_XTALOUT, true);
     // use UART0 for debug output
-    Chip_SWM_MovablePinAssign(SWM_U0_TXD_O, 7);
-    Chip_SWM_MovablePinAssign(SWM_U0_RXD_I, 18);
+    Chip_SWM_MovablePinAssign(SWM_U0_TXD_O, UART_RX);
+    Chip_SWM_MovablePinAssign(SWM_U0_RXD_I, UART_TX);
     Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_SWM);
     // setup iocon 
     Chip_Clock_EnablePeriphClock(SYSCTL_CLOCK_IOCON);
+    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO8, PIN_MODE_INACTIVE);
+    Chip_IOCON_PinSetMode(LPC_IOCON, IOCON_PIO9, PIN_MODE_INACTIVE); 
     Chip_Clock_DisablePeriphClock(SYSCTL_CLOCK_IOCON);
     // crystal clocking
     Chip_SetupXtalClocking();
