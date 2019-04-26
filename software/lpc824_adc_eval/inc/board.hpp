@@ -24,6 +24,8 @@ SOFTWARE.
 #ifndef BOARD_HPP
 #define BOARD_HPP
 
+#define BOARD_ADC_CH 3
+
 void boardInit(void);
 
 #endif

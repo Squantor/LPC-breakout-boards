@@ -11,8 +11,7 @@ include src/$(BOARD).mk
 C_SOURCES +=
 CXX_SOURCES += src/startup.cpp src/main.cpp \
 src/strings.cpp \
-src/stream_uart.cpp \
-src/print.cpp
+src/stream_uart.cpp
 S_SOURCES +=
 INCLUDES += -Iinc
 DEFINES +=
