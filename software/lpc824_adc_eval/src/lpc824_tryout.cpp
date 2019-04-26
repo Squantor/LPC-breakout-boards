@@ -30,39 +30,39 @@ Main program entry/file.
 #include <boardinit.h>
 #include <sqassert.h>
 
-#define TICKRATE_HZ (2)	/* 10 ticks per second */
+#define TICKRATE_HZ (2)    /* 10 ticks per second */
 
 /* I2CM transfer record */
 static I2CM_XFER_T  i2cmXferRec;
 
 /* Function to setup and execute I2C transfer request */
 static void SetupXferRecAndExecute(uint8_t devAddr,
-								   uint8_t *txBuffPtr,
-								   uint16_t txSize,
-								   uint8_t *rxBuffPtr,
-								   uint16_t rxSize)
+                                   uint8_t *txBuffPtr,
+                                   uint16_t txSize,
+                                   uint8_t *rxBuffPtr,
+                                   uint16_t rxSize)
 {
-	/* Setup I2C transfer record */
-	i2cmXferRec.slaveAddr = devAddr;
-	i2cmXferRec.status = 0;
-	i2cmXferRec.txSz = txSize;
-	i2cmXferRec.rxSz = rxSize;
-	i2cmXferRec.txBuff = txBuffPtr;
+    /* Setup I2C transfer record */
+    i2cmXferRec.slaveAddr = devAddr;
+    i2cmXferRec.status = 0;
+    i2cmXferRec.txSz = txSize;
+    i2cmXferRec.rxSz = rxSize;
+    i2cmXferRec.txBuff = txBuffPtr;
     i2cmXferRec.rxBuff = rxBuffPtr;
-	Chip_I2CM_XferBlocking(LPC_I2C, &i2cmXferRec);
+    Chip_I2CM_XferBlocking(LPC_I2C, &i2cmXferRec);
 }
 
 static uint8_t txData[1];
 static uint8_t rxData[1];
 static void setI2CExpander(uint8_t outputs)
 {
-	txData[0] = outputs;
-	SetupXferRecAndExecute(0x20, txData, sizeof(txData), rxData, 0);
+    txData[0] = outputs;
+    SetupXferRecAndExecute(0x20, txData, sizeof(txData), rxData, 0);
 }
 
 static void getI2CExpander(uint8_t *inputs)
 {
-	SetupXferRecAndExecute(0x20, txData, 0, rxData, sizeof(rxData));
+    SetupXferRecAndExecute(0x20, txData, 0, rxData, sizeof(rxData));
     *inputs = rxData[0];
 }
 
@@ -73,16 +73,16 @@ volatile uint32_t events_int0 = 0;
 
 extern "C"
 {
-	void SysTick_Handler(void)
-	{
-		ticks++;
-	}
+    void SysTick_Handler(void)
+    {
+        ticks++;
+    }
 
-	void PIN_INT0_IRQHandler(void)
-	{
-		events_int0++;
-		Chip_PININT_ClearIntStatus(LPC_PININT, PININTCH0);
-	}
+    void PIN_INT0_IRQHandler(void)
+    {
+        events_int0++;
+        Chip_PININT_ClearIntStatus(LPC_PININT, PININTCH0);
+    }
 }
 
 
@@ -90,30 +90,30 @@ extern "C"
 int main(void)
 {
     static volatile uint8_t test;
-	char string[] = "int0\n\r";
-	uint8_t leds = 0;
-	uint32_t eventsInt0Current = 0;
+    char string[] = "int0\n\r";
+    uint8_t leds = 0;
+    uint32_t eventsInt0Current = 0;
 
-	boardInit();
+    boardInit();
 
-	/* Enable SysTick Timer */
-	sqassert(SysTick_Config(SystemCoreClock / TICKRATE_HZ) == 0);
+    /* Enable SysTick Timer */
+    sqassert(SysTick_Config(SystemCoreClock / TICKRATE_HZ) == 0);
 
-	/* Loop forever */
-	while (1)
-	{
-		// handle I2c port expander pins
-		if(eventsInt0Current != events_int0)
-		{
+    /* Loop forever */
+    while (1)
+    {
+        // handle I2c port expander pins
+        if(eventsInt0Current != events_int0)
+        {
             uint8_t pins;
             getI2CExpander(&pins);
             test = pins;
             Chip_UART_SendBlocking(LPC_USART0, &string, sizeof(string));
             setI2CExpander(( ~(leds++) ) | 0xF0);
-			eventsInt0Current = events_int0;
-		}
-		__WFI();
-	}
+            eventsInt0Current = events_int0;
+        }
+        __WFI();
+    }
 
     return 0 ;
 }
