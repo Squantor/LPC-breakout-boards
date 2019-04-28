@@ -6,6 +6,7 @@
     </Plugin>
   </Plugins>
   <VirtualDirectory Name="src">
+    <File Name="src/commands.cpp"/>
     <File Name="src/strings.cpp"/>
     <File Name="src/lpc824JHI33_protoboard.cpp"/>
     <File Name="src/stream_uart.cpp"/>
@@ -14,6 +15,7 @@
     <File Name="src/startup.cpp"/>
   </VirtualDirectory>
   <VirtualDirectory Name="inc">
+    <File Name="inc/commands.hpp"/>
     <File Name="inc/strings.hpp"/>
     <File Name="inc/board.hpp"/>
     <File Name="inc/print.hpp"/>

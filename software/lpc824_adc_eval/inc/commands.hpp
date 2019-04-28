@@ -21,22 +21,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-#ifndef BOARD_HPP
-#define BOARD_HPP
+#ifndef COMMAND_HPP
+#define COMMAND_HPP
+#include <command_mini.h>
 
-#define BOARD_ADC_CH0 3
-#define BOARD_ADC_CH1 4
-#define BOARD_ADC_CH2 5
-#define BOARD_ADC_CH3 6
-#define BOARD_ADC_CH4 7
-#define BOARD_ADC_CH5 8
-#define BOARD_ADC_CH6 9
-#define UART_TX 27
-#define UART_RX 26
-
-#define TICKRATE_HZ (10)    /* 10 ticks per second */
-
-void boardInit(void);
-void boardAdcInit(void);
+extern commandEntry_t adcEvalCommands[];
 
 #endif

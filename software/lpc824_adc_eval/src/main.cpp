@@ -31,8 +31,20 @@ Main program entry/file.
 #include <stream_uart.hpp>
 #include <strings.hpp>
 #include <print.h>
+#include <prompt_mini.h>
+#include <command_mini.h>
+#include <commands.hpp>
 
-#define TICKRATE_HZ (10)    /* 10 ticks per second */
+char promptBuf[5];
+result cmdlineParse(char *cmdline);
+
+promptData_t adcEvalPromptData = 
+{
+    promptBuf,
+    0,
+    sizeof(promptBuf),
+    cmdlineParse,
+};
 
 volatile uint32_t ticks = 0;
 volatile bool sequenceComplete, thresholdCrossed;
@@ -63,6 +75,11 @@ extern "C"
     }
 }
 
+result cmdlineParse(char *const cmdline)
+{
+    return commandInterpret(adcEvalCommands, cmdline);
+}
+
 int main(void)
 {
     boardInit(); 
@@ -73,7 +90,7 @@ int main(void)
 
     while (1)
     {
-        __WFI();
+        promptProcess(&adcEvalPromptData, &streamUart);
         
         /* Is a conversion sequence complete? */
         if(sequenceComplete) 
