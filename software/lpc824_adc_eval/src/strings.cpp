@@ -28,6 +28,6 @@ Common used strings
 #include <strings.h>
 
 char strHello[] = "LPC824 ADC evaluator\r\n";
-char strAdcChan[] = "Channel: ";
-char strAdcValue[] = " value: ";
+char strIs[] = " = ";
+char strSep[] = " | ";
 char strCrLf[] = "\r\n";

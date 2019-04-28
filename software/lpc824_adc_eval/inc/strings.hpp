@@ -28,8 +28,8 @@ Common used strings
 #define STRINGS_HPP
 
 extern char strHello[];
-extern char strAdcChan[];
-extern char strAdcValue[];
+extern char strIs[];
+extern char strSep[];
 extern char strCrLf[];
 
 #endif

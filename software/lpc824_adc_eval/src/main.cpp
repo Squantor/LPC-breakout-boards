@@ -87,13 +87,13 @@ int main(void)
                 /* Show some ADC data */
                 if (rawSample & (ADC_DR_OVERRUN | ADC_SEQ_GDAT_DATAVALID)) 
                 {
-                    dsPuts(&streamUart, strAdcChan);
-                    printDecU16(&streamUart, i);
-                    dsPuts(&streamUart, strAdcValue);
-                    printDecU16(&streamUart, ADC_DR_RESULT(rawSample));
-                    dsPuts(&streamUart, strCrLf);
+                    printDecNzU16(&streamUart, i);
+                    dsPuts(&streamUart, strIs);
+                    printDecNzU16(&streamUart, ADC_DR_RESULT(rawSample));
+                    dsPuts(&streamUart, strSep);
                 }
             }
+            dsPuts(&streamUart, strCrLf);
         }
     }
 
