@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Project Name="lpc824_adc_eval" Version="10.0.0" InternalType="">
+  <Plugins>
+    <Plugin Name="qmake">
+      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
+    </Plugin>
+  </Plugins>
   <VirtualDirectory Name="src">
     <File Name="src/strings.cpp"/>
-    <File Name="src/boardinit.cpp"/>
     <File Name="src/lpc824JHI33_protoboard.cpp"/>
     <File Name="src/stream_uart.cpp"/>
     <File Name="src/main.cpp"/>
     <File Name="src/print.cpp"/>
     <File Name="src/startup.cpp"/>
   </VirtualDirectory>
-  <Plugins>
-    <Plugin Name="qmake">
-      <![CDATA[00020001N0005Debug0000000000000001N0007Release000000000000]]>
-    </Plugin>
-  </Plugins>
   <VirtualDirectory Name="inc">
     <File Name="inc/strings.hpp"/>
     <File Name="inc/board.hpp"/>

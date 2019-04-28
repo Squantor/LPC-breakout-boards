@@ -89,7 +89,7 @@ int main(void)
                 {
                     printDecNzU16(&streamUart, i);
                     dsPuts(&streamUart, strIs);
-                    printDecNzU16(&streamUart, ADC_DR_RESULT(rawSample));
+                    printDecU16(&streamUart, ADC_DR_RESULT(rawSample));
                     dsPuts(&streamUart, strSep);
                 }
             }
