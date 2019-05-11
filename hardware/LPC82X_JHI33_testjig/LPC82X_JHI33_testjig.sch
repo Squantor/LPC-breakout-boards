@@ -37,35 +37,35 @@ F 3 "" H 4000 1300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SquantorConnectorsNamed:LPC82XJHI33_breakout_left J1
+L Connector_Generic:Conn_02x09_Odd_Even J1
 U 1 1 5BD2E6A6
-P 3600 2600
-F 0 "J1" H 3600 3265 50  0000 C CNN
-F 1 "LPC82XJHI33_LEFT" H 3600 3174 50  0000 C CNN
-F 2 "SquantorConnectorsNamed:LPC82XJHI33_breakout_left" H 3600 2600 50  0001 C CNN
-F 3 "~" H 3600 2600 50  0001 C CNN
-	1    3600 2600
-	1    0    0    -1  
+P 3700 2600
+F 0 "J1" H 3700 3265 50  0000 C CNN
+F 1 "LPC82XJHI33_LEFT" H 3700 3174 50  0000 C CNN
+F 2 "SquantorConnectors:Header-0254-2X09-H015" H 3700 2600 50  0001 C CNN
+F 3 "~" H 3700 2600 50  0001 C CNN
+	1    3700 2600
+	-1   0    0    -1  
 $EndComp
 $Comp
-L SquantorConnectorsNamed:LPC82XJHI33_breakout_right J2
+L Connector_Generic:Conn_02x09_Odd_Even J2
 U 1 1 5BD2E711
-P 3600 3850
-F 0 "J2" H 3600 4515 50  0000 C CNN
-F 1 "LPC82XJHI33_RIGHT" H 3600 4424 50  0000 C CNN
-F 2 "SquantorConnectorsNamed:LPC82XJHI33_breakout_right" H 3600 3850 50  0001 C CNN
-F 3 "~" H 3600 3850 50  0001 C CNN
-	1    3600 3850
-	1    0    0    -1  
+P 3700 3850
+F 0 "J2" H 3700 4515 50  0000 C CNN
+F 1 "LPC82XJHI33_RIGHT" H 3700 4424 50  0000 C CNN
+F 2 "SquantorConnectors:Header-0254-2X09-H015" H 3700 3850 50  0001 C CNN
+F 3 "~" H 3700 3850 50  0001 C CNN
+	1    3700 3850
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3100 2200 3150 2200
+	3350 2200 3400 2200
 Wire Wire Line
-	4100 2200 4050 2200
+	3950 2200 3900 2200
 Wire Wire Line
-	3100 3450 3150 3450
+	3350 3450 3400 3450
 Wire Wire Line
-	4050 3450 4100 3450
+	3900 3450 3950 3450
 $Comp
 L SquantorConnectors:JTAG_2X05 J3
 U 1 1 5BD303CB
@@ -95,9 +95,9 @@ $Comp
 L Device:R R1
 U 1 1 5BD32184
 P 3750 4950
-F 0 "R1" V 3700 4800 50  0000 C CNN
-F 1 "100" V 3750 4950 50  0000 C CNN
-F 2 "SquantorRcl:R_0603_hand" V 3680 4950 50  0001 C CNN
+F 0 "R1" V 3543 4950 50  0000 C CNN
+F 1 "100" V 3634 4950 50  0000 C CNN
+F 2 "SquantorRcl:R_0402_hand" V 3680 4950 50  0001 C CNN
 F 3 "~" H 3750 4950 50  0001 C CNN
 	1    3750 4950
 	0    1    1    0   
@@ -106,9 +106,9 @@ $Comp
 L Device:R R2
 U 1 1 5BD3223D
 P 3750 5050
-F 0 "R2" V 3700 4900 50  0000 C CNN
-F 1 "100" V 3750 5050 50  0000 C CNN
-F 2 "SquantorRcl:R_0603_hand" V 3680 5050 50  0001 C CNN
+F 0 "R2" V 3865 5050 50  0000 C CNN
+F 1 "100" V 3956 5050 50  0000 C CNN
+F 2 "SquantorRcl:R_0402_hand" V 3680 5050 50  0001 C CNN
 F 3 "~" H 3750 5050 50  0001 C CNN
 	1    3750 5050
 	0    1    1    0   
@@ -126,151 +126,132 @@ PIO0_2
 Text Label 3500 5050 2    50   ~ 0
 PIO0_3
 Wire Wire Line
-	3150 2300 3100 2300
+	3400 2300 3350 2300
 Wire Wire Line
-	4100 2300 4050 2300
+	3950 2300 3900 2300
 Wire Wire Line
-	3150 2400 3100 2400
+	3400 2400 3350 2400
 Wire Wire Line
-	3150 2500 3100 2500
+	3400 2500 3350 2500
 Wire Wire Line
-	3150 2600 3100 2600
+	3400 2600 3350 2600
 Wire Wire Line
-	3150 2700 3100 2700
+	3400 2700 3350 2700
 Wire Wire Line
-	3150 2800 3100 2800
+	3400 2800 3350 2800
 Wire Wire Line
-	3150 3000 3100 3000
+	3400 3000 3350 3000
 Wire Wire Line
-	4050 2400 4100 2400
+	3900 2400 3950 2400
 Wire Wire Line
-	4050 2500 4100 2500
+	3900 2500 3950 2500
 Wire Wire Line
-	4050 2600 4100 2600
+	3900 2600 3950 2600
 Wire Wire Line
-	4050 2700 4100 2700
+	3900 2700 3950 2700
 Wire Wire Line
-	4050 2800 4100 2800
+	3900 2800 3950 2800
 Wire Wire Line
-	4050 3000 4100 3000
-Text Label 3100 2300 2    50   ~ 0
+	3900 3000 3950 3000
+Text Label 3350 2300 2    50   ~ 0
 PIO0_28
-Text Label 4100 2300 0    50   ~ 0
+Text Label 3950 2300 0    50   ~ 0
 PIO0_3
-Text Label 3100 2400 2    50   ~ 0
+Text Label 3350 2400 2    50   ~ 0
 PIO0_2
-Text Label 4100 2400 0    50   ~ 0
+Text Label 3950 2400 0    50   ~ 0
 PIO0_11
-Text Label 3100 2500 2    50   ~ 0
+Text Label 3350 2500 2    50   ~ 0
 PIO0_10
-Text Label 4100 2500 0    50   ~ 0
+Text Label 3950 2500 0    50   ~ 0
 PIO0_16
-Text Label 3100 2600 2    50   ~ 0
+Text Label 3350 2600 2    50   ~ 0
 PIO0_27
-Text Label 4100 2600 0    50   ~ 0
+Text Label 3950 2600 0    50   ~ 0
 PIO0_26
-Text Label 3100 2700 2    50   ~ 0
+Text Label 3350 2700 2    50   ~ 0
 PIO0_25
-Text Label 4100 2700 0    50   ~ 0
+Text Label 3950 2700 0    50   ~ 0
 PIO0_24
-Text Label 3100 2800 2    50   ~ 0
+Text Label 3350 2800 2    50   ~ 0
 PIO0_15
-Text Label 4100 2800 0    50   ~ 0
+Text Label 3950 2800 0    50   ~ 0
 PIO0_1
 Wire Wire Line
-	3100 3550 3150 3550
+	3350 3550 3400 3550
 Wire Wire Line
-	3150 3650 3100 3650
+	3400 3650 3350 3650
 Wire Wire Line
-	3100 3750 3150 3750
+	3350 3750 3400 3750
 Wire Wire Line
-	3150 3850 3100 3850
+	3400 3850 3350 3850
 Wire Wire Line
-	3150 3950 3100 3950
+	3400 3950 3350 3950
 Wire Wire Line
-	3150 4050 3100 4050
+	3400 4050 3350 4050
 Wire Wire Line
-	3150 4150 3100 4150
+	3400 4150 3350 4150
 Wire Wire Line
-	3150 4250 3100 4250
+	3400 4250 3350 4250
 Wire Wire Line
-	4050 4250 4100 4250
+	3900 4250 3950 4250
 Wire Wire Line
-	4100 4150 4050 4150
+	3950 4150 3900 4150
 Wire Wire Line
-	4050 4050 4100 4050
+	3900 4050 3950 4050
 Wire Wire Line
-	4100 3950 4050 3950
+	3950 3950 3900 3950
 Wire Wire Line
-	4050 3850 4100 3850
+	3900 3850 3950 3850
 Wire Wire Line
-	4100 3750 4050 3750
+	3950 3750 3900 3750
 Wire Wire Line
-	4050 3650 4100 3650
+	3900 3650 3950 3650
 Wire Wire Line
-	4100 3550 4050 3550
-Text Label 4100 4150 0    50   ~ 0
+	3950 3550 3900 3550
+Text Label 3950 4150 0    50   ~ 0
 PIO0_7
-Text Label 3100 4150 2    50   ~ 0
+Text Label 3350 4150 2    50   ~ 0
 PIO0_6
-Text Label 4100 4050 0    50   ~ 0
+Text Label 3950 4050 0    50   ~ 0
 PIO0_0
-Text Label 3100 4050 2    50   ~ 0
+Text Label 3350 4050 2    50   ~ 0
 PIO0_14
-Text Label 4100 3950 0    50   ~ 0
+Text Label 3950 3950 0    50   ~ 0
 PIO0_23
-Text Label 3100 3950 2    50   ~ 0
+Text Label 3350 3950 2    50   ~ 0
 PIO0_22
-Text Label 4100 3850 0    50   ~ 0
+Text Label 3950 3850 0    50   ~ 0
 PIO0_21
-Text Label 3100 3850 2    50   ~ 0
+Text Label 3350 3850 2    50   ~ 0
 PIO0_20
-Text Label 4100 3750 0    50   ~ 0
+Text Label 3950 3750 0    50   ~ 0
 PIO0_19
-Text Label 3100 3750 2    50   ~ 0
+Text Label 3350 3750 2    50   ~ 0
 PIO0_18
-Text Label 4100 3650 0    50   ~ 0
+Text Label 3950 3650 0    50   ~ 0
 PIO0_17
-Text Label 3100 3650 2    50   ~ 0
+Text Label 3350 3650 2    50   ~ 0
 PIO0_13
-Text Label 4100 3550 0    50   ~ 0
+Text Label 3950 3550 0    50   ~ 0
 PIO0_12
-Text Label 3100 3550 2    50   ~ 0
+Text Label 3350 3550 2    50   ~ 0
 PIO0_4
-$Comp
-L Device:C C7
-U 1 1 5BD6A440
-P 4550 3250
-F 0 "C7" H 4665 3296 50  0000 L CNN
-F 1 "2.2u" H 4665 3205 50  0000 L CNN
-F 2 "SquantorRcl:C_0805" H 4588 3100 50  0001 C CNN
-F 3 "~" H 4550 3250 50  0001 C CNN
-	1    4550 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 3050 4550 3100
-Wire Wire Line
-	4550 3400 4550 3450
-Text Label 3100 2200 2    50   ~ 0
+Text Label 3350 2200 2    50   ~ 0
 VDD
-Text Label 4100 2200 0    50   ~ 0
+Text Label 3950 2200 0    50   ~ 0
 VDD
-Text Label 3100 3000 2    50   ~ 0
+Text Label 3350 3000 2    50   ~ 0
 VSS
-Text Label 4100 3000 0    50   ~ 0
+Text Label 3950 3000 0    50   ~ 0
 VSS
-Text Label 3100 3450 2    50   ~ 0
+Text Label 3350 3450 2    50   ~ 0
 VSS
-Text Label 4100 3450 0    50   ~ 0
+Text Label 3950 3450 0    50   ~ 0
 VSS
-Text Label 3100 4250 2    50   ~ 0
+Text Label 3350 4250 2    50   ~ 0
 VDD
-Text Label 4100 4250 0    50   ~ 0
-VDD
-Text Label 4550 3050 1    50   ~ 0
-VSS
-Text Label 4550 3450 3    50   ~ 0
+Text Label 3950 4250 0    50   ~ 0
 VDD
 Text Label 4950 4800 2    50   ~ 0
 VDD
@@ -790,7 +771,51 @@ Wire Wire Line
 	8500 6200 8550 6200
 Wire Wire Line
 	8550 6300 8500 6300
-NoConn ~ 4050 2900
-NoConn ~ 3150 2900
+NoConn ~ 3900 2900
+NoConn ~ 3400 2900
 NoConn ~ 3950 5350
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5CE959EC
+P 850 7450
+F 0 "H?" H 950 7496 50  0000 L CNN
+F 1 "MountingHole" H 950 7405 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7450 50  0001 C CNN
+F 3 "~" H 850 7450 50  0001 C CNN
+	1    850  7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5CE970BF
+P 850 7250
+F 0 "H?" H 950 7296 50  0000 L CNN
+F 1 "MountingHole" H 950 7205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7250 50  0001 C CNN
+F 3 "~" H 850 7250 50  0001 C CNN
+	1    850  7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5CE97293
+P 850 7050
+F 0 "H?" H 950 7096 50  0000 L CNN
+F 1 "MountingHole" H 950 7005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7050 50  0001 C CNN
+F 3 "~" H 850 7050 50  0001 C CNN
+	1    850  7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H?
+U 1 1 5CE9748D
+P 850 6850
+F 0 "H?" H 950 6896 50  0000 L CNN
+F 1 "MountingHole" H 950 6805 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 6850 50  0001 C CNN
+F 3 "~" H 850 6850 50  0001 C CNN
+	1    850  6850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
