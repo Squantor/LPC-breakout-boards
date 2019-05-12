@@ -775,10 +775,10 @@ NoConn ~ 3900 2900
 NoConn ~ 3400 2900
 NoConn ~ 3950 5350
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H4
 U 1 1 5CE959EC
 P 850 7450
-F 0 "H?" H 950 7496 50  0000 L CNN
+F 0 "H4" H 950 7496 50  0000 L CNN
 F 1 "MountingHole" H 950 7405 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7450 50  0001 C CNN
 F 3 "~" H 850 7450 50  0001 C CNN
@@ -786,10 +786,10 @@ F 3 "~" H 850 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H3
 U 1 1 5CE970BF
 P 850 7250
-F 0 "H?" H 950 7296 50  0000 L CNN
+F 0 "H3" H 950 7296 50  0000 L CNN
 F 1 "MountingHole" H 950 7205 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7250 50  0001 C CNN
 F 3 "~" H 850 7250 50  0001 C CNN
@@ -797,10 +797,10 @@ F 3 "~" H 850 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H2
 U 1 1 5CE97293
 P 850 7050
-F 0 "H?" H 950 7096 50  0000 L CNN
+F 0 "H2" H 950 7096 50  0000 L CNN
 F 1 "MountingHole" H 950 7005 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 7050 50  0001 C CNN
 F 3 "~" H 850 7050 50  0001 C CNN
@@ -808,10 +808,10 @@ F 3 "~" H 850 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H?
+L Mechanical:MountingHole H1
 U 1 1 5CE9748D
 P 850 6850
-F 0 "H?" H 950 6896 50  0000 L CNN
+F 0 "H1" H 950 6896 50  0000 L CNN
 F 1 "MountingHole" H 950 6805 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 850 6850 50  0001 C CNN
 F 3 "~" H 850 6850 50  0001 C CNN
