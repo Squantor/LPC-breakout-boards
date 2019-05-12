@@ -818,4 +818,36 @@ F 3 "~" H 850 6850 50  0001 C CNN
 	1    850  6850
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5CD8E7E9
+P 4850 3250
+F 0 "R3" V 5046 3250 50  0000 C CNN
+F 1 "1K" V 4955 3250 50  0000 C CNN
+F 2 "SquantorRcl:R_0402_hand" H 4850 3250 50  0001 C CNN
+F 3 "~" H 4850 3250 50  0001 C CNN
+	1    4850 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5CD8EF1E
+P 5150 3250
+F 0 "D1" H 5143 2995 50  0000 C CNN
+F 1 "RED" H 5143 3086 50  0000 C CNN
+F 2 "SquantorDiodes:D_0603_hand" H 5150 3250 50  0001 C CNN
+F 3 "~" H 5150 3250 50  0001 C CNN
+	1    5150 3250
+	-1   0    0    1   
+$EndComp
+Text Label 5350 3250 0    50   ~ 0
+VSS
+Text Label 4700 3250 2    50   ~ 0
+VDD
+Wire Wire Line
+	4700 3250 4750 3250
+Wire Wire Line
+	4950 3250 5000 3250
+Wire Wire Line
+	5350 3250 5300 3250
 $EndSCHEMATC
