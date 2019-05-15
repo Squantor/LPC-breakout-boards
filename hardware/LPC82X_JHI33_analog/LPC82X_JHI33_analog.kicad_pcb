@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew 5.1.0-060a0da~80~ubuntu18.04.1)
+(kicad_pcb (version 20171130) (host pcbnew 5.1.2-f72e74a~84~ubuntu18.04.1)
 
   (general
     (thickness 1.6)
@@ -106,7 +106,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "LPC82X_JHI33_2layer_plots/"))
+      (outputdirectory "LPC82X_JHI33_analog_plots/"))
   )
 
   (net 0 "")
@@ -1634,7 +1634,7 @@
   (via (at 94.2 114.5) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 39))
   (segment (start 93.05 114.5) (end 94.2 114.5) (width 0.4) (layer F.Cu) (net 39))
 
-  (zone (net 36) (net_name /VSS) (layer In1.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 36) (net_name /VSS) (layer In1.Cu) (tstamp 5CDC4816) (hatch edge 0.508)
     (connect_pads (clearance 0.3))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -1893,7 +1893,7 @@
       )
     )
   )
-  (zone (net 39) (net_name /AVSS) (layer In1.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 39) (net_name /AVSS) (layer In1.Cu) (tstamp 5CDC4813) (hatch edge 0.508)
     (connect_pads (clearance 0.3))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -2038,7 +2038,7 @@
       )
     )
   )
-  (zone (net 37) (net_name /VDD) (layer In2.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 37) (net_name /VDD) (layer In2.Cu) (tstamp 5CDC4810) (hatch edge 0.508)
     (connect_pads (clearance 0.3))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -2320,7 +2320,7 @@
       )
     )
   )
-  (zone (net 38) (net_name /AVDD) (layer In2.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 38) (net_name /AVDD) (layer In2.Cu) (tstamp 5CDC480D) (hatch edge 0.508)
     (connect_pads (clearance 0.3))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
