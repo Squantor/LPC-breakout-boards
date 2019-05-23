@@ -36,7 +36,7 @@ void boardAdcInit(void)
 {
     Chip_ADC_StartCalibration(LPC_ADC);
     while (!(Chip_ADC_IsCalibrationDone(LPC_ADC))) {}
-    Chip_ADC_SetClockRate(LPC_ADC, ADC_MAX_SAMPLE_RATE);
+    Chip_ADC_SetClockRate(LPC_ADC, 1000000);
     // setup sampling sequencer
     Chip_ADC_SetupSequencer(LPC_ADC, ADC_SEQA_IDX, (
         ADC_SEQ_CTRL_CHANSEL(BOARD_ADC_CH0) | 
