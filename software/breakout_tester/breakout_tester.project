@@ -6,6 +6,7 @@
     </Plugin>
   </Plugins>
   <VirtualDirectory Name="src">
+    <File Name="src/lpc82xJHI33_breakout.cpp"/>
     <File Name="src/lpc81xJDH20_breakout.cpp"/>
     <File Name="src/ticks.cpp"/>
     <File Name="src/gpio_tester.cpp"/>

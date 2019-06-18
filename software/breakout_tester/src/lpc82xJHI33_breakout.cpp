@@ -30,17 +30,31 @@ const uint32_t ExtRateIn = 0;
 
 const ioTest_t boardPinTable[] =
 {
-    {23, IOCON_PIO23},
-    {17, IOCON_PIO17},
-    {13, IOCON_PIO13},
-    {12, IOCON_PIO12},
-    {4, IOCON_PIO4},
+    {28, IOCON_PIO28},
     {11, IOCON_PIO11},
     {10, IOCON_PIO10},
+    {16, IOCON_PIO16},
+    {27, IOCON_PIO27},
+    {26, IOCON_PIO26},
+    {25, IOCON_PIO25},
+    {24, IOCON_PIO24},
     {15, IOCON_PIO15},
     {1, IOCON_PIO1},
-    {0, IOCON_PIO0},
+    {4, IOCON_PIO4},
+    {12, IOCON_PIO12},
+    {13, IOCON_PIO13},
+    {17, IOCON_PIO17},
+    {18, IOCON_PIO18},
+    {19, IOCON_PIO19},
+    {20, IOCON_PIO20},
+    {21, IOCON_PIO21},
+    {22, IOCON_PIO22},
+    {23, IOCON_PIO23},
     {14, IOCON_PIO14},
+    {0, IOCON_PIO0},
+    {6, IOCON_PIO6},
+    {7, IOCON_PIO7},
+    
 };
 const int boardPinCount = sizeof(boardPinTable) / sizeof(boardPinTable[0]);
 
