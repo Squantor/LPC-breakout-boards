@@ -25,11 +25,18 @@ SOFTWARE.
 #define BOARD_HPP
 
 #include <gpio_tester.hpp>
+#include <stdint.h>
 
 extern const ioTest_t boardPinTable[];
 extern const int boardPinCount;
 
-void boardInit(void);
+// board test settings
+extern const uint32_t chargeTime;
+extern const uint32_t maxTicksLoHi;
+extern const uint32_t maxTicksHiLo;
+extern const uint32_t minTicksLoHi;
+extern const uint32_t minTicksHiLo;
 
+void boardInit(void);
 
 #endif

@@ -23,23 +23,7 @@ SOFTWARE.
 */
 #include <gpio_tester.hpp>
 #include <ticks.hpp>
-
-
-/*
-Quite a long time but this is to take into account that open drain pins
-cannot go high and are charged up only via the 100K resistor.
-*/
-const uint32_t chargeTime = 600;
-
-/* 
-maximum transition times for Low to High and High to Low. These values are
-derived from charging a 2.2uF via 100K, with some counts added to have 
-sufficient margin.
-*/
-const uint32_t maxTicksLoHi = 500;
-const uint32_t maxTicksHiLo = 500;
-const uint32_t minTicksLoHi = 60;
-const uint32_t minTicksHiLo = 60;
+#include <board.hpp>
 
 // dut is the index that will be skipped, dut > size, will apply to all
 void gpioTestAllHigh(const ioTest_t *pinTable, const int size, const int dut)

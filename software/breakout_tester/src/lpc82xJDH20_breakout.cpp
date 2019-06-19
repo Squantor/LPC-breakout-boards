@@ -28,6 +28,22 @@ SOFTWARE.
 const uint32_t OscRateIn = 12000000;
 const uint32_t ExtRateIn = 0;
 
+/*
+Quite a long time but this is to take into account that open drain pins
+cannot go high and are charged up only via the 100K resistor.
+*/
+const uint32_t chargeTime = 600;
+
+/* 
+maximum transition times for Low to High and High to Low. These values are
+derived from charging a 2.2uF via 100K, with some counts added to have 
+sufficient margin.
+*/
+const uint32_t maxTicksLoHi = 500;
+const uint32_t maxTicksHiLo = 500;
+const uint32_t minTicksLoHi = 80;
+const uint32_t minTicksHiLo = 80;
+
 const ioTest_t boardPinTable[] =
 {
     {23, IOCON_PIO23},
