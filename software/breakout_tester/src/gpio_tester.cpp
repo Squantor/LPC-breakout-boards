@@ -86,7 +86,7 @@ int gpioTestAll(const ioTest_t *pinTable, const int size)
         uint32_t ticksLoHiEnd = ticksLoHiStart;
         gpioTestAllHigh(pinTable, size, i);
         while(  !Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, dut.gpioDut) && 
-                ticksLoHiEnd < ticksLoHiStart + maxTicksLoHi )
+                ticksLoHiEnd < ticksLoHiStart + chargeTime )
         {
             ticksLoHiEnd = ticks;
         }
@@ -98,8 +98,8 @@ int gpioTestAll(const ioTest_t *pinTable, const int size)
         uint32_t ticksHiLoStart = ticks;
         uint32_t ticksHiLoEnd = ticksHiLoStart;
         gpioTestAllLow(pinTable, size, i);
-        while(Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, dut.gpioDut) && 
-                ticksHiLoEnd < ticksHiLoStart + maxTicksHiLo )
+        while(  Chip_GPIO_GetPinState(LPC_GPIO_PORT, 0, dut.gpioDut) && 
+                ticksHiLoEnd < ticksHiLoStart + chargeTime )
         {
             ticksHiLoEnd = ticks;
         }
