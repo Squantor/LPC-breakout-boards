@@ -39,10 +39,10 @@ maximum transition times for Low to High and High to Low. These values are
 derived from charging a 1uF via 100K, with some counts added to have 
 sufficient margin.
 */
-const uint32_t maxTicksLoHi = 500;
-const uint32_t maxTicksHiLo = 500;
-const uint32_t minTicksLoHi = 60;
-const uint32_t minTicksHiLo = 60;
+const uint32_t maxTicksLoHi = 85;
+const uint32_t minTicksLoHi = 65;
+const uint32_t maxTicksHiLo = 100;
+const uint32_t minTicksHiLo = 50;
 
 const ioTest_t boardPinTable[] =
 {
