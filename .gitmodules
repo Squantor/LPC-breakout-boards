@@ -10,3 +10,6 @@
 [submodule "software/squantorLibEmbeddedC"]
 	path = software/squantorLibEmbeddedC
 	url = https://github.com/Squantor/squantorLibEmbeddedC.git
+[submodule "hardware/various_schematics"]
+	path = hardware/various_schematics
+	url = https://github.com/Squantor/various_schematics.git
