@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -19,7 +19,7 @@ L SquantorLabels:VYYYYMMDD N2
 U 1 1 5A1357A5
 P 4000 1650
 F 0 "N2" H 4000 1750 60  0000 C CNN
-F 1 "20190514" H 4000 1650 60  0000 C CNN
+F 1 "20190710" H 4000 1650 60  0000 C CNN
 F 2 "SquantorLabels:Label_version" H 4000 1650 60  0001 C CNN
 F 3 "" H 4000 1650 60  0001 C CNN
 	1    4000 1650
@@ -238,82 +238,6 @@ Wire Wire Line
 	3100 3450 3150 3450
 Wire Wire Line
 	4050 3450 4100 3450
-$Comp
-L SquantorConnectors:JTAG_2X05 J3
-U 1 1 5BD303CB
-P 4450 5150
-F 0 "J3" H 4450 5637 60  0000 C CNN
-F 1 "JTAG_2X05" H 4450 5531 60  0000 C CNN
-F 2 "SquantorConnectors:Header-0127-2X05-H006" H 4450 5300 60  0001 C CNN
-F 3 "" H 4450 5300 60  0001 C CNN
-	1    4450 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 5050 5000 5050
-Wire Wire Line
-	5000 5050 5000 5150
-Wire Wire Line
-	4950 5350 5000 5350
-Connection ~ 5000 5350
-Wire Wire Line
-	4950 5150 5000 5150
-Connection ~ 5000 5150
-Wire Wire Line
-	5000 5150 5000 5350
-Wire Wire Line
-	4950 4950 5000 4950
-$Comp
-L Device:R R1
-U 1 1 5BD32184
-P 3750 4950
-F 0 "R1" V 3700 4800 50  0000 C CNN
-F 1 "100" V 3750 4950 50  0000 C CNN
-F 2 "SquantorRcl:R_0402_hand" V 3680 4950 50  0001 C CNN
-F 3 "~" H 3750 4950 50  0001 C CNN
-	1    3750 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5BD3223D
-P 3750 5050
-F 0 "R2" V 3700 4900 50  0000 C CNN
-F 1 "100" V 3750 5050 50  0000 C CNN
-F 2 "SquantorRcl:R_0402_hand" V 3680 5050 50  0001 C CNN
-F 3 "~" H 3750 5050 50  0001 C CNN
-	1    3750 5050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3950 4950 3900 4950
-Wire Wire Line
-	3900 5050 3950 5050
-Wire Wire Line
-	3600 5050 3500 5050
-Wire Wire Line
-	3600 4950 3500 4950
-Text Label 3500 4950 2    50   ~ 0
-PIO0_2
-Text Label 3500 5050 2    50   ~ 0
-PIO0_3
-$Comp
-L Device:R R3
-U 1 1 5BD34D15
-P 3750 5350
-F 0 "R3" V 3700 5200 50  0000 C CNN
-F 1 "100" V 3750 5350 50  0000 C CNN
-F 2 "SquantorRcl:R_0402_hand" V 3680 5350 50  0001 C CNN
-F 3 "~" H 3750 5350 50  0001 C CNN
-	1    3750 5350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3950 5350 3900 5350
-Wire Wire Line
-	3600 5350 3500 5350
-Text Label 3500 5350 2    50   ~ 0
-RESET
 Text Label 5750 1650 2    50   ~ 0
 RESET
 Wire Wire Line
@@ -595,40 +519,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 6350 6100 6300
 $Comp
-L Device:R R7
-U 1 1 5BECCB56
-P 3750 4700
-F 0 "R7" V 3700 4550 50  0000 C CNN
-F 1 "100k" V 3750 4700 50  0000 C CNN
-F 2 "SquantorRcl:R_0402_hand" V 3680 4700 50  0001 C CNN
-F 3 "~" H 3750 4700 50  0001 C CNN
-	1    3750 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5BECCC51
-P 3750 4600
-F 0 "R6" V 3700 4450 50  0000 C CNN
-F 1 "100k" V 3750 4600 50  0000 C CNN
-F 2 "SquantorRcl:R_0402_hand" V 3680 4600 50  0001 C CNN
-F 3 "~" H 3750 4600 50  0001 C CNN
-	1    3750 4600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3950 4700 3900 4700
-Wire Wire Line
-	3900 4600 3950 4600
-Text Label 3500 4700 2    50   ~ 0
-PIO0_3
-Text Label 3500 4600 2    50   ~ 0
-PIO0_2
-Wire Wire Line
-	3600 4700 3500 4700
-Wire Wire Line
-	3600 4600 3500 4600
-$Comp
 L Device:Crystal_GND24 Y1
 U 1 1 5BE1D5EF
 P 6100 6100
@@ -658,23 +548,6 @@ Text Label 5850 6100 2    50   ~ 0
 PIO0_9
 Text Label 6350 6100 0    50   ~ 0
 PIO0_8
-$Comp
-L Device:R R4
-U 1 1 5BD88002
-P 3750 4500
-F 0 "R4" V 3700 4350 50  0000 C CNN
-F 1 "100K" V 3750 4500 50  0000 C CNN
-F 2 "SquantorRcl:R_0402_hand" V 3680 4500 50  0001 C CNN
-F 3 "~" H 3750 4500 50  0001 C CNN
-	1    3750 4500
-	0    1    1    0   
-$EndComp
-Text Label 3500 4500 2    50   ~ 0
-RESET
-Wire Wire Line
-	3500 4500 3600 4500
-Wire Wire Line
-	3900 4500 3950 4500
 Wire Wire Line
 	5800 5250 5800 4750
 Connection ~ 5800 4750
@@ -715,24 +588,6 @@ Text Label 4550 3050 1    50   ~ 0
 VSS
 Text Label 4550 3450 3    50   ~ 0
 VDD
-Text Label 3950 4500 0    50   ~ 0
-VDD
-Text Label 3950 4600 0    50   ~ 0
-VDD
-Text Label 3950 4700 0    50   ~ 0
-VSS
-Text Label 4950 4800 2    50   ~ 0
-VDD
-Wire Wire Line
-	5000 4800 4950 4800
-Wire Wire Line
-	5000 4800 5000 4950
-Text Label 4950 5550 2    50   ~ 0
-VSS
-Wire Wire Line
-	4950 5550 5000 5550
-Wire Wire Line
-	5000 5350 5000 5550
 Text Label 5750 5150 2    50   ~ 0
 VSS
 Text Label 5750 5650 2    50   ~ 0
@@ -789,6 +644,35 @@ $EndComp
 Connection ~ 6250 5650
 Wire Wire Line
 	6250 5650 6100 5650
-NoConn ~ 3950 5250
-NoConn ~ 3950 5150
+$Sheet
+S 3100 6050 1050 800 
+U 5D27243C
+F0 "Serial Wire debug connection" 50
+F1 "SWD_connector.sch" 50
+F2 "RESET" O L 3100 6300 50 
+F3 "SWDIO" B L 3100 6400 50 
+F4 "SWDCLK" O L 3100 6500 50 
+F5 "VDD" I R 4150 6350 50 
+F6 "VSS" I R 4150 6450 50 
+$EndSheet
+Text Label 3050 6300 2    50   ~ 0
+RESET
+Text Label 3050 6400 2    50   ~ 0
+PIO0_2
+Text Label 3050 6500 2    50   ~ 0
+PIO0_3
+Wire Wire Line
+	3100 6300 3050 6300
+Wire Wire Line
+	3050 6400 3100 6400
+Wire Wire Line
+	3050 6500 3100 6500
+Text Label 4200 6450 0    50   ~ 0
+VSS
+Text Label 4200 6350 0    50   ~ 0
+VDD
+Wire Wire Line
+	4150 6450 4200 6450
+Wire Wire Line
+	4200 6350 4150 6350
 $EndSCHEMATC
