@@ -26,10 +26,10 @@ SOFTWARE.
 #include <board.hpp>
 #include <chip.h>
 
-result cmdHandleSample(void);
-result cmdHandleRecalibrate(void);
-result cmdHandleContinual(void);
-result cmdHandleQuit(void);
+result cmdHandleSample(int *argument);
+result cmdHandleRecalibrate(int *argument);
+result cmdHandleContinual(int *argument);
+result cmdHandleQuit(int *argument);
 
 const char cmdSample[] = "s";
 const char cmdRecalibrate[] = "r";
@@ -45,25 +45,25 @@ commandEntry_t adcEvalCommands[] =
     {NULL, NULL},
 };
 
-result cmdHandleSample(void)
+result cmdHandleSample(int *argument)
 {
     return noError;
 }
 
-result cmdHandleRecalibrate(void)
+result cmdHandleRecalibrate(int *argument)
 {
     Chip_ADC_DisableSequencer(LPC_ADC, ADC_SEQA_IDX);
     boardAdcInit();
     return noError;
 }
 
-result cmdHandleContinual(void)
+result cmdHandleContinual(int *argument)
 {
     Chip_ADC_EnableSequencer(LPC_ADC, ADC_SEQA_IDX);
     return noError;
 }
 
-result cmdHandleQuit(void)
+result cmdHandleQuit(int *argument)
 {
     Chip_ADC_DisableSequencer(LPC_ADC, ADC_SEQA_IDX);
     return noError;
