@@ -1,9 +1,12 @@
+# kicad temporaries
 rescue-backup
 *rescue.lib
 *.net
 *.kicad_pcb-bak
 *.bak
 fp-info-cache
+*.sch-bak
+
 
 # ignoring plot zips
 *.zip
