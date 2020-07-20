@@ -47,4 +47,211 @@ Wire Notes Line
 	1400 7000 600  7000
 Wire Notes Line
 	600  7550 1400 7550
+$Comp
+L SquantorNxp:LPC812M101JTB16 U1
+U 1 1 5F164C20
+P 10650 2900
+F 0 "U1" H 10600 3100 50  0000 L CNN
+F 1 "LPC812M101JTB16" H 10300 2700 50  0000 L CNN
+F 2 "Package_SON:NXP_XSON-16" H 10500 2900 50  0001 C CNN
+F 3 "" H 10500 2900 50  0001 C CNN
+	1    10650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SquantorNxp:LPC812M101JTB16 U1
+U 2 1 5F165B66
+P 10200 1650
+F 0 "U1" H 10100 2450 50  0000 L CNN
+F 1 "LPC812M101JTB16" H 9850 850 50  0000 L CNN
+F 2 "Package_SON:NXP_XSON-16" H 10050 1650 50  0001 C CNN
+F 3 "" H 10050 1650 50  0001 C CNN
+	2    10200 1650
+	1    0    0    -1  
+$EndComp
+Text Label 9500 1000 2    50   ~ 0
+PIO0_0
+Text Label 9500 1100 2    50   ~ 0
+PIO0_1
+Text Label 9500 1200 2    50   ~ 0
+PIO0_2
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 5F16BEEF
+P 1400 1300
+F 0 "J1" H 1350 1700 50  0000 L CNN
+F 1 "Conn_01x08" H 1150 800 50  0000 L CNN
+F 2 "SquantorConnectors:Header-0254-1X08-H010" H 1400 1300 50  0001 C CNN
+F 3 "~" H 1400 1300 50  0001 C CNN
+	1    1400 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5F16CA69
+P 1700 1400
+F 0 "J2" H 1650 1800 50  0000 L CNN
+F 1 "Conn_01x08" H 1450 900 50  0000 L CNN
+F 2 "SquantorConnectors:Header-0254-1X08-H010" H 1700 1400 50  0001 C CNN
+F 3 "~" H 1700 1400 50  0001 C CNN
+	1    1700 1400
+	-1   0    0    1   
+$EndComp
+Text Label 9500 1300 2    50   ~ 0
+PIO0_3
+Text Label 9500 1400 2    50   ~ 0
+PIO0_4
+Text Label 9500 1500 2    50   ~ 0
+PIO0_5
+Text Label 9500 1600 2    50   ~ 0
+PIO0_6
+Text Label 9500 1700 2    50   ~ 0
+PIO0_7
+Text Label 9500 1800 2    50   ~ 0
+PIO0_8
+Text Label 9500 1900 2    50   ~ 0
+PIO0_9
+Text Label 9500 2000 2    50   ~ 0
+PIO0_10
+Text Label 9500 2100 2    50   ~ 0
+PIO0_11
+Text Label 9500 2200 2    50   ~ 0
+PIO0_12
+Text Label 9500 2300 2    50   ~ 0
+PIO0_13
+Wire Wire Line
+	9500 1000 9550 1000
+Wire Wire Line
+	9550 1100 9500 1100
+Wire Wire Line
+	9500 1200 9550 1200
+Wire Wire Line
+	9550 1300 9500 1300
+Wire Wire Line
+	9500 1400 9550 1400
+Wire Wire Line
+	9550 1500 9500 1500
+Wire Wire Line
+	9500 1600 9550 1600
+Wire Wire Line
+	9550 1700 9500 1700
+Wire Wire Line
+	9500 1800 9550 1800
+Wire Wire Line
+	9550 1900 9500 1900
+Wire Wire Line
+	9500 2000 9550 2000
+Wire Wire Line
+	9550 2100 9500 2100
+Wire Wire Line
+	9500 2200 9550 2200
+Wire Wire Line
+	9550 2300 9500 2300
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5F172199
+P 10200 2750
+F 0 "FB?" V 10150 2600 50  0000 C CNN
+F 1 "600" V 10250 2600 50  0000 C CNN
+F 2 "SquantorRcl:L_0402" V 10130 2750 50  0001 C CNN
+F 3 "~" H 10200 2750 50  0001 C CNN
+	1    10200 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5F174129
+P 10350 2900
+F 0 "C?" H 10250 3000 50  0000 L CNN
+F 1 "1u" H 10250 2800 50  0000 L CNN
+F 2 "SquantorRcl:C_0402" H 10350 2900 50  0001 C CNN
+F 3 "~" H 10350 2900 50  0001 C CNN
+	1    10350 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10450 2850 10400 2850
+Wire Wire Line
+	10400 2850 10400 2750
+Wire Wire Line
+	10400 2750 10350 2750
+Wire Wire Line
+	10350 2800 10350 2750
+Connection ~ 10350 2750
+Wire Wire Line
+	10350 2750 10300 2750
+Wire Wire Line
+	10450 2950 10400 2950
+Wire Wire Line
+	10400 2950 10400 3050
+Wire Wire Line
+	10400 3050 10350 3050
+Wire Wire Line
+	10350 3050 10350 3000
+Text Label 9850 3050 2    50   ~ 0
+VSS
+Text Label 9850 2750 2    50   ~ 0
+VDD
+$Comp
+L Device:C_Small C?
+U 1 1 5F17B143
+P 9950 2900
+F 0 "C?" H 9850 3000 50  0000 L CNN
+F 1 "10u" H 10000 2850 50  0000 L CNN
+F 2 "SquantorRcl:C_0603" H 9950 2900 50  0001 C CNN
+F 3 "~" H 9950 2900 50  0001 C CNN
+	1    9950 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 2750 9950 2750
+Wire Wire Line
+	9950 2800 9950 2750
+Connection ~ 9950 2750
+Wire Wire Line
+	9950 2750 10100 2750
+Wire Wire Line
+	9850 3050 9950 3050
+Connection ~ 10350 3050
+Wire Wire Line
+	9950 3000 9950 3050
+Connection ~ 9950 3050
+Wire Wire Line
+	9950 3050 10350 3050
+Text Label 1150 1400 2    50   ~ 0
+PIO0_13
+Text Label 1150 1500 2    50   ~ 0
+PIO0_12
+Text Label 1150 1600 2    50   ~ 0
+PIO0_5
+Text Label 1150 1700 2    50   ~ 0
+PIO0_4
+Text Label 1950 1700 0    50   ~ 0
+PIO0_3
+Text Label 1950 1600 0    50   ~ 0
+PIO0_2
+Text Label 1950 1500 0    50   ~ 0
+PIO0_11
+Text Label 1950 1400 0    50   ~ 0
+PIO0_10
+Wire Wire Line
+	1150 1400 1200 1400
+Wire Wire Line
+	1200 1500 1150 1500
+Wire Wire Line
+	1150 1600 1200 1600
+Wire Wire Line
+	1200 1700 1150 1700
+Wire Wire Line
+	1900 1400 1950 1400
+Wire Wire Line
+	1950 1500 1900 1500
+Wire Wire Line
+	1900 1600 1950 1600
+Wire Wire Line
+	1950 1700 1900 1700
+Text Label 1950 1300 0    50   ~ 0
+PIO0_1
+Text Label 1950 1200 0    50   ~ 0
+PIO0_9
 $EndSCHEMATC
