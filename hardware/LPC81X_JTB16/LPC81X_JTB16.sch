@@ -78,24 +78,24 @@ PIO0_2
 $Comp
 L Connector_Generic:Conn_01x08 J1
 U 1 1 5F16BEEF
-P 1400 1300
-F 0 "J1" H 1350 1700 50  0000 L CNN
-F 1 "Conn_01x08" H 1150 800 50  0000 L CNN
-F 2 "SquantorConnectors:Header-0254-1X08-H010" H 1400 1300 50  0001 C CNN
-F 3 "~" H 1400 1300 50  0001 C CNN
-	1    1400 1300
-	1    0    0    -1  
+P 1400 1400
+F 0 "J1" H 1350 1800 50  0000 L CNN
+F 1 "Conn_01x08" H 1150 900 50  0000 L CNN
+F 2 "SquantorConnectors:Header-0254-1X08-H010" H 1400 1400 50  0001 C CNN
+F 3 "~" H 1400 1400 50  0001 C CNN
+	1    1400 1400
+	1    0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x08 J2
 U 1 1 5F16CA69
-P 1700 1400
-F 0 "J2" H 1650 1800 50  0000 L CNN
-F 1 "Conn_01x08" H 1450 900 50  0000 L CNN
-F 2 "SquantorConnectors:Header-0254-1X08-H010" H 1700 1400 50  0001 C CNN
-F 3 "~" H 1700 1400 50  0001 C CNN
-	1    1700 1400
-	-1   0    0    1   
+P 1700 1300
+F 0 "J2" H 1650 1700 50  0000 L CNN
+F 1 "Conn_01x08" H 1450 800 50  0000 L CNN
+F 2 "SquantorConnectors:Header-0254-1X08-H010" H 1700 1300 50  0001 C CNN
+F 3 "~" H 1700 1300 50  0001 C CNN
+	1    1700 1300
+	-1   0    0    -1  
 $EndComp
 Text Label 9500 1300 2    50   ~ 0
 PIO0_3
@@ -148,10 +148,10 @@ Wire Wire Line
 Wire Wire Line
 	9550 2300 9500 2300
 $Comp
-L Device:Ferrite_Bead_Small FB?
+L Device:Ferrite_Bead_Small FB1
 U 1 1 5F172199
 P 10200 2750
-F 0 "FB?" V 10150 2600 50  0000 C CNN
+F 0 "FB1" V 10150 2600 50  0000 C CNN
 F 1 "600" V 10250 2600 50  0000 C CNN
 F 2 "SquantorRcl:L_0402" V 10130 2750 50  0001 C CNN
 F 3 "~" H 10200 2750 50  0001 C CNN
@@ -159,10 +159,10 @@ F 3 "~" H 10200 2750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C2
 U 1 1 5F174129
 P 10350 2900
-F 0 "C?" H 10250 3000 50  0000 L CNN
+F 0 "C2" H 10250 3000 50  0000 L CNN
 F 1 "1u" H 10250 2800 50  0000 L CNN
 F 2 "SquantorRcl:C_0402" H 10350 2900 50  0001 C CNN
 F 3 "~" H 10350 2900 50  0001 C CNN
@@ -193,10 +193,10 @@ VSS
 Text Label 9850 2750 2    50   ~ 0
 VDD
 $Comp
-L Device:C_Small C?
+L Device:C_Small C1
 U 1 1 5F17B143
 P 9950 2900
-F 0 "C?" H 9850 3000 50  0000 L CNN
+F 0 "C1" H 9850 3000 50  0000 L CNN
 F 1 "10u" H 10000 2850 50  0000 L CNN
 F 2 "SquantorRcl:C_0603" H 9950 2900 50  0001 C CNN
 F 3 "~" H 9950 2900 50  0001 C CNN
@@ -254,4 +254,35 @@ Text Label 1950 1300 0    50   ~ 0
 PIO0_1
 Text Label 1950 1200 0    50   ~ 0
 PIO0_9
+$Comp
+L SquantorConnectorsNamed:JTAG_2X05_IN J3
+U 1 1 5F1920CA
+P 8050 4050
+F 0 "J3" H 8050 4537 60  0000 C CNN
+F 1 "JTAG_2X05_IN" H 8050 4431 60  0000 C CNN
+F 2 "SquantorConnectors:Header-0127-2X05-H006" H 8050 4200 60  0001 C CNN
+F 3 "" H 8050 4200 60  0001 C CNN
+	1    8050 4050
+	1    0    0    -1  
+$EndComp
+Text Label 8650 3850 0    50   ~ 0
+VDD
+Text Label 8650 4250 0    50   ~ 0
+VSS
+Wire Wire Line
+	8550 4250 8600 4250
+Wire Wire Line
+	8650 3850 8550 3850
+Wire Wire Line
+	8550 3950 8600 3950
+Wire Wire Line
+	8600 3950 8600 4050
+Connection ~ 8600 4250
+Wire Wire Line
+	8600 4250 8650 4250
+Wire Wire Line
+	8550 4050 8600 4050
+Connection ~ 8600 4050
+Wire Wire Line
+	8600 4050 8600 4250
 $EndSCHEMATC
